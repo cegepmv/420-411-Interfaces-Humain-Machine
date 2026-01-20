@@ -1,6 +1,6 @@
-baseURL = 'https://cegepmv.github.io/420-111/'
+baseURL = 'https://cegepmv.github.io/420-411-Interfaces-Humain-Machine/'
 languageCode = 'fr-ca'
-title = 'Introduction à la programmation'
+title = 'Interfaces Humain machine'
 theme = 'relearn'
 enableEmoji = true
 
