@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Variables :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/3-variables-types/variables/index.html</link>
+    <description>Une variable, c’est comme une boîte dans laquelle on range une valeur. Elle a toujours trois éléments essentiels :&#xA;👉 type nom = valeur;&#xA;Par exemple :&#xA;int var1 = 42; Ici :&#xA;🧾 int → le type de la variable (entier) 🏷️ var1 → le nom de la variable 🎁 42 → la valeur qu’elle contient 📢 Afficher une variable Tu peux afficher une variable comme tu afficherais n’importe quelle valeur :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Tue, 26 Aug 2025 14:39:35 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/3-variables-types/variables/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constantes</title>
+      <link>http://localhost:1313/420-111/3-variables-types/variables/constantes/index.html</link>
+      <pubDate>Tue, 26 Aug 2025 14:39:35 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/3-variables-types/variables/constantes/index.html</guid>
+      <description>En Java, une constante est une variable dont la valeur ne peut plus être modifiée après son initialisation.&#xA;Elles sont utilisées pour représenter des valeurs fixes (comme un taux de taxe, un seuil, une unité de mesure, etc.) qui ne doivent pas changer pendant l’exécution du programme.&#xA;✅ Comment déclarer une constante ? Pour déclarer une constante, on utilise le mot-clé final. Cela indique que la valeur ne pourra être assignée qu’une seule fois.</description>
+    </item>
+    <item>
+      <title>Locale/Instance/Classe</title>
+      <link>http://localhost:1313/420-111/3-variables-types/variables/locale-instance-classe/index.html</link>
+      <pubDate>Tue, 26 Aug 2025 14:39:35 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/3-variables-types/variables/locale-instance-classe/index.html</guid>
+      <description>En Java, il existe trois grands types de variables qu’on peut rencontrer dans une classe :&#xA;Les variables d’instance Les variables de classe Les variables locales (dans les méthodes) 👤 Variables d’instance(Sera vue dans le cours de programmation orientée objet) Voir la théorie quand même Une variable d’instance est propre à chaque objet créé à partir d’une classe. Elle est déclarée dans la classe, mais en dehors des méthodes.&#xA;public class Voiture { int vitesse; // Variable d’instance } ➕ Caractéristiques : Chaque objet a sa propre copie. Sert à stocker des caractéristiques propres à un objet. Accessible dans la classe avec this.vitesse. 🏛️ Variables de classe Une variable de classe est partagée par tous les objets d’une classe. Elle est déclarée avec le mot-clé static.</description>
+    </item>
+  </channel>
+</rss>

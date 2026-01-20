@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conversions De Types :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/6-conversions-de-types/index.html</link>
+    <description>🔄 Conversion implicite vs explicite en Java La conversion permet de changer le type d’une donnée pour l’adapter à une autre variable ou expression.&#xA;1. Conversion implicite (promotion automatique) Java effectue automatiquement la conversion quand il n’y a pas de risque de perte de données. Se produit souvent quand on passe d’un type plus petit à un type plus grand. Exemples classiques : De Vers Exemple int double double d = 5; byte int int x = 10; int a = 10; double b = a; // Conversion implicite 2. Conversion explicite (casting) Nécessaire quand il y a un risque de perte de données ou incompatibilité. Le programmeur doit forcer la conversion avec un cast (type). Exemples classiques : De Vers Exemple double int int x = (int) 9.99; long int int y = (int) 100000L; double x = 9.99; int y = (int) x; // Conversion explicite, décimale perdue 3. Différences clés Aspect Conversion implicite Conversion explicite Nécessite une action ? Non, automatique Oui, cast obligatoire (type) Risque de perte Non Oui Sens Du plus petit au plus grand Du plus grand au plus petit Exemples int → double double → int 4. En résumé Conversion implicite = sûre, automatique, du type petit vers grand. Conversion explicite = risquée, forcée, du type grand vers petit. Utilise toujours le casting explicite pour éviter les erreurs de compilation. 🧠 À retenir Java convertit tout seul quand c’est sûr. Pour tout ce qui peut perdre des infos, il faut caster manuellement. Sois vigilant avec les conversions explicites, elles peuvent tronquer ou modifier la valeur. Conversion_des_types Le terme le plus utilisé pour la technique de conversion est « Casting ».</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <atom:link href="http://localhost:1313/420-111/6-conversions-de-types/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

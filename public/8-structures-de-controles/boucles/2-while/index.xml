@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>While :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/8-structures-de-controles/boucles/2-while/index.html</link>
+    <description>🔁 La boucle while en Java La boucle while permet de répéter des instructions tant qu’une condition est vraie. C’est une structure de contrôle très utile quand on ne connaît pas à l’avance le nombre d’itérations.&#xA;🧱 Structure d’une boucle while while (condition) { // instructions à exécuter } Élément Rôle condition Tant qu’elle est vraie, la boucle continue bloc de code Ce qui est exécuté à chaque tour 🔂 Exemple simple int i = 0; while (i &lt; 5) { System.out.println(&#34;i vaut : &#34; + i); i++; } 🔎 Ce code va afficher :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/8-structures-de-controles/boucles/2-while/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

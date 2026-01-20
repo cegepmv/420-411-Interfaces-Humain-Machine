@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>⚙️ Les opérateurs logiques en Java :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/5-operateurs/logique/index.html</link>
+    <description>Les opérateurs logiques permettent de combiner des conditions. Ils sont essentiels pour construire des expressions complexes dans les structures comme if, while, etc.&#xA;Ils s’appliquent sur des booléens (true ou false) et renvoient eux-mêmes un booléen.&#xA;🧪 Les 3 opérateurs logiques principaux Opérateur Nom Fonction principale Exemple Résultat &amp;&amp; ET logique Vrai seulement si les deux conditions sont vraies true &amp;&amp; true true || OU logique Vrai si au moins une condition est vraie true || false true ! NON logique Inverse la valeur (vrai devient faux, et vice-versa) !true false 🧠 Tableau de vérité 1. &amp;&amp; (ET logique) A B A &amp;&amp; B true true true true false false false true false false false false 2. || (OU logique) A B A || B true true true true false true false true true false false false 3. ! (NON logique) A !A true false false true 💬 Exemples simples int age = 20; boolean citoyen = true; // Vrai seulement si les deux conditions sont vraies if (age &gt;= 18 &amp;&amp; citoyen) { System.out.println(&#34;Tu peux voter !&#34;); } boolean ilPleut = true; boolean aParapluie = false; if (ilPleut &amp;&amp; !aParapluie) { System.out.println(&#34;Tu vas être mouillé !&#34;); } ⚠️ Attention à la priorité des opérateurs Priorité (ordre d’évaluation) Opérateur Haute ! Moyenne &amp;&amp; Basse || Tu peux utiliser des parenthèses pour forcer l’ordre :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/5-operateurs/logique/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

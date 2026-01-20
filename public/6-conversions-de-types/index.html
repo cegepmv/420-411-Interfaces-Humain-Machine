@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/420-111/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=420-111/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="🔄 Conversion implicite vs explicite en Java La conversion permet de changer le type d’une donnée pour l’adapter à une autre variable ou expression.
+1. Conversion implicite (promotion automatique) Java effectue automatiquement la conversion quand il n’y a pas de risque de perte de données. Se produit souvent quand on passe d’un type plus petit à un type plus grand. Exemples classiques : De Vers Exemple int double double d = 5; byte int int x = 10; int a = 10; double b = a; // Conversion implicite 2. Conversion explicite (casting) Nécessaire quand il y a un risque de perte de données ou incompatibilité. Le programmeur doit forcer la conversion avec un cast (type). Exemples classiques : De Vers Exemple double int int x = (int) 9.99; long int int y = (int) 100000L; double x = 9.99; int y = (int) x; // Conversion explicite, décimale perdue 3. Différences clés Aspect Conversion implicite Conversion explicite Nécessite une action ? Non, automatique Oui, cast obligatoire (type) Risque de perte Non Oui Sens Du plus petit au plus grand Du plus grand au plus petit Exemples int → double double → int 4. En résumé Conversion implicite = sûre, automatique, du type petit vers grand. Conversion explicite = risquée, forcée, du type grand vers petit. Utilise toujours le casting explicite pour éviter les erreurs de compilation. 🧠 À retenir Java convertit tout seul quand c’est sûr. Pour tout ce qui peut perdre des infos, il faut caster manuellement. Sois vigilant avec les conversions explicites, elles peuvent tronquer ou modifier la valeur. Conversion_des_types Le terme le plus utilisé pour la technique de conversion est « Casting ».">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Conversions De Types :: Introduction à la programmation">
+    <meta name="twitter:description" content="🔄 Conversion implicite vs explicite en Java La conversion permet de changer le type d’une donnée pour l’adapter à une autre variable ou expression.
+1. Conversion implicite (promotion automatique) Java effectue automatiquement la conversion quand il n’y a pas de risque de perte de données. Se produit souvent quand on passe d’un type plus petit à un type plus grand. Exemples classiques : De Vers Exemple int double double d = 5; byte int int x = 10; int a = 10; double b = a; // Conversion implicite 2. Conversion explicite (casting) Nécessaire quand il y a un risque de perte de données ou incompatibilité. Le programmeur doit forcer la conversion avec un cast (type). Exemples classiques : De Vers Exemple double int int x = (int) 9.99; long int int y = (int) 100000L; double x = 9.99; int y = (int) x; // Conversion explicite, décimale perdue 3. Différences clés Aspect Conversion implicite Conversion explicite Nécessite une action ? Non, automatique Oui, cast obligatoire (type) Risque de perte Non Oui Sens Du plus petit au plus grand Du plus grand au plus petit Exemples int → double double → int 4. En résumé Conversion implicite = sûre, automatique, du type petit vers grand. Conversion explicite = risquée, forcée, du type grand vers petit. Utilise toujours le casting explicite pour éviter les erreurs de compilation. 🧠 À retenir Java convertit tout seul quand c’est sûr. Pour tout ce qui peut perdre des infos, il faut caster manuellement. Sois vigilant avec les conversions explicites, elles peuvent tronquer ou modifier la valeur. Conversion_des_types Le terme le plus utilisé pour la technique de conversion est « Casting ».">
+    <meta property="og:url" content="http://localhost:1313/420-111/6-conversions-de-types/index.html">
+    <meta property="og:site_name" content="Introduction à la programmation">
+    <meta property="og:title" content="Conversions De Types :: Introduction à la programmation">
+    <meta property="og:description" content="🔄 Conversion implicite vs explicite en Java La conversion permet de changer le type d’une donnée pour l’adapter à une autre variable ou expression.
+1. Conversion implicite (promotion automatique) Java effectue automatiquement la conversion quand il n’y a pas de risque de perte de données. Se produit souvent quand on passe d’un type plus petit à un type plus grand. Exemples classiques : De Vers Exemple int double double d = 5; byte int int x = 10; int a = 10; double b = a; // Conversion implicite 2. Conversion explicite (casting) Nécessaire quand il y a un risque de perte de données ou incompatibilité. Le programmeur doit forcer la conversion avec un cast (type). Exemples classiques : De Vers Exemple double int int x = (int) 9.99; long int int y = (int) 100000L; double x = 9.99; int y = (int) x; // Conversion explicite, décimale perdue 3. Différences clés Aspect Conversion implicite Conversion explicite Nécessite une action ? Non, automatique Oui, cast obligatoire (type) Risque de perte Non Oui Sens Du plus petit au plus grand Du plus grand au plus petit Exemples int → double double → int 4. En résumé Conversion implicite = sûre, automatique, du type petit vers grand. Conversion explicite = risquée, forcée, du type grand vers petit. Utilise toujours le casting explicite pour éviter les erreurs de compilation. 🧠 À retenir Java convertit tout seul quand c’est sûr. Pour tout ce qui peut perdre des infos, il faut caster manuellement. Sois vigilant avec les conversions explicites, elles peuvent tronquer ou modifier la valeur. Conversion_des_types Le terme le plus utilisé pour la technique de conversion est « Casting ».">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Conversions De Types :: Introduction à la programmation">
+    <meta itemprop="description" content="🔄 Conversion implicite vs explicite en Java La conversion permet de changer le type d’une donnée pour l’adapter à une autre variable ou expression.
+1. Conversion implicite (promotion automatique) Java effectue automatiquement la conversion quand il n’y a pas de risque de perte de données. Se produit souvent quand on passe d’un type plus petit à un type plus grand. Exemples classiques : De Vers Exemple int double double d = 5; byte int int x = 10; int a = 10; double b = a; // Conversion implicite 2. Conversion explicite (casting) Nécessaire quand il y a un risque de perte de données ou incompatibilité. Le programmeur doit forcer la conversion avec un cast (type). Exemples classiques : De Vers Exemple double int int x = (int) 9.99; long int int y = (int) 100000L; double x = 9.99; int y = (int) x; // Conversion explicite, décimale perdue 3. Différences clés Aspect Conversion implicite Conversion explicite Nécessite une action ? Non, automatique Oui, cast obligatoire (type) Risque de perte Non Oui Sens Du plus petit au plus grand Du plus grand au plus petit Exemples int → double double → int 4. En résumé Conversion implicite = sûre, automatique, du type petit vers grand. Conversion explicite = risquée, forcée, du type grand vers petit. Utilise toujours le casting explicite pour éviter les erreurs de compilation. 🧠 À retenir Java convertit tout seul quand c’est sûr. Pour tout ce qui peut perdre des infos, il faut caster manuellement. Sois vigilant avec les conversions explicites, elles peuvent tronquer ou modifier la valeur. Conversion_des_types Le terme le plus utilisé pour la technique de conversion est « Casting ».">
+    <meta itemprop="wordCount" content="1148">
+    <title>Conversions De Types :: Introduction à la programmation</title>
+    <link href="/420-111/6-conversions-de-types/index.xml" rel="alternate" type="application/rss+xml" title="Conversions De Types :: Introduction à la programmation">
+    <link href="/420-111/images/favicon.png?1768412029" rel="icon" type="image/png">
+    <link href="/420-111/css/auto-complete/auto-complete.min.css?1768412029" rel="stylesheet">
+    <script src="/420-111/js/auto-complete/auto-complete.min.js?1768412029" defer></script>
+    <script src="/420-111/js/search-lunr.js?1768412029" defer></script>
+    <script src="/420-111/js/search.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/420-111/searchindex.en.js?1768412029";
+    </script>
+    <script src="/420-111/js/lunr/lunr.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.stemmer.support.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.multi.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.fr.min.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet"></noscript>
+    <link href="/420-111/css/perfect-scrollbar/perfect-scrollbar.min.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/theme.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/format-html.css?1768412029" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/6-conversions-de-types\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/420-111';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'zen-light', 'zen-dark', 'neon', 'learn' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+:root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 16rem;
+}
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/420-111/6-conversions-de-types/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#-conversion-implicite-vs-explicite-en-java">🔄 Conversion implicite vs explicite en Java</a></li>
+    <li><a href="#1-conversion-implicite-promotion-automatique">1. Conversion implicite (promotion automatique)</a>
+      <ul>
+        <li><a href="#exemples-classiques-">Exemples classiques :</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-conversion-explicite-casting">2. Conversion explicite (casting)</a>
+      <ul>
+        <li><a href="#exemples-classiques--1">Exemples classiques :</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-différences-clés">3. Différences clés</a></li>
+    <li><a href="#4-en-résumé">4. En résumé</a></li>
+    <li><a href="#-à-retenir">🧠 À retenir</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#automatique-vs-manuelle">Automatique vs manuelle</a></li>
+        <li><a href="#pour-résumer-">Pour résumer :</a></li>
+        <li><a href="#-exercice-1--fusion-de-types">🧪 <strong>Exercice 1 : Fusion de types</strong></a></li>
+        <li><a href="#-exercice-2--tronquage-dun-flottant">✂️ <strong>Exercice 2 : Tronquage d’un flottant</strong></a></li>
+        <li><a href="#-exercice-3--enchaînement-de-cast">🔁 <strong>Exercice 3 : Enchaînement de cast</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#1--quest-ce-que-cest-">1. 🔍 Qu’est-ce que c’est ?</a></li>
+    <li><a href="#2--syntaxe">2. 📌 Syntaxe</a>
+      <ul>
+        <li><a href="#-déclaration-classique">✅ Déclaration classique</a></li>
+        <li><a href="#-exécution-en-ligne-de-commande">✅ Exécution (en ligne de commande)</a></li>
+      </ul>
+    </li>
+    <li><a href="#3--exemple-simple">3. 🧪 Exemple simple</a>
+      <ul>
+        <li><a href="#-important">⚠️ Important</a></li>
+      </ul>
+    </li>
+    <li><a href="#4--gestion-des-erreurs">4. 🛑 Gestion des erreurs</a></li>
+    <li><a href="#5--conversion-de-type">5. 🔄 Conversion de type</a></li>
+    <li><a href="#6--utilisation-typique">6. 🎯 Utilisation typique</a></li>
+    <li><a href="#7--exemple-complet">7. 📦 Exemple complet</a></li>
+    <li><a href="#-à-retenir-1">🧠 À retenir</a>
+      <ul>
+        <li><a href="#-exercice-1--convertisseur-celsius--fahrenheit">🧩 <strong>Exercice 1 : Convertisseur Celsius → Fahrenheit</strong></a></li>
+        <li><a href="#-exercice-2--nombre-pair-ou-impair">🧮 <strong>Exercice 2 : Nombre pair ou impair</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/index.html"><span itemprop="name">Introduction à la programmation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Conversions De Types</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/5-operateurs/ordre-priorite/index.html" title="🧭 Ordre de priorité des opérations en Java (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/7-tableaux/index.html" title="Tableaux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable chapter" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="chapter narrow">
+  <header class="headline">
+  </header>
+<div class="article-subheading">Chapter 6</div>
+
+<h1 id="conversions-de-types">Conversions De Types</h1>
+
+<hr>
+<h2 id="-conversion-implicite-vs-explicite-en-java">🔄 Conversion implicite vs explicite en Java</h2>
+<p>La conversion permet de changer le type d’une donnée pour l’adapter à une autre variable ou expression.</p>
+<hr>
+<h2 id="1-conversion-implicite-promotion-automatique">1. Conversion implicite (promotion automatique)</h2>
+<ul>
+<li>Java effectue <strong>automatiquement</strong> la conversion quand il n’y a <strong>pas de risque de perte de données</strong>.</li>
+<li>Se produit souvent quand on passe d’un type <strong>plus petit</strong> à un type <strong>plus grand</strong>.</li>
+</ul>
+<h3 id="exemples-classiques-">Exemples classiques :</h3>
+<table>
+  <thead>
+      <tr>
+          <th>De</th>
+          <th>Vers</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>int</code></td>
+          <td><code>double</code></td>
+          <td><code>double d = 5;</code></td>
+      </tr>
+      <tr>
+          <td><code>byte</code></td>
+          <td><code>int</code></td>
+          <td><code>int x = 10;</code></td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">10</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">double</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Conversion</span><span class="w"> </span><span class="n">implicite</span></span></span></code></pre></div>
+<hr>
+<h2 id="2-conversion-explicite-casting">2. Conversion explicite (casting)</h2>
+<ul>
+<li>Nécessaire quand il y a un <strong>risque de perte de données</strong> ou <strong>incompatibilité</strong>.</li>
+<li>Le programmeur doit forcer la conversion avec un <strong>cast</strong> <code>(type)</code>.</li>
+</ul>
+<h3 id="exemples-classiques--1">Exemples classiques :</h3>
+<table>
+  <thead>
+      <tr>
+          <th>De</th>
+          <th>Vers</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>double</code></td>
+          <td><code>int</code></td>
+          <td><code>int x = (int) 9.99;</code></td>
+      </tr>
+      <tr>
+          <td><code>long</code></td>
+          <td><code>int</code></td>
+          <td><code>int y = (int) 100000L;</code></td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">9</span><span class="p">.</span><span class="na">99</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="n">Conversion</span><span class="w"> </span><span class="n">explicite</span><span class="p">,</span><span class="w"> </span><span class="n">décimale</span><span class="w"> </span><span class="n">perdue</span></span></span></code></pre></div>
+<hr>
+<h2 id="3-différences-clés">3. Différences clés</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Conversion implicite</th>
+          <th>Conversion explicite</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Nécessite une action ?</td>
+          <td>Non, automatique</td>
+          <td>Oui, cast obligatoire <code>(type)</code></td>
+      </tr>
+      <tr>
+          <td>Risque de perte</td>
+          <td>Non</td>
+          <td>Oui</td>
+      </tr>
+      <tr>
+          <td>Sens</td>
+          <td>Du plus petit au plus grand</td>
+          <td>Du plus grand au plus petit</td>
+      </tr>
+      <tr>
+          <td>Exemples</td>
+          <td><code>int</code> → <code>double</code></td>
+          <td><code>double</code> → <code>int</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="4-en-résumé">4. En résumé</h2>
+<ul>
+<li><strong>Conversion implicite</strong> = sûre, automatique, du type petit vers grand.</li>
+<li><strong>Conversion explicite</strong> = risquée, forcée, du type grand vers petit.</li>
+<li>Utilise toujours le casting explicite pour éviter les erreurs de compilation.</li>
+</ul>
+<hr>
+<h2 id="-à-retenir">🧠 À retenir</h2>
+<ul>
+<li>Java convertit <strong>tout seul</strong> quand c’est sûr.</li>
+<li>Pour tout ce qui peut perdre des infos, il faut <strong>caster</strong> manuellement.</li>
+<li>Sois vigilant avec les conversions explicites, elles peuvent tronquer ou modifier la valeur.</li>
+</ul>
+<h1 id="conversion_des_types">Conversion_des_types</h1>
+<p>Le terme le plus utilisé pour la technique de conversion est « Casting ».</p>
+<h4 id="cas-1">Cas 1</h4>
+<h5 id="conversion-1--string-vers-les-numériques">Conversion 1 : String vers les numériques</h5>
+<img src="/420-111/images/rencontre4/1.png">
+<h5 id="conversion-2--les-numériques-vers-une-string-en-utilisant-la-méthode-valueof">Conversion 2 : Les numériques vers une String en utilisant la méthode valueOf()</h5>
+<img src="/420-111/images/rencontre4/2.png">
+<h5 id="conversion-3--les-numériques-vers-une-string-en-utilisant-la-méthode-tostring">Conversion 3 : Les numériques vers une String en utilisant la méthode toString()</h5>
+<img src="/420-111/images/rencontre4/3.png">
+<h5 id="conversion-4--string-vers-les-primitifs">Conversion 4 : String vers les primitifs</h5>
+<img src="/420-111/images/rencontre4/4.png">
+<h5 id="conversion-5--primitifs-vers-string">Conversion 5 : Primitifs vers String</h5>
+<img src="/420-111/images/rencontre4/5.png">
+<h5 id="conversion-6--les-primitifs-vers-une-string-en-utilisant-la-méthode-valueof">Conversion 6 : Les primitifs vers une String en utilisant la méthode valueOf()</h5>
+<img src="/420-111/images/rencontre4/6.png">
+<h3 id="automatique-vs-manuelle">Automatique vs manuelle</h3>
+<p>Conversion automatique : il s’agit d’une conversion d&rsquo;un type plus petit en un type plus grand</p>
+<p>byte -&gt; short -&gt; char -&gt; int -&gt; long -&gt; float -&gt; double</p>
+<img src="/420-111/images/rencontre4/7.png">
+<h4 id="cas-2">Cas 2</h4>
+<p>Conversion manuelle :</p>
+<p>il s’agit de la conversion d&rsquo;un type plus grand en un type de taille plus petite. Il suffit de rajouter le casting du type voulu à droite.</p>
+<p>double -&gt; float -&gt; long -&gt; int -&gt; char -&gt; short -&gt; byte
+double d = 2000.23;
+float f = (float)d;
+long l = (long) f;</p>
+<p>Quand on diminue la taille il y a parfois une perte d&rsquo;information comme si l&rsquo;on passe de float à int:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">4</span><span class="p">.</span><span class="na">53F</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">a</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="o">//</span><span class="n">4</span></span></span></code></pre></div>
+<h3 id="pour-résumer-">Pour résumer :</h3>
+<ul>
+<li>Dans le cas d’une conversion de petit vers grand ➔ on ne fait rien.</li>
+<li>Dans le cas d’une conversion d’un grand vers un petit ➔ il faut « Caster » la partie droite en type du petit.</li>
+</ul>
+<hr>
+<h3 id="-exercice-1--fusion-de-types">🧪 <strong>Exercice 1 : Fusion de types</strong></h3>
+<p><strong>Objectif :</strong> Comprendre la promotion automatique des types.</p>
+<p>🧾 <strong>Consignes :</strong></p>
+<ul>
+<li>Crée une variable <code>byte</code> avec une valeur (ex. <code>byte b = 10;</code>)</li>
+<li>Crée une variable <code>int</code> et affecte-lui la valeur de <code>b</code> (sans cast)</li>
+<li>Affiche la valeur de l’int</li>
+<li>Explique dans un commentaire pourquoi ça fonctionne sans cast</li>
+</ul>
+<p>🔧 Concepts : conversion <strong>implicite</strong> <code>byte → int</code></p>
+<hr>
+<h3 id="-exercice-2--tronquage-dun-flottant">✂️ <strong>Exercice 2 : Tronquage d’un flottant</strong></h3>
+<p><strong>Objectif :</strong> Observer la perte de données lors d’un cast.</p>
+<p>🧾 <strong>Consignes :</strong></p>
+<ul>
+<li>Déclare une variable <code>double</code> avec une valeur décimale (ex. <code>double d = 123.456;</code>)</li>
+<li>Caste-la en <code>int</code> et stocke le résultat dans une nouvelle variable</li>
+<li>Affiche les deux valeurs</li>
+<li>Constate la perte des décimales</li>
+</ul>
+<p>🔧 Concepts : conversion <strong>explicite</strong> <code>double → int</code></p>
+<hr>
+<h3 id="-exercice-3--enchaînement-de-cast">🔁 <strong>Exercice 3 : Enchaînement de cast</strong></h3>
+<p><strong>Objectif :</strong> Appliquer plusieurs conversions manuelles successives.</p>
+<p>🧾 <strong>Consignes :</strong></p>
+<ul>
+<li>Déclare une variable <code>double</code> avec une valeur (ex. <code>double x = 1000.99;</code>)</li>
+<li>Convertis-la en <code>float</code>, puis en <code>long</code>, puis en <code>int</code></li>
+<li>Affiche chaque étape</li>
+<li>Observe l’évolution de la donnée à chaque cast</li>
+</ul>
+<p>🔧 Concepts : conversion <strong>explicite</strong> en chaîne : <code>double → float → long → int</code></p>
+<hr>
+<hr>
+<h1 id="-passage-darguments-par-la-ligne-de-commande-en-java">📥 Passage d&rsquo;arguments par la ligne de commande en Java</h1>
+<hr>
+<h2 id="1--quest-ce-que-cest-">1. 🔍 Qu’est-ce que c’est ?</h2>
+<p>En Java, on peut passer des <strong>valeurs à un programme</strong> au moment de son <strong>exécution</strong>, directement <strong>depuis la ligne de commande</strong>.</p>
+<p>Ces valeurs sont appelées <strong>arguments</strong> et sont transmis au programme via le <strong>tableau <code>String[] args</code></strong> de la méthode <code>main</code>.</p>
+<hr>
+<h2 id="2--syntaxe">2. 📌 Syntaxe</h2>
+<h3 id="-déclaration-classique">✅ Déclaration classique</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">MonProgramme</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// args est un tableau de chaînes</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<hr>
+<h3 id="-exécution-en-ligne-de-commande">✅ Exécution (en ligne de commande)</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java MonProgramme argument1 argument2 argument3</span></span></code></pre></div>
+<blockquote>
+<p>Ces <code>argument1</code>, <code>argument2</code>, etc. seront accessibles dans le tableau <code>args</code>.</p></blockquote>
+<hr>
+<h2 id="3--exemple-simple">3. 🧪 Exemple simple</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ExempleArgs</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Premier argument : &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">args</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Deuxième argument : &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">args</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<h3 id="-important">⚠️ Important</h3>
+<ul>
+<li><code>args[0]</code> = premier argument</li>
+<li><code>args[1]</code> = deuxième argument</li>
+<li><code>args.length</code> = nombre total d’arguments</li>
+</ul>
+<hr>
+<h2 id="4--gestion-des-erreurs">4. 🛑 Gestion des erreurs</h2>
+<p>Il faut <strong>toujours vérifier la taille du tableau</strong> <code>args</code> pour éviter les erreurs :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Erreur : il faut au moins 2 arguments.&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<hr>
+<h2 id="5--conversion-de-type">5. 🔄 Conversion de type</h2>
+<p>Les arguments sont des <strong>chaînes de caractères (<code>String</code>)</strong> par défaut. Pour utiliser des nombres :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">args</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="p">);</span><span class="w">    </span><span class="c1">// Convertit en int</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">double</span><span class="w"> </span><span class="n">taille</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Double</span><span class="p">.</span><span class="na">parseDouble</span><span class="p">(</span><span class="n">args</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="p">);</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">Convertit</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="kt">double</span></span></span></code></pre></div>
+<blockquote>
+<p>⚠️ Attention aux erreurs si l’utilisateur entre des valeurs non numériques.</p></blockquote>
+<hr>
+<h2 id="6--utilisation-typique">6. 🎯 Utilisation typique</h2>
+<ul>
+<li>Fournir des <strong>paramètres</strong> (nom, âge, etc.) à un programme.</li>
+<li>Contrôler le <strong>comportement</strong> du programme (mode test, options, etc.).</li>
+<li>Éviter de coder en dur des valeurs.</li>
+</ul>
+<hr>
+<h2 id="7--exemple-complet">7. 📦 Exemple complet</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">BonjourNom</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Usage : java BonjourNom &lt;nom&gt;&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">return</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Bonjour &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">args</span><span class="o">[</span><span class="n">0</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; !&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<hr>
+<h2 id="-à-retenir-1">🧠 À retenir</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Élément</th>
+          <th>Détail</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>String[] args</code></td>
+          <td>Tableau contenant les arguments</td>
+      </tr>
+      <tr>
+          <td><code>args.length</code></td>
+          <td>Nombre d’arguments passés</td>
+      </tr>
+      <tr>
+          <td><code>args[i]</code></td>
+          <td>iᵉ argument (indexé à partir de 0)</td>
+      </tr>
+      <tr>
+          <td>Conversion</td>
+          <td>Utiliser <code>Integer.parseInt()</code>, <code>Double.parseDouble()</code>, etc.</td>
+      </tr>
+      <tr>
+          <td>Bonne pratique</td>
+          <td>Vérifier la longueur du tableau avant d&rsquo;accéder aux éléments</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-exercice-1--convertisseur-celsius--fahrenheit">🧩 <strong>Exercice 1 : Convertisseur Celsius → Fahrenheit</strong></h3>
+<p><strong>🎯 Objectif :</strong> Lire une température en degrés Celsius en argument, et afficher sa conversion en Fahrenheit.</p>
+<h4 id="-consigne-">🔧 Consigne :</h4>
+<ol>
+<li>
+<p>Le programme prend <strong>un seul argument numérique</strong>.</p>
+</li>
+<li>
+<p>Il affiche :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>&lt;valeur&gt;°C équivaut à &lt;valeur_fahrenheit&gt;°F</code></pre></div>
+</li>
+<li>
+<p>Utilise la formule : <code>F = C × 9/5 + 32</code></p>
+</li>
+</ol>
+<h4 id="-exemple-attendu-">📝 Exemple attendu :</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java Convertisseur <span class="m">25</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>25°C équivaut à 77.0°F</code></pre></div>
+<blockquote>
+<p>🛑 Ajoute une vérification si aucun argument n’est donné ou si l’entrée n’est pas un nombre.</p></blockquote>
+<hr>
+<h3 id="-exercice-2--nombre-pair-ou-impair">🧮 <strong>Exercice 2 : Nombre pair ou impair</strong></h3>
+<p><strong>🎯 Objectif :</strong> Vérifier si un nombre entier donné en argument est pair ou impair.</p>
+<h4 id="-consigne--1">🔧 Consigne :</h4>
+<ol>
+<li>Le programme prend <strong>un entier</strong> en argument.</li>
+<li>Il affiche si le nombre est pair ou non</li>
+</ol>
+<h4 id="-exemple-attendu--1">📝 Exemple attendu :</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java Parite <span class="m">41</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Le nombre est pair? : false</code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="R-logo" 
+   style="display: flex; justify-content: center; align-items: center; text-decoration: none;" 
+   href="/420-111/index.html">
+
+    <img src="/420-111/images/logo.png" width="40" height="40" alt="logo" style="margin-right: 8px;">
+
+    <div style="display: flex; flex-direction: column; font-size: 130%; align-items: flex-start;">
+        <span>Introduction à</span>
+        <span>la programmation</span>
+    </div>
+</a>
+
+        </div>
+        <search><form action="/420-111/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/420-111/index.html"><a class="padding" href="/420-111/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Intro</a><ul id="R-subsections-6fffaf9b92bcc839991ff76663fb9bac" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/2-vscode/index.html"><a class="padding" href="/420-111/2-vscode/index.html">VSCode</a></li>
+            <li class="" data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables &amp; Types</a><ul id="R-subsections-56652df65f37063b28a69d5d800b9039" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/4-string/index.html"><a class="padding" href="/420-111/4-string/index.html">String</a><ul id="R-subsections-782b65f21e652a1eafb534740db488ee" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/5-operateurs/arithmetique/index.html"><a class="padding" href="/420-111/5-operateurs/arithmetique/index.html">Opérateurs</a><ul id="R-subsections-cef453883c54c95d8fd8616f806d4cea" class="collapsible-menu"></ul></li>
+            <li class="active " data-nav-id="/420-111/6-conversions-de-types/index.html"><a class="padding" href="/420-111/6-conversions-de-types/index.html">Conversions De Types</a></li>
+            <li class="" data-nav-id="/420-111/7-tableaux/index.html"><a class="padding" href="/420-111/7-tableaux/index.html">Tableaux</a><ul id="R-subsections-55c24a3b7117af4e14c631828fa164c4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Structures De Controles</a><ul id="R-subsections-9f8f049e95e0d117f4b5a03645c9071a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/9-debug/index.html"><a class="padding" href="/420-111/9-debug/index.html">Debug</a></li>
+            <li class="" data-nav-id="/420-111/10-fonctions/index.html"><a class="padding" href="/420-111/10-fonctions/index.html">Fonctions</a><ul id="R-subsections-e4181c72c636f10f24765f042a0f0763" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/11-scanner/index.html"><a class="padding" href="/420-111/11-scanner/index.html">Scanner</a><ul id="R-subsections-2e7a5e82e009aac91720d05751cc77c0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/12-fichier/lecture/index.html"><a class="padding" href="/420-111/12-fichier/lecture/index.html">Fichier</a><ul id="R-subsections-7d34dcc2710810bfed736603e11f989d" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/exercices/index.html"><a class="padding" href="/420-111/exercices/index.html">Exercices</a><ul id="R-subsections-393f73ec6223292328da5c03b7f3a881" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-learn" value="learn">Learn</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"></div>
+      </div>
+    </aside>
+    <script src="/420-111/js/clipboard/clipboard.min.js?1768412029" defer></script>
+    <script src="/420-111/js/perfect-scrollbar/perfect-scrollbar.min.js?1768412029" defer></script>
+    <script src="/420-111/js/theme.js?1768412029" defer></script>
+  </body>
+</html>

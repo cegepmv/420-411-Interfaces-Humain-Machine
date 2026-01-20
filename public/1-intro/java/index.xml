@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/1-intro/java/index.html</link>
+    <description>This is a new chapter.</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Thu, 21 Aug 2025 20:52:37 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/1-intro/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/420-111/1-intro/java/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:04:05 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/1-intro/java/index.html</guid>
+      <description>Introduction C’est quoi un language de programmation? Java est l’un des langages les plus populaires en 2025 selon TIOBE https://www.tiobe.com/tiobe-index/&#xA;Java fonctionne sur plusieurs systèmes d’exploitation (Windows, Mac, Linux, Raspberry Pi, etc.) Java est assez facile à apprendre, surtout pour les débutants, et il est agréable à utiliser.</description>
+    </item>
+    <item>
+      <title>Affichage console</title>
+      <link>http://localhost:1313/420-111/1-intro/affichage-console/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:04:19 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/1-intro/affichage-console/index.html</guid>
+      <description>☕ Créer son tout premier programme en Java Avant de plonger dans le code, il est important de savoir qu’en Java, tout le code source doit être enregistré dans un fichier avec l’extension .java.&#xA;EN ligne Si java n’est malheureusement pas installé sur votre ordinateur et que vous ne pouvez pas le faire, vous pouvez tout de même programmer directement sur le web ici</description>
+    </item>
+    <item>
+      <title>Règles/conventions</title>
+      <link>http://localhost:1313/420-111/1-intro/regles/index.html</link>
+      <pubDate>Thu, 21 Aug 2025 20:52:37 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/1-intro/regles/index.html</guid>
+      <description>🟨 Règles de base en Java 🔤 Sensibilité à la casse → Java distingue majuscules et minuscules. nom ≠ Nom ≠ NOM.&#xA;🧱 Délimitation des blocs → Tout bloc de code (classe, méthode, boucle, condition, etc.) est entouré par accolades {}.&#xA;🔚 Fin des instructions → Chaque ligne d’instruction se termine par un point-virgule ;.&#xA;💬 Commentaires dans le code :&#xA;Type Syntaxe Usage Commentaire une ligne // Pour un commentaire bref Commentaire multi-ligne /* ... */ Pour expliquer un bloc de code // Ceci est un commentaire simple /* Ceci est un commentaire sur plusieurs lignes */ 🟦 Nomenclature Java ✅ Une fonction dans une classe = une méthode. Elle appartient à la classe dans laquelle elle est définie. 🟩 Conventions de nommage (cours) Élément Convention Exemple Technique utilisée Classe Majuscule initiale Animal, VoitureBleue PascalCase Méthode Minuscule initiale afficherNom() camelCase Variable Minuscule initiale nomClient, ageMoyen camelCase Constante MAJUSCULE + _ TAUX_DE_TAXE SNAKE_CASE Variable locale simple Lettre courte i, j (dans les boucles) — Les variables à une seule lettre sont permises uniquement pour un usage local (dans une boucle for, par exemple) par exemple i ou j. Toutes les autres variables doivent avoir un nom significatif. Les tableau doivent avoir un nom qui sous-entend la pluralité.</description>
+    </item>
+    <item>
+      <title>Commentaires</title>
+      <link>http://localhost:1313/420-111/1-intro/commentaires/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:04:38 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/1-intro/commentaires/index.html</guid>
+      <description>🧠 Qu’est-ce qu’un commentaire ? Un commentaire est une partie du code ignorée par le compilateur Java.&#xA;Il sert à :&#xA;Expliquer le code aux humains (programmeurs). Documenter le fonctionnement des classes, des méthodes, etc. Faciliter la relecture et la maintenance du programme. ✍️ 1. Commentaire sur une ligne (//) 🔹 Syntaxe : // Ceci est un commentaire sur une ligne int age = 25; // Stocke l’âge ✅ Utilisation : Expliquer une ligne de code. Ajouter une remarque rapide. 🧾2. Commentaire sur plusieurs lignes (/* … */) 🔹 Syntaxe : /* Ceci est un commentaire sur plusieurs lignes. Il peut couvrir un bloc de texte. */ ✅ Utilisation : Fournir une explication plus longue. Désactiver temporairement un bloc de code. Avancé Nous verrons peut être cette théorie plus tard</description>
+    </item>
+  </channel>
+</rss>

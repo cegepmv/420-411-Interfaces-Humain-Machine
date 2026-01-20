@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/420-111/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=420-111/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="🧪 Exercice 1 Crée une fonction saluer qui prend un paramètre String nom et affiche : Bonjour [nom]!
+🧪 Exercice 2 Crée une fonction somme qui prend deux entiers en paramètres et retourne leur somme. Affiche le résultat de somme(5, 7).
+🧪 Exercice 3 Crée une fonction max qui prend deux entiers et retourne le plus grand. Teste-la avec les valeurs 8 et 12.
+🧪 Exercice 4 Crée une fonction moyenne qui prend trois double et retourne leur moyenne. Affiche la moyenne de 12.5, 15.0, 17.5.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Série 10 :: Introduction à la programmation">
+    <meta name="twitter:description" content="🧪 Exercice 1 Crée une fonction saluer qui prend un paramètre String nom et affiche : Bonjour [nom]!
+🧪 Exercice 2 Crée une fonction somme qui prend deux entiers en paramètres et retourne leur somme. Affiche le résultat de somme(5, 7).
+🧪 Exercice 3 Crée une fonction max qui prend deux entiers et retourne le plus grand. Teste-la avec les valeurs 8 et 12.
+🧪 Exercice 4 Crée une fonction moyenne qui prend trois double et retourne leur moyenne. Affiche la moyenne de 12.5, 15.0, 17.5.">
+    <meta property="og:url" content="http://localhost:1313/420-111/exercices/serie010/index.html">
+    <meta property="og:site_name" content="Introduction à la programmation">
+    <meta property="og:title" content="Série 10 :: Introduction à la programmation">
+    <meta property="og:description" content="🧪 Exercice 1 Crée une fonction saluer qui prend un paramètre String nom et affiche : Bonjour [nom]!
+🧪 Exercice 2 Crée une fonction somme qui prend deux entiers en paramètres et retourne leur somme. Affiche le résultat de somme(5, 7).
+🧪 Exercice 3 Crée une fonction max qui prend deux entiers et retourne le plus grand. Teste-la avec les valeurs 8 et 12.
+🧪 Exercice 4 Crée une fonction moyenne qui prend trois double et retourne leur moyenne. Affiche la moyenne de 12.5, 15.0, 17.5.">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Exercices">
+    <meta property="article:published_time" content="2025-08-20T19:03:03-04:00">
+    <meta property="article:modified_time" content="2025-08-20T19:03:03-04:00">
+    <meta itemprop="name" content="Série 10 :: Introduction à la programmation">
+    <meta itemprop="description" content="🧪 Exercice 1 Crée une fonction saluer qui prend un paramètre String nom et affiche : Bonjour [nom]!
+🧪 Exercice 2 Crée une fonction somme qui prend deux entiers en paramètres et retourne leur somme. Affiche le résultat de somme(5, 7).
+🧪 Exercice 3 Crée une fonction max qui prend deux entiers et retourne le plus grand. Teste-la avec les valeurs 8 et 12.
+🧪 Exercice 4 Crée une fonction moyenne qui prend trois double et retourne leur moyenne. Affiche la moyenne de 12.5, 15.0, 17.5.">
+    <meta itemprop="datePublished" content="2025-08-20T19:03:03-04:00">
+    <meta itemprop="dateModified" content="2025-08-20T19:03:03-04:00">
+    <meta itemprop="wordCount" content="749">
+    <title>Série 10 :: Introduction à la programmation</title>
+    <link href="/420-111/images/favicon.png?1768412029" rel="icon" type="image/png">
+    <link href="/420-111/css/auto-complete/auto-complete.min.css?1768412029" rel="stylesheet">
+    <script src="/420-111/js/auto-complete/auto-complete.min.js?1768412029" defer></script>
+    <script src="/420-111/js/search-lunr.js?1768412029" defer></script>
+    <script src="/420-111/js/search.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/420-111/searchindex.en.js?1768412029";
+    </script>
+    <script src="/420-111/js/lunr/lunr.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.stemmer.support.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.multi.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.fr.min.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet"></noscript>
+    <link href="/420-111/css/perfect-scrollbar/perfect-scrollbar.min.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/theme.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/format-html.css?1768412029" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/exercices\/serie010\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/420-111';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'zen-light', 'zen-dark', 'neon', 'learn' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+:root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 16rem;
+}
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/420-111/exercices/serie010/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-exercice-1">🧪 <strong>Exercice 1</strong></a></li>
+        <li><a href="#-exercice-2">🧪 <strong>Exercice 2</strong></a></li>
+        <li><a href="#-exercice-3">🧪 <strong>Exercice 3</strong></a></li>
+        <li><a href="#-exercice-4">🧪 <strong>Exercice 4</strong></a></li>
+        <li><a href="#-exercice-5">🧪 <strong>Exercice 5</strong></a></li>
+        <li><a href="#-exercice-6">🧪 <strong>Exercice 6</strong></a></li>
+        <li><a href="#-exercice-7">🧪 <strong>Exercice 7</strong></a></li>
+        <li><a href="#-exercice-8">🧪 <strong>Exercice 8</strong></a></li>
+        <li><a href="#exercice-9"><strong>Exercice 9</strong></a></li>
+        <li><a href="#exemple-de-sortie-attendue-pour"><strong>Exemple de sortie attendue pour <code>nbElement = 5</code> :</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/index.html"><span itemprop="name">Introduction à la programmation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/exercices/index.html"><span itemprop="name">Exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Série 10</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/exercices/serie09/index.html" title="Série 9 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/exercices/serie012/index.html" title="Série 12 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable exercices" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="série-10">Série 10</h1>
+
+<h3 id="-exercice-1">🧪 <strong>Exercice 1</strong></h3>
+<p>Crée une fonction <code>saluer</code> qui prend un paramètre <code>String nom</code> et affiche :
+<code>Bonjour [nom]!</code></p>
+<hr>
+<h3 id="-exercice-2">🧪 <strong>Exercice 2</strong></h3>
+<p>Crée une fonction <code>somme</code> qui prend deux entiers en paramètres et retourne leur somme.
+Affiche le résultat de <code>somme(5, 7)</code>.</p>
+<hr>
+<h3 id="-exercice-3">🧪 <strong>Exercice 3</strong></h3>
+<p>Crée une fonction <code>max</code> qui prend deux entiers et retourne le plus grand.
+Teste-la avec les valeurs <code>8</code> et <code>12</code>.</p>
+<hr>
+<h3 id="-exercice-4">🧪 <strong>Exercice 4</strong></h3>
+<p>Crée une fonction <code>moyenne</code> qui prend trois <code>double</code> et retourne leur moyenne.
+Affiche la moyenne de <code>12.5, 15.0, 17.5</code>.</p>
+<hr>
+<h3 id="-exercice-5">🧪 <strong>Exercice 5</strong></h3>
+<p>Crée une fonction <code>estPair</code> qui prend un entier et retourne <code>true</code> si le nombre est pair, sinon <code>false</code>.
+Teste-la avec le nombre <code>11</code>.</p>
+<hr>
+<h3 id="-exercice-6">🧪 <strong>Exercice 6</strong></h3>
+<p>Crée une fonction <code>factorielle</code> qui calcule la factorielle d’un entier positif (exemple : <code>factorielle(5)</code> = 120).
+Affiche la factorielle de 5.</p>
+<hr>
+<h3 id="-exercice-7">🧪 <strong>Exercice 7</strong></h3>
+<p>Crée une fonction <code>inverse</code> qui prend une chaîne <code>String</code> en paramètre et retourne la chaîne inversée.
+Teste-la avec <code>&quot;Java&quot;</code>.</p>
+<hr>
+<h3 id="-exercice-8">🧪 <strong>Exercice 8</strong></h3>
+<p>Crée une fonction <code>maxTableau</code> qui prend un tableau d’entiers et retourne la valeur maximale.
+Teste-la avec <code>{3, 9, 2, 14, 5}</code>.</p>
+<hr>
+<p>Voici une reformulation plus claire et fluide de l&rsquo;exercice :</p>
+<hr>
+<h3 id="exercice-9"><strong>Exercice 9</strong></h3>
+<ol>
+<li>
+<p>Écrivez une fonction qui prend en paramètre un entier <code>nbElement</code> et retourne un tableau contenant <code>nbElement</code> entiers aléatoires compris entre 0 et 100 (inclus).
+<em>(Astuce : utilisez <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" rel="external" target="_blank">Math.random</a>)</em>.</p>
+</li>
+<li>
+<p>Dans la fonction principale (<code>main</code>), appelez cette fonction pour générer un tableau avec <code>nbElement</code> valeurs, puis affichez chaque valeur du tableau sur une ligne différente.</p>
+</li>
+</ol>
+<hr>
+<h3 id="exemple-de-sortie-attendue-pour"><strong>Exemple de sortie attendue pour <code>nbElement = 5</code> :</strong></h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>45
+30
+56
+77
+34</code></pre></div>
+<hr>
+<h1 id="exo_10">Exo_10</h1>
+<p><strong>Exercice</strong> :</p>
+<p>Faites une fonction pour afficher le tableau généré à la question précédente sous un format plus esthétique</p>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[45,30,56,77,34]</code></pre></div>
+<hr>
+<h1 id="exo_11">Exo_11</h1>
+<p><strong>Exercice</strong> :</p>
+<p>Reprenez le code de la question précédente.</p>
+<ul>
+<li>Trouvez le maximum et le minimum du tableau, puis affichez-les. Utiliser 2 méthodes (findMax et findMin)</li>
+</ul>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[45,30,56,77,34]
+Le maximum est : 77
+Le minimum est : 30</code></pre></div>
+<hr>
+<h1 id="exo_12---utilisation-du-return">Exo_12 - Utilisation du return</h1>
+<p><strong>Exercice</strong> :</p>
+<p>Écrivez une méthode qui reçoit 2 tableaux d’entiers en paramètre. Il affiche les 2 tableaux. Il affiche ensuite identique si les 2 tableaux ont le même nombre d’éléments et que tous les éléments au même index sont égaux, sinon il affiche différent.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[5,1,2,2,1,4,5,6,6,7]
+[5,1,2,2,1,4,5,6,6,7]
+Identique</code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[5,1,2,2,1,4,5,6,6,7]
+[5,1,2,2,0,4,5,6,6,7]
+Différent</code></pre></div>
+<h1 id="exo_13">Exo_13</h1>
+<p><strong>Exercice</strong> :</p>
+<p>Créez une méthode pour compter combien de voyelles (<code>a, e, i, o, u, y</code>) il y a dans un tableau de caractères passée en paramètre.</p>
+<ul>
+<li>Créez un tableau de caractères : <code>['a', 'b', 'e', 'f', 'i', 'o', 'u', 'p']</code>.</li>
+<li>Utilisez une boucle pour compter combien de voyelles il y a dans le tableau et affichez le résultat.</li>
+</ul>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Il y a 5 voyelles dans le tableau.</code></pre></div>
+<h1 id="exo_14">Exo_14</h1>
+<p>Faites une méthode qui vérifie et retourne un booléen si un mots est un palindrome (le mot est identique lorsqu&rsquo;il est lu de gauche à droite ou de droite à gauche). (Ex: laval)</p>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kc">true</span><span class="w">  </span><span class="c1">//Laval </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kc">false</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">Patate</span></span></span></code></pre></div>
+<hr>
+<h1 id="exo_15">Exo_15</h1>
+<p><strong>Exercice</strong> :</p>
+<ul>
+<li>Faites une méthode qui prend en paramètre un tableau de int et un int.</li>
+<li>Renvoi true si le 2e paramètre est dans le tableau.</li>
+</ul>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>true</code></pre></div>
+<h1 id="exo_16">Exo_16</h1>
+<p><strong>Exercice</strong> :</p>
+<p>Remplacer une lettre donnée dans une chaîne par une autre lettre.</p>
+<ul>
+<li>Créez une chaîne de caractères.</li>
+<li>Remplacez toutes les occurrences d&rsquo;un caractère spécifique par un autre caractère.</li>
+</ul>
+<p><strong>Exemple de chaîne</strong> : <code>&quot;banana&quot;</code><br>
+<strong>Remplacer <code>'a'</code> par <code>'o'</code></strong></p>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>La chaîne après remplacement est : bonono</code></pre></div>
+<h1 id="exo_17">Exo_17</h1>
+<p>Niveau : 3 ⭐</p>
+<p>Compter combien de fois un caractère apparaît dans une chaîne.</p>
+<p><strong>Exercice</strong> :</p>
+<ul>
+<li>Faites une méthode qui prend en paramètre une chaîne de caractères.</li>
+<li>Comptez et affichez combien de fois un caractère spécifique (par exemple <code>'o'</code>) apparaît dans la chaîne.</li>
+</ul>
+<p><strong>Exemple de chaîne</strong> : <code>&quot;Hello World&quot;</code></p>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>2</code></pre></div>
+<hr>
+<h1 id="exo_18">Exo_18</h1>
+<p><strong>Exercice</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="w"> </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="nf">fusionTab</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">tab1</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">tab2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span><span class="p">}</span></span></span></code></pre></div>
+<p>Fusionner deux tableaux dans un seul tableau.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">tab1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">1</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">tab2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">4</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">5</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">6</span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">tab3</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">tab3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fusionTab</span><span class="p">(</span><span class="n">tab1</span><span class="p">,</span><span class="w"> </span><span class="n">tab2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">afficherTableau</span><span class="p">(</span><span class="n">tab3</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Tableau fusionné : [1, 2, 3, 4, 5, 6]</code></pre></div>
+<hr>
+<h1 id="exo_19">Exo_19</h1>
+<p><strong>Exercice</strong> :<br>
+Créez une méthode qui reçois l&rsquo;entier n.</p>
+<ul>
+<li>Créez un tableau d&rsquo;entiers de taille n. Remplissez le de n nombres aléatoires entre 0 et 100.</li>
+<li>Affichez le</li>
+<li>Inverser l&rsquo;ordre des éléments du tableau.</li>
+<li>Affichez le</li>
+</ul>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[45,30,56,77,34]
+[34,77,56,30,45]</code></pre></div>
+<p><a href="https://github.com/cegepmv/420-111/tree/main/solutions/serie10">Solutions</a></p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Aug 20, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="R-logo" 
+   style="display: flex; justify-content: center; align-items: center; text-decoration: none;" 
+   href="/420-111/index.html">
+
+    <img src="/420-111/images/logo.png" width="40" height="40" alt="logo" style="margin-right: 8px;">
+
+    <div style="display: flex; flex-direction: column; font-size: 130%; align-items: flex-start;">
+        <span>Introduction à</span>
+        <span>la programmation</span>
+    </div>
+</a>
+
+        </div>
+        <search><form action="/420-111/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/420-111/index.html"><a class="padding" href="/420-111/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Intro</a><ul id="R-subsections-6fffaf9b92bcc839991ff76663fb9bac" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/2-vscode/index.html"><a class="padding" href="/420-111/2-vscode/index.html">VSCode</a></li>
+            <li class="" data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables &amp; Types</a><ul id="R-subsections-56652df65f37063b28a69d5d800b9039" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/4-string/index.html"><a class="padding" href="/420-111/4-string/index.html">String</a><ul id="R-subsections-782b65f21e652a1eafb534740db488ee" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/5-operateurs/arithmetique/index.html"><a class="padding" href="/420-111/5-operateurs/arithmetique/index.html">Opérateurs</a><ul id="R-subsections-cef453883c54c95d8fd8616f806d4cea" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/6-conversions-de-types/index.html"><a class="padding" href="/420-111/6-conversions-de-types/index.html">Conversions De Types</a></li>
+            <li class="" data-nav-id="/420-111/7-tableaux/index.html"><a class="padding" href="/420-111/7-tableaux/index.html">Tableaux</a><ul id="R-subsections-55c24a3b7117af4e14c631828fa164c4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Structures De Controles</a><ul id="R-subsections-9f8f049e95e0d117f4b5a03645c9071a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/9-debug/index.html"><a class="padding" href="/420-111/9-debug/index.html">Debug</a></li>
+            <li class="" data-nav-id="/420-111/10-fonctions/index.html"><a class="padding" href="/420-111/10-fonctions/index.html">Fonctions</a><ul id="R-subsections-e4181c72c636f10f24765f042a0f0763" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/11-scanner/index.html"><a class="padding" href="/420-111/11-scanner/index.html">Scanner</a><ul id="R-subsections-2e7a5e82e009aac91720d05751cc77c0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/12-fichier/lecture/index.html"><a class="padding" href="/420-111/12-fichier/lecture/index.html">Fichier</a><ul id="R-subsections-7d34dcc2710810bfed736603e11f989d" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/420-111/exercices/index.html"><a class="padding" href="/420-111/exercices/index.html">Exercices</a><ul id="R-subsections-393f73ec6223292328da5c03b7f3a881" class="collapsible-menu">
+            <li class="" data-nav-id="/420-111/exercices/serie1/index.html"><a class="padding" href="/420-111/exercices/serie1/index.html">Série 1</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie2/index.html"><a class="padding" href="/420-111/exercices/serie2/index.html">Série 2</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie3/index.html"><a class="padding" href="/420-111/exercices/serie3/index.html">Série 3</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie04/index.html"><a class="padding" href="/420-111/exercices/serie04/index.html">Série 4</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie05/index.html"><a class="padding" href="/420-111/exercices/serie05/index.html">Série 5</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie06/index.html"><a class="padding" href="/420-111/exercices/serie06/index.html">Série 6</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie07/index.html"><a class="padding" href="/420-111/exercices/serie07/index.html">Série 7</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie08/index.html"><a class="padding" href="/420-111/exercices/serie08/index.html">Série 8</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie09/index.html"><a class="padding" href="/420-111/exercices/serie09/index.html">Série 9</a></li>
+            <li class="active " data-nav-id="/420-111/exercices/serie010/index.html"><a class="padding" href="/420-111/exercices/serie010/index.html">Série 10</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie012/index.html"><a class="padding" href="/420-111/exercices/serie012/index.html">Série 12</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie013/index.html"><a class="padding" href="/420-111/exercices/serie013/index.html">Série 13</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-learn" value="learn">Learn</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"></div>
+      </div>
+    </aside>
+    <script src="/420-111/js/clipboard/clipboard.min.js?1768412029" defer></script>
+    <script src="/420-111/js/perfect-scrollbar/perfect-scrollbar.min.js?1768412029" defer></script>
+    <script src="/420-111/js/theme.js?1768412029" defer></script>
+  </body>
+</html>

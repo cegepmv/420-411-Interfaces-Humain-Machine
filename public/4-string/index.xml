@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>String :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/4-string/index.html</link>
+    <description>Les chaînes de caractères 🍥 Lien vers la classe String de l’API Java&#xA;Les Strings c’est quoi? En Java, une chaîne de caractères (ou String) est un objet qui représente une séquence de caractères. Contrairement à certains langages où les chaînes sont simplement des tableaux de caractères (char[]), en Java, elles sont des objets de la classe String.&#xA;Exemple :&#xA;String message = &#34;Bonjour !&#34;; Utilisation simple Créer une chaîne :&#xA;String nom = &#34;Alice&#34;; //Afficher une chaîne : System.out.println(nom); Connaître la longueur :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Mon, 01 Sep 2025 18:19:26 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/4-string/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Méthodes de String</title>
+      <link>http://localhost:1313/420-111/4-string/methodestring/index.html</link>
+      <pubDate>Mon, 01 Sep 2025 18:19:26 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/4-string/methodestring/index.html</guid>
+      <description>🍥 Lien vers la classe String de l’API Java&#xA;1. Méthodes Statistiques de la classe String Les méthodes statiques de la classe String ne nécessitent pas de créer une instance de String pour les utiliser. Vous les appelez directement sur la classe elle-même. Voici quelques exemples de méthodes statiques courantes :&#xA;Exemple 1 : String.format() Cette méthode statique permet de formater une chaîne de caractères en utilisant des espaces réservés (placeholders).&#xA;public class ExempleStringStatic { public static void main(String[] args) { String name = &#34;Alice&#34;; int age = 30; String formattedString = String.format(&#34;Nom : %s, Âge : %d&#34;, name, age); System.out.println(formattedString); } } Sortie attendue :</description>
+    </item>
+  </channel>
+</rss>

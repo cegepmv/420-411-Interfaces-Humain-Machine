@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/420-111/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=420-111/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="📥 Exercices – Entrées utilisateur en Java 🧪 Exercice 1 – Lire un prénom Demande à l’utilisateur de saisir son prénom (chaine de caractères) et affiche : Bonjour, [prénom] !
+🧪 Exercice 2 – Lire deux entiers et afficher leur somme Demande à l’utilisateur de saisir deux entiers, puis affiche la somme.
+🧪 Exercice 3 – Lire un nombre à virgule Demande à l’utilisateur de saisir un nombre à virgule (double) et affiche ce nombre arrondi à 2 décimales.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Série 12 :: Introduction à la programmation">
+    <meta name="twitter:description" content="📥 Exercices – Entrées utilisateur en Java 🧪 Exercice 1 – Lire un prénom Demande à l’utilisateur de saisir son prénom (chaine de caractères) et affiche : Bonjour, [prénom] !
+🧪 Exercice 2 – Lire deux entiers et afficher leur somme Demande à l’utilisateur de saisir deux entiers, puis affiche la somme.
+🧪 Exercice 3 – Lire un nombre à virgule Demande à l’utilisateur de saisir un nombre à virgule (double) et affiche ce nombre arrondi à 2 décimales.">
+    <meta property="og:url" content="http://localhost:1313/420-111/exercices/serie012/index.html">
+    <meta property="og:site_name" content="Introduction à la programmation">
+    <meta property="og:title" content="Série 12 :: Introduction à la programmation">
+    <meta property="og:description" content="📥 Exercices – Entrées utilisateur en Java 🧪 Exercice 1 – Lire un prénom Demande à l’utilisateur de saisir son prénom (chaine de caractères) et affiche : Bonjour, [prénom] !
+🧪 Exercice 2 – Lire deux entiers et afficher leur somme Demande à l’utilisateur de saisir deux entiers, puis affiche la somme.
+🧪 Exercice 3 – Lire un nombre à virgule Demande à l’utilisateur de saisir un nombre à virgule (double) et affiche ce nombre arrondi à 2 décimales.">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Exercices">
+    <meta property="article:published_time" content="2025-08-20T19:03:11-04:00">
+    <meta property="article:modified_time" content="2025-08-20T19:03:11-04:00">
+    <meta itemprop="name" content="Série 12 :: Introduction à la programmation">
+    <meta itemprop="description" content="📥 Exercices – Entrées utilisateur en Java 🧪 Exercice 1 – Lire un prénom Demande à l’utilisateur de saisir son prénom (chaine de caractères) et affiche : Bonjour, [prénom] !
+🧪 Exercice 2 – Lire deux entiers et afficher leur somme Demande à l’utilisateur de saisir deux entiers, puis affiche la somme.
+🧪 Exercice 3 – Lire un nombre à virgule Demande à l’utilisateur de saisir un nombre à virgule (double) et affiche ce nombre arrondi à 2 décimales.">
+    <meta itemprop="datePublished" content="2025-08-20T19:03:11-04:00">
+    <meta itemprop="dateModified" content="2025-08-20T19:03:11-04:00">
+    <meta itemprop="wordCount" content="859">
+    <title>Série 12 :: Introduction à la programmation</title>
+    <link href="/420-111/images/favicon.png?1768412029" rel="icon" type="image/png">
+    <link href="/420-111/css/auto-complete/auto-complete.min.css?1768412029" rel="stylesheet">
+    <script src="/420-111/js/auto-complete/auto-complete.min.js?1768412029" defer></script>
+    <script src="/420-111/js/search-lunr.js?1768412029" defer></script>
+    <script src="/420-111/js/search.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/420-111/searchindex.en.js?1768412029";
+    </script>
+    <script src="/420-111/js/lunr/lunr.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.stemmer.support.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.multi.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.fr.min.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet"></noscript>
+    <link href="/420-111/css/perfect-scrollbar/perfect-scrollbar.min.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/theme.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/format-html.css?1768412029" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/exercices\/serie012\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/420-111';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'zen-light', 'zen-dark', 'neon', 'learn' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+:root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 16rem;
+}
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/420-111/exercices/serie012/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-exercice-1--lire-un-prénom">🧪 <strong>Exercice 1 – Lire un prénom</strong></a></li>
+        <li><a href="#-exercice-2--lire-deux-entiers-et-afficher-leur-somme">🧪 <strong>Exercice 2 – Lire deux entiers et afficher leur somme</strong></a></li>
+        <li><a href="#-exercice-3--lire-un-nombre-à-virgule">🧪 <strong>Exercice 3 – Lire un nombre à virgule</strong></a></li>
+        <li><a href="#-exercice-4--lire-une-phrase-complète">🧪 <strong>Exercice 4 – Lire une phrase complète</strong></a></li>
+        <li><a href="#-exercice-5--calculer-la-moyenne-de-3-notes">🧪 <strong>Exercice 5 – Calculer la moyenne de 3 notes</strong></a></li>
+        <li><a href="#exo_6">Exo_6</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-exercice-7--menu-simple-de-salutation">🧪 <strong>Exercice 7 – Menu simple de salutation</strong></a></li>
+        <li><a href="#-exercice-8--menu-calculatrice-simple">🧪 <strong>Exercice 8 – Menu calculatrice simple</strong></a></li>
+        <li><a href="#-exercice-9--menu-gestion-de-tableau">🧪 <strong>Exercice 9 – Menu gestion de tableau</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/index.html"><span itemprop="name">Introduction à la programmation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/exercices/index.html"><span itemprop="name">Exercices</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Série 12</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/exercices/serie010/index.html" title="Série 10 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/exercices/serie013/index.html" title="Série 13 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable exercices" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="série-12">Série 12</h1>
+
+<hr>
+<h1 id="-exercices--entrées-utilisateur-en-java">📥 <strong>Exercices – Entrées utilisateur en Java</strong></h1>
+<hr>
+<h3 id="-exercice-1--lire-un-prénom">🧪 <strong>Exercice 1 – Lire un prénom</strong></h3>
+<p>Demande à l’utilisateur de saisir son prénom (chaine de caractères) et affiche :
+<code>Bonjour, [prénom] !</code></p>
+<hr>
+<h3 id="-exercice-2--lire-deux-entiers-et-afficher-leur-somme">🧪 <strong>Exercice 2 – Lire deux entiers et afficher leur somme</strong></h3>
+<p>Demande à l’utilisateur de saisir deux entiers, puis affiche la somme.</p>
+<hr>
+<h3 id="-exercice-3--lire-un-nombre-à-virgule">🧪 <strong>Exercice 3 – Lire un nombre à virgule</strong></h3>
+<p>Demande à l’utilisateur de saisir un nombre à virgule (double) et affiche ce nombre arrondi à 2 décimales.</p>
+<p>Si la saisie n’est pas correcte, redemande jusqu’à ce qu’un nombre valide soit entré.</p>
+<hr>
+<h3 id="-exercice-4--lire-une-phrase-complète">🧪 <strong>Exercice 4 – Lire une phrase complète</strong></h3>
+<p>Demande à l’utilisateur de saisir une phrase complète (avec espaces), puis affiche-la.</p>
+<hr>
+<h3 id="-exercice-5--calculer-la-moyenne-de-3-notes">🧪 <strong>Exercice 5 – Calculer la moyenne de 3 notes</strong></h3>
+<p>Demande à l’utilisateur de saisir 3 notes (double) séparées par un espace sur la même ligne, calcule la moyenne et affiche-la arrondie à 2 décimales.</p>
+<p>Si la saisie n’est pas correcte, redemande jusqu’à ce qu’elle le soit.</p>
+<hr>
+<h3 id="exo_6">Exo_6</h3>
+<p><strong>Exercice</strong> :</p>
+<p>Vérification de l&rsquo;année bissextile : Écrivez un programme qui demande à
+l&rsquo;utilisateur de saisir une année, puis affiche &ldquo;Année bissextile&rdquo; si l&rsquo;année est
+divisible par 4 et non divisible par 100, ou si elle est divisible par 400. Sinon,
+affiche &ldquo;Année non bissextile&rdquo;.</p>
+<p>Si la saisie n’est pas correcte, redemande jusqu’à ce qu’elle le soit.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Entrez une année : 2025
+Année non bissextile</code></pre></div>
+<hr>
+<h1 id="menus">Menus</h1>
+<h3 id="-exercice-7--menu-simple-de-salutation">🧪 <strong>Exercice 7 – Menu simple de salutation</strong></h3>
+<p>Affiche ce menu :</p>
+<p>Effectuez la validation et indiquez les erreurs à l’utilisateur s’il y en a.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1. Dire bonjour  
+2. Dire au revoir  
+3. Quitter  </code></pre></div>
+<p>Lis le choix de l’utilisateur (entier).
+Affiche :</p>
+<ul>
+<li><code>&quot;Bonjour !&quot;</code> si choix = 1</li>
+<li><code>&quot;Au revoir !&quot;</code> si choix = 2</li>
+<li><code>&quot;Fin du programme.&quot;</code> si choix = 3</li>
+</ul>
+<hr>
+<h3 id="-exercice-8--menu-calculatrice-simple">🧪 <strong>Exercice 8 – Menu calculatrice simple</strong></h3>
+<p>Affiche ce menu :</p>
+<p>Effectuez la validation et indiquez les erreurs à l’utilisateur s’il y en a.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>+ Addition  
+- Soustraction  
+x Multiplication  
+/ Division  
+q Quitter  </code></pre></div>
+<p>Lis le choix, puis demande deux nombres (entiers).
+Effectue l’opération choisie et affiche le résultat.
+Si division par zéro, affiche un message d’erreur.</p>
+<hr>
+<h3 id="-exercice-9--menu-gestion-de-tableau">🧪 <strong>Exercice 9 – Menu gestion de tableau</strong></h3>
+<p>Déclare un tableau d’entiers vide de taille 5.
+Propose ce menu en boucle jusqu’à ce que l’utilisateur choisisse de quitter :</p>
+<p>Effectuez la validation et indiquez les erreurs à l’utilisateur s’il y en a.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1. Ajouter un nombre au tableau  
+2. Afficher le tableau  
+3. Quitter  </code></pre></div>
+<ul>
+<li>Si 1 : demande un entier et ajoute-le dans la première case libre du tableau (si possible).</li>
+<li>Si 2 : affiche le contenu du tableau.</li>
+<li>Si 3 : termine le programme.</li>
+</ul>
+<hr>
+<h1 id="exo_10">Exo_10</h1>
+<p>Créer un menu pour gérer un reçu avec des options pour ajouter ou retirer des items.</p>
+<p>Effectuez la validation et indiquez les erreurs à l’utilisateur s’il y en a.</p>
+<p><strong>Exercice</strong> :</p>
+<ul>
+<li>
+<p>Créez un tableau de <code>String</code> pour les noms des plats : <code>[&quot;Crevette&quot;, &quot;Salade&quot;, &quot;Frite&quot;, &quot;Hamburger&quot;, &quot;Gâteau&quot;]</code>.</p>
+</li>
+<li>
+<p>Créez un tableau de <code>float</code> pour les prix des plats correspondants : <code>[8.99, 5.60, 6.40, 10.99, 7.99]</code>.</p>
+</li>
+<li>
+<p>Créez un tableau de <code>boolean</code> pour retenir ce qui est commandé. On assume que chaque plat ne peut être commandé qu&rsquo;une seule fois.</p>
+</li>
+<li>
+<p>Implémentez un menu interactif avec les options suivantes :</p>
+<ol>
+<li>Ajouter un item.</li>
+<li>Retirer un item.</li>
+<li>Afficher le reçu (afficher les plats ajoutés et le total).</li>
+<li>Terminer la transaction (Afficher le reçu, écrire un message d&rsquo;adieu et arrête le programme).</li>
+</ol>
+</li>
+<li>
+<p>À chaque ajout d&rsquo;item, le prix du plat sera ajouté au total de la facture.</p>
+</li>
+<li>
+<p>À chaque retrait d&rsquo;item, le prix du plat sera soustrait du total de la facture.</p>
+</li>
+<li>
+<p>L&rsquo;option d&rsquo;ajouter un item doit être retirer s&rsquo;il est déjà ajouté.</p>
+</li>
+<li>
+<p>L&rsquo;option de retirer un item est disponible seulement s&rsquo;il est sur la facture actuellement.</p>
+</li>
+<li>
+<p>Si une mauvaise entrée est détecté, affiche un message d&rsquo;erreur et attend que l&rsquo;utilisateur appuie sur la touche entrée. Ensuite le ramène au menu principal.</p>
+</li>
+</ul>
+<p><strong>Exemple de sortie attendue</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Menu :
+1. Ajouter un item
+2. Retirer un item
+3. Afficher le reçu
+4. Terminer la transaction
+Total de la facture actuelle : 0.00$
+
+Entrez votre choix : 1
+Choisissez un item à ajouter :
+1. Crevette           8.99$
+2. Salade             5.60$
+3. Frite              6.40$
+4. Hamburger         10.99$
+5. Gâteau             7.99$
+
+
+Entrez le numéro de l&#39;item : 1
+Plat ajouté : Crevette
+Total de la facture actuelle : 8.99$
+
+Menu :
+1. Ajouter un item
+2. Retirer un item
+3. Afficher le reçu
+4. Terminer la transaction
+Total de la facture actuelle : 8.99$
+
+
+Entrez votre choix : 1
+Choisissez un item à ajouter :
+2. Salade             5.60$
+3. Frite              6.40$
+4. Hamburger         10.99$
+5. Gâteau             7.99$
+
+
+Entrez le numéro de l&#39;item : 3
+Plat ajouté : Frite
+Total de la facture actuelle : 15.39$
+
+Menu :
+1. Ajouter un item
+2. Retirer un item
+3. Afficher le reçu
+4. Terminer la transaction
+Total de la facture actuelle : 15.39$
+
+
+Entrez votre choix : 3
+Reçu :
+
+Crevette              8.99$
+Frite                 6.40$
+---------------------------
+Total                15.39$
+
+
+Menu :
+1. Ajouter un item
+2. Retirer un item
+3. Afficher le reçu
+4. Terminer la transaction
+Total de la facture actuelle : 15.39$
+
+Entrez votre choix : 4
+
+Crevette              8.99$
+Frite                 6.40$
+---------------------------
+Total                15.39$
+
+Merci pour votre visite!</code></pre></div>
+<hr>
+<p><a href="https://github.com/cegepmv/420-111/tree/main/solutions/serie12">Solutions</a></p>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Aug 20, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="R-logo" 
+   style="display: flex; justify-content: center; align-items: center; text-decoration: none;" 
+   href="/420-111/index.html">
+
+    <img src="/420-111/images/logo.png" width="40" height="40" alt="logo" style="margin-right: 8px;">
+
+    <div style="display: flex; flex-direction: column; font-size: 130%; align-items: flex-start;">
+        <span>Introduction à</span>
+        <span>la programmation</span>
+    </div>
+</a>
+
+        </div>
+        <search><form action="/420-111/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/420-111/index.html"><a class="padding" href="/420-111/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Intro</a><ul id="R-subsections-6fffaf9b92bcc839991ff76663fb9bac" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/2-vscode/index.html"><a class="padding" href="/420-111/2-vscode/index.html">VSCode</a></li>
+            <li class="" data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables &amp; Types</a><ul id="R-subsections-56652df65f37063b28a69d5d800b9039" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/4-string/index.html"><a class="padding" href="/420-111/4-string/index.html">String</a><ul id="R-subsections-782b65f21e652a1eafb534740db488ee" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/5-operateurs/arithmetique/index.html"><a class="padding" href="/420-111/5-operateurs/arithmetique/index.html">Opérateurs</a><ul id="R-subsections-cef453883c54c95d8fd8616f806d4cea" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/6-conversions-de-types/index.html"><a class="padding" href="/420-111/6-conversions-de-types/index.html">Conversions De Types</a></li>
+            <li class="" data-nav-id="/420-111/7-tableaux/index.html"><a class="padding" href="/420-111/7-tableaux/index.html">Tableaux</a><ul id="R-subsections-55c24a3b7117af4e14c631828fa164c4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Structures De Controles</a><ul id="R-subsections-9f8f049e95e0d117f4b5a03645c9071a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/9-debug/index.html"><a class="padding" href="/420-111/9-debug/index.html">Debug</a></li>
+            <li class="" data-nav-id="/420-111/10-fonctions/index.html"><a class="padding" href="/420-111/10-fonctions/index.html">Fonctions</a><ul id="R-subsections-e4181c72c636f10f24765f042a0f0763" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/11-scanner/index.html"><a class="padding" href="/420-111/11-scanner/index.html">Scanner</a><ul id="R-subsections-2e7a5e82e009aac91720d05751cc77c0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/12-fichier/lecture/index.html"><a class="padding" href="/420-111/12-fichier/lecture/index.html">Fichier</a><ul id="R-subsections-7d34dcc2710810bfed736603e11f989d" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/420-111/exercices/index.html"><a class="padding" href="/420-111/exercices/index.html">Exercices</a><ul id="R-subsections-393f73ec6223292328da5c03b7f3a881" class="collapsible-menu">
+            <li class="" data-nav-id="/420-111/exercices/serie1/index.html"><a class="padding" href="/420-111/exercices/serie1/index.html">Série 1</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie2/index.html"><a class="padding" href="/420-111/exercices/serie2/index.html">Série 2</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie3/index.html"><a class="padding" href="/420-111/exercices/serie3/index.html">Série 3</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie04/index.html"><a class="padding" href="/420-111/exercices/serie04/index.html">Série 4</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie05/index.html"><a class="padding" href="/420-111/exercices/serie05/index.html">Série 5</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie06/index.html"><a class="padding" href="/420-111/exercices/serie06/index.html">Série 6</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie07/index.html"><a class="padding" href="/420-111/exercices/serie07/index.html">Série 7</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie08/index.html"><a class="padding" href="/420-111/exercices/serie08/index.html">Série 8</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie09/index.html"><a class="padding" href="/420-111/exercices/serie09/index.html">Série 9</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie010/index.html"><a class="padding" href="/420-111/exercices/serie010/index.html">Série 10</a></li>
+            <li class="active " data-nav-id="/420-111/exercices/serie012/index.html"><a class="padding" href="/420-111/exercices/serie012/index.html">Série 12</a></li>
+            <li class="" data-nav-id="/420-111/exercices/serie013/index.html"><a class="padding" href="/420-111/exercices/serie013/index.html">Série 13</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-learn" value="learn">Learn</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"></div>
+      </div>
+    </aside>
+    <script src="/420-111/js/clipboard/clipboard.min.js?1768412029" defer></script>
+    <script src="/420-111/js/perfect-scrollbar/perfect-scrollbar.min.js?1768412029" defer></script>
+    <script src="/420-111/js/theme.js?1768412029" defer></script>
+  </body>
+</html>

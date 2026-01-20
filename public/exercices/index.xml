@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercices :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/exercices/index.html</link>
+    <description>Série 1&#xA;Série 2&#xA;Série 3&#xA;Série 4&#xA;Série 5&#xA;Série 6&#xA;Série 7&#xA;Série 8&#xA;Série 9&#xA;Série 10&#xA;Série 11&#xA;Série 12&#xA;Série 13&#xA;Série 14&#xA;Série 15</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Wed, 20 Aug 2025 19:03:15 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/exercices/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Série 1</title>
+      <link>http://localhost:1313/420-111/exercices/serie1/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:22 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie1/index.html</guid>
+      <description>Exo 1 Objectif : Créer un programme Java qui affiche ceci.&#xA;➡️ Sortie attendu :&#xA;Nom : Alice Âge : 23 Ville : Toulouse Instructions :&#xA;Utilise System.out.println(). Respecte l’indentation. N’oublie pas le point-virgule ; à chaque ligne. Exo 2 Objectif : Reproduis le même affichage que l’exercice 1, mais sur une seule ligne.&#xA;➡️ Exemple attendu :&#xA;Nom : Alice | Âge : 23 | Ville : Toulouse Instructions :&#xA;Utilise System.out.print() (sans println()). Utilise \n si besoin. Respecte les espaces entre les mots (convention d’espacement). Exo 3 Objectif : Créer un programme qui affiche les lignes suivantes :</description>
+    </item>
+    <item>
+      <title>Série 2</title>
+      <link>http://localhost:1313/420-111/exercices/serie2/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:29 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie2/index.html</guid>
+      <description>🧠 Exercices – Choisis le type le plus adapté Tu dois enregistrer les données suivantes dans une variable aussi petite que possible, selon leur type.&#xA;Pour chaque donnée, déclare une variable (ou une valeur fixe) en utilisant le type primitif le plus petit possible ou String.&#xA;Exo 1 1. La température d’un congélateur : -18 2. Une distance interplanétaire en kilomètres : 150000000000L 3. Le taux de réussite à un examen : 0.987 4. Le message d’accueil : &#34;Bienvenue sur le système&#34; 5. Une température corporelle : 36.6 6. Le niveau d’alerte (valeur unique entre ‘A’ et ‘Z’) : &#39;C&#39; 7. L’âge d’un arbre centenaire : 153 8. La réponse à une question (oui/non) : true 9. Le nom de la planète : &#34;Terre&#34; 10. Le nombre d’enfants dans une classe : 28 Exo 2 1. Le taux de remplissage d’un réservoir : 0.735 2. Le code de niveau de sécurité : &#39;B&#39; 3. Le nombre de jours dans une semaine : 7 (valeur fixe) 4. Le nom du système solaire : &#34;Système solaire&#34; 5. La distance Terre-Lune (en km) : 384400 6. L’année de construction d’un pont : 1967 7. La température d’ébullition de l’eau (en °C) : 100 8. La lumière est-elle allumée ? : false 9. Le message d&#39;erreur affiché à l&#39;écran : &#34;Erreur : accès refusé&#34; 10. L’identifiant d’un capteur : 120 🎯 Objectif : 1 ligne = 1 variable. Type primitif ou `String`. La plus petite taille possible. Exo 3 1. Le niveau sonore maximal autorisé : 120 2. Le symbole de la touche entrée : &#39;\n&#39; 3. Le résultat d’un test booléen : true 4. Le prénom du robot assistant : &#34;EVA&#34; 5. La masse d’un atome d’hydrogène : 1.00784 6. Le nombre de planètes dans le système solaire : 8 (valeur fixe) 7. Le code d’erreur reçu par un serveur : 404 8. Une température très basse mesurée dans l’espace : -270 9. La distance entre deux étoiles : 9461000000000 (en km) 10. Le slogan affiché à l’accueil : &#34;Bonjour, humain.&#34; Exo 4 1. L&#39;âge d’un personnage de jeu vidéo : 32 2. La température idéale pour un serveur : 21.5 3. Le caractère de commande utilisé dans le terminal : &#39;$&#39; 4. Le nombre d’heures dans une journée : 24 (valeur fixe) 5. Le nom du fichier système : &#34;kernel.sys&#34; 6. La valeur de l&#39;accélération gravitationnelle (m/s²) : 9.80665 7. Le niveau de batterie d’un drone : 98 8. Est-ce que le drone est actif ? : true 9. Le message système de veille : &#34;Mise en veille imminente&#34; 10. Une distance astronomique (en km) : 149600000000 Exo 5 1. Un identifiant d’objet unique : 256 2. Le mot de passe par défaut : &#34;admin&#34; 3. La pression moyenne atmosphérique : 1013.25 4. Le caractère spécial de validation : &#39;#&#39; 5. Le nombre de bits dans un octet : 8 (valeur fixe) 6. Le message de confirmation : &#34;Action enregistrée&#34; 7. Est-ce que le mode nuit est activé ? : false 8. L’année de fondation de l’entreprise : 2001 9. La température moyenne de Mars : -63 10. La vitesse de la lumière en km/s : 299792 💡 Exercices : Concaténation de chaînes de caractères en Java 🧪 Exo 6 – Concaténation simple avec + Enregistre Alice et Durand dans 2 variables distinctes:</description>
+    </item>
+    <item>
+      <title>Série 3</title>
+      <link>http://localhost:1313/420-111/exercices/serie3/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:35 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie3/index.html</guid>
+      <description>🧪 Exercice 1 Déclare une chaîne de caractères :&#xA;Programmation Java. Trouve le nombre de caractères dans la chaîne.&#xA;Affiche :&#xA;&#34;La phrase contient 19 caractères&#34; (sans compter manuellement !)&#xA;🧪 Exercice 2 À partir de :&#xA;ordinateur Affiche le premier caractère Affiche le dernier caractère Affiche le caractère à l’index 3 o r i 🧪 Exercice 3 Déclare :&#xA;Bienvenue dans le monde Java Extrais et affiche “Bienvenue” Extrais et affiche “monde Java” Extrais les 5 premiers caractères de la phrase et affiche-les Bienvenue monde Java Bienv 🧪 Exercice 4 Déclare :</description>
+    </item>
+    <item>
+      <title>Série 4</title>
+      <link>http://localhost:1313/420-111/exercices/serie04/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:39 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie04/index.html</guid>
+      <description>🔢 Exercices – Opérateurs en Java 🧪 Exercice 1 – Opérations simples Déclare deux entiers a = 12 et b = 5. Affiche :&#xA;La somme La différence entre a et b Le produit Le quotient entier de la division de b par a Le reste de la division de a par b Sortie attendue La somme de 12 et 5 est : 17 La différence entre 12 et 5 : 7 Le produit de 12 et 5 est : 60 Le quotient entier de la division de b par a est de 0 Le reste de la division de a par b est de 2 🧪 Exercice 2 – Comparaisons simples Déclare :</description>
+    </item>
+    <item>
+      <title>Série 5</title>
+      <link>http://localhost:1313/420-111/exercices/serie05/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:43 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie05/index.html</guid>
+      <description>🧪 Exercice 1 (3 pts) Déclare les variables suivantes : String mot = &#34;Programmation&#34;; int n = 12; Affiche les informations suivantes : Le nombre de lettres dans le mot Si ce nombre est supérieur ou égal à 10 Si ce nombre est pair ou impair Si le nombre de lettres du mot est égal au nombre n Sortie attendue (exemple) Le mot &#34;Programmation&#34; contient 13 lettres Le mot contient au moins 10 lettres : true Le mot a un nombre de lettres pair : false La longueur du mot est égale au nombre : false Exercice 2 (3 pts) Déclare la plus petite variable pour chacune de ces données et initie-la:</description>
+    </item>
+    <item>
+      <title>Série 6</title>
+      <link>http://localhost:1313/420-111/exercices/serie06/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:46 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie06/index.html</guid>
+      <description>🧮 Exercices – Tableaux en Java (sans boucle) avec sorties attendues 🧪 Exercice 1 – Création et accès Crée un tableau de 3 entiers :&#xA;10, 20, 30 Affiche le premier et le dernier élément.&#xA;Sortie attendue Premier élément : 10 Dernier élément : 30 🧪 Exercice 2 – Longueur d’un tableau Crée un tableau de chaînes :&#xA;Alice, Bob, Carla, Dan Affiche la longueur du tableau.&#xA;Sortie attendue Nombre de prénoms : 4 🧪 Exercice 3 – Concaténation de plusieurs éléments Crée :</description>
+    </item>
+    <item>
+      <title>Série 7</title>
+      <link>http://localhost:1313/420-111/exercices/serie07/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:49 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie07/index.html</guid>
+      <description>🔀 Exercices – Structures de contrôle conditionnelles (if/else) en Java 🧪 Exercice 1 Déclare un entier int x = -3; Affiche s’il est positif ou négatif avec un message correspondant au résultat.&#xA;Sortie attendue Le nombre est négatif. 🧪 Exercice 2 Déclare int n = 7; Affiche si le nombre est pair ou impair.&#xA;Sortie attendue Le nombre 7 est impair. 🧪 Exercice 3 Déclare :&#xA;int a = 12; int b = 20; Affiche lequel est le plus grand. Affiche a et b sont égaux si c’est le cas.</description>
+    </item>
+    <item>
+      <title>Série 8</title>
+      <link>http://localhost:1313/420-111/exercices/serie08/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:52 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie08/index.html</guid>
+      <description>Examen préparatif 1 partie théorique ( /8) Question 1 ( /2): Quelle est la sortie attendue de ce bout de code :&#xA;boolean calcul = 18 % 5 + 1 == 4 &amp;&amp; !(2 * 2 &gt;= 5); System.out.println(&#34;Résultat : &#34; + calcul) Question 2 ( /1) Déclare une variable qui servira à enregistrer des nombres entier entre -120 et 31 000? (Nomme-la simplement variable)</description>
+    </item>
+    <item>
+      <title>Série 9</title>
+      <link>http://localhost:1313/420-111/exercices/serie09/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:02:55 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie09/index.html</guid>
+      <description>🔁 Exercices – Boucles for en Java avec args[] et tableaux 🧪 Exercice 1 💡 Utilise une boucle for pour afficher tous les arguments passés à l’exécution.&#xA;Exécution :&#xA;java Main Alice Bob Carla Objectif : Afficher :&#xA;Argument 0 : Alice Argument 1 : Bob Argument 2 : Carla 🧪 Exercice 2 int[] nombres = {4, 7, 2, 9}; Utilise une boucle for pour calculer et afficher la somme des éléments.</description>
+    </item>
+    <item>
+      <title>Série 10</title>
+      <link>http://localhost:1313/420-111/exercices/serie010/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:03:03 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie010/index.html</guid>
+      <description>🧪 Exercice 1 Crée une fonction saluer qui prend un paramètre String nom et affiche : Bonjour [nom]!&#xA;🧪 Exercice 2 Crée une fonction somme qui prend deux entiers en paramètres et retourne leur somme. Affiche le résultat de somme(5, 7).&#xA;🧪 Exercice 3 Crée une fonction max qui prend deux entiers et retourne le plus grand. Teste-la avec les valeurs 8 et 12.&#xA;🧪 Exercice 4 Crée une fonction moyenne qui prend trois double et retourne leur moyenne. Affiche la moyenne de 12.5, 15.0, 17.5.</description>
+    </item>
+    <item>
+      <title>Série 12</title>
+      <link>http://localhost:1313/420-111/exercices/serie012/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:03:11 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie012/index.html</guid>
+      <description>📥 Exercices – Entrées utilisateur en Java 🧪 Exercice 1 – Lire un prénom Demande à l’utilisateur de saisir son prénom (chaine de caractères) et affiche : Bonjour, [prénom] !&#xA;🧪 Exercice 2 – Lire deux entiers et afficher leur somme Demande à l’utilisateur de saisir deux entiers, puis affiche la somme.&#xA;🧪 Exercice 3 – Lire un nombre à virgule Demande à l’utilisateur de saisir un nombre à virgule (double) et affiche ce nombre arrondi à 2 décimales.</description>
+    </item>
+    <item>
+      <title>Série 13</title>
+      <link>http://localhost:1313/420-111/exercices/serie013/index.html</link>
+      <pubDate>Wed, 20 Aug 2025 19:03:15 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/exercices/serie013/index.html</guid>
+      <description>📂 Exercices – Lecture de fichiers en Java 🧪 Exercice 1 – Lire un fichier texte ligne par ligne Crée un fichier texte data.txt contenant plusieurs lignes. Écris un programme qui ouvre ce fichier et affiche chaque ligne à la console.&#xA;🧪 Exercice 2 – Compter le nombre de lignes Modifie le programme précédent pour compter et afficher le nombre total de lignes dans le fichier.&#xA;🧪 Exercice 3 – Lire un fichier et afficher les lignes contenant un mot Demande à l’utilisateur de saisir un mot clé. Affiche uniquement les lignes du fichier qui contiennent ce mot.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Break Continue :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/8-structures-de-controles/break-continue/index.html</link>
+    <description>🛑 break &amp; continue en Java Les instructions break et continue permettent de contrôler le déroulement des boucles (for, while, etc.).&#xA;Elles sont très utiles pour interrompre une boucle plus tôt ou sauter certaines itérations.&#xA;🚪 break : sortir d’une boucle immédiatement L’instruction break permet de quitter immédiatement la boucle en cours, même si la condition est encore vraie.&#xA;🔂 Exemple simple avec break for (int i = 0; i &lt; 10; i++) { if (i == 5) { break; } System.out.println(&#34;i = &#34; + i); } 🔎 Résultat :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/8-structures-de-controles/break-continue/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parametres :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/10-fonctions/parametres/index.html</link>
+    <description>📦 Les paramètres &amp; le passage par valeur / par référence en Java Quand tu appelles une méthode, tu peux lui transmettre des informations : ce sont les paramètres.&#xA;Mais comment sont-ils transmis ? Est-ce que la méthode peut modifier les variables d’origine ? C’est là qu’interviennent les notions de passage par valeur et passage par référence.&#xA;🎁 Définir et utiliser des paramètres Une méthode peut recevoir un ou plusieurs paramètres :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/10-fonctions/parametres/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

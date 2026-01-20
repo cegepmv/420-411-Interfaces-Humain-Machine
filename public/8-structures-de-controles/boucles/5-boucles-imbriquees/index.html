@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/420-111/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=420-111/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="🔁🔁 Les boucles imbriquées en Java Une boucle imbriquée (ou boucle dans une boucle) permet de répéter un ensemble d’instructions à l’intérieur d’une autre boucle. C’est très utile pour travailler avec des tableaux à plusieurs dimensions, afficher des grilles, ou répéter des structures complexes.
+🧱 Structure d’une boucle imbriquée for (int i = 0; i &lt; 3; i&#43;&#43;) { for (int j = 0; j &lt; 4; j&#43;&#43;) { // Instructions exécutées à chaque combinaison de i et j } } 💡 Ici, pour chaque valeur de i, la boucle j s’exécute complètement.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Boucles Imbriquees :: Introduction à la programmation">
+    <meta name="twitter:description" content="🔁🔁 Les boucles imbriquées en Java Une boucle imbriquée (ou boucle dans une boucle) permet de répéter un ensemble d’instructions à l’intérieur d’une autre boucle. C’est très utile pour travailler avec des tableaux à plusieurs dimensions, afficher des grilles, ou répéter des structures complexes.
+🧱 Structure d’une boucle imbriquée for (int i = 0; i &lt; 3; i&#43;&#43;) { for (int j = 0; j &lt; 4; j&#43;&#43;) { // Instructions exécutées à chaque combinaison de i et j } } 💡 Ici, pour chaque valeur de i, la boucle j s’exécute complètement.">
+    <meta property="og:url" content="http://localhost:1313/420-111/8-structures-de-controles/boucles/5-boucles-imbriquees/index.html">
+    <meta property="og:site_name" content="Introduction à la programmation">
+    <meta property="og:title" content="Boucles Imbriquees :: Introduction à la programmation">
+    <meta property="og:description" content="🔁🔁 Les boucles imbriquées en Java Une boucle imbriquée (ou boucle dans une boucle) permet de répéter un ensemble d’instructions à l’intérieur d’une autre boucle. C’est très utile pour travailler avec des tableaux à plusieurs dimensions, afficher des grilles, ou répéter des structures complexes.
+🧱 Structure d’une boucle imbriquée for (int i = 0; i &lt; 3; i&#43;&#43;) { for (int j = 0; j &lt; 4; j&#43;&#43;) { // Instructions exécutées à chaque combinaison de i et j } } 💡 Ici, pour chaque valeur de i, la boucle j s’exécute complètement.">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Boucles Imbriquees :: Introduction à la programmation">
+    <meta itemprop="description" content="🔁🔁 Les boucles imbriquées en Java Une boucle imbriquée (ou boucle dans une boucle) permet de répéter un ensemble d’instructions à l’intérieur d’une autre boucle. C’est très utile pour travailler avec des tableaux à plusieurs dimensions, afficher des grilles, ou répéter des structures complexes.
+🧱 Structure d’une boucle imbriquée for (int i = 0; i &lt; 3; i&#43;&#43;) { for (int j = 0; j &lt; 4; j&#43;&#43;) { // Instructions exécutées à chaque combinaison de i et j } } 💡 Ici, pour chaque valeur de i, la boucle j s’exécute complètement.">
+    <meta itemprop="datePublished" content="2025-09-19T12:03:31-04:00">
+    <meta itemprop="dateModified" content="2025-09-19T12:03:31-04:00">
+    <meta itemprop="wordCount" content="766">
+    <title>Boucles Imbriquees :: Introduction à la programmation</title>
+    <link href="/420-111/8-structures-de-controles/boucles/5-boucles-imbriquees/index.xml" rel="alternate" type="application/rss+xml" title="Boucles Imbriquees :: Introduction à la programmation">
+    <link href="/420-111/images/favicon.png?1768412029" rel="icon" type="image/png">
+    <link href="/420-111/css/auto-complete/auto-complete.min.css?1768412029" rel="stylesheet">
+    <script src="/420-111/js/auto-complete/auto-complete.min.js?1768412029" defer></script>
+    <script src="/420-111/js/search-lunr.js?1768412029" defer></script>
+    <script src="/420-111/js/search.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/420-111/searchindex.en.js?1768412029";
+    </script>
+    <script src="/420-111/js/lunr/lunr.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.stemmer.support.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.multi.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.fr.min.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet"></noscript>
+    <link href="/420-111/css/perfect-scrollbar/perfect-scrollbar.min.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/theme.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/format-html.css?1768412029" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/8-structures-de-controles\/boucles\/5-boucles-imbriquees\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/420-111';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'zen-light', 'zen-dark', 'neon', 'learn' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+:root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 16rem;
+}
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/420-111/8-structures-de-controles/boucles/5-boucles-imbriquees/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#-les-boucles-imbriquées-en-java">🔁🔁 Les boucles <strong>imbriquées</strong> en Java</a></li>
+    <li><a href="#-structure-dune-boucle-imbriquée">🧱 Structure d’une boucle imbriquée</a></li>
+    <li><a href="#-exemple--afficher-une-grille">🔂 Exemple : afficher une grille</a></li>
+    <li><a href="#-comment-ça-marche-">💡 Comment ça marche ?</a></li>
+    <li><a href="#-quand-utiliser-des-boucles-imbriquées-">🎯 Quand utiliser des boucles imbriquées ?</a></li>
+    <li><a href="#-exemple--tableau-à-2-dimensions">🔁 Exemple : tableau à 2 dimensions</a></li>
+    <li><a href="#-attention">⚠️ Attention</a></li>
+    <li><a href="#-à-retenir">🧠 À retenir</a>
+      <ul>
+        <li><a href="#-exercice-1--grille-de">🔹 <strong>Exercice 1 : Grille de <code>*</code> avec deux <code>for</code></strong></a></li>
+        <li><a href="#sortie-attendue">Sortie attendue</a></li>
+        <li><a href="#-exercice-2--afficher-une-matrice-de-nombres">🔹 <strong>Exercice 2 : Afficher une matrice de nombres</strong></a></li>
+        <li><a href="#sortie-attendue-1">Sortie attendue</a></li>
+        <li><a href="#-exercice-3--triangle-détoiles-croissant">🔹 <strong>Exercice 3 : Triangle d’étoiles croissant</strong></a></li>
+        <li><a href="#sortie-attendue-2">Sortie attendue</a></li>
+        <li><a href="#-défi-visuel--dessiner-un-damier">🧩 <strong>Défi visuel : Dessiner un damier <code>#</code> et <code>.</code></strong></a></li>
+        <li><a href="#sortie-attendue-3">Sortie attendue</a></li>
+      </ul>
+    </li>
+    <li><a href="#-objectif">🎯 Objectif</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/index.html"><span itemprop="name">Introduction à la programmation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><span itemprop="name">Structures De Controles</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/8-structures-de-controles/boucles/1-for/index.html"><span itemprop="name">Boucles</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Boucles Imbriquees</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/8-structures-de-controles/boucles/4-for-each/index.html" title="For Each (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/8-structures-de-controles/break-continue/index.html" title="Break Continue (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 8-structures-de-controles" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="boucles-imbriquees">Boucles Imbriquees</h1>
+
+<hr>
+<h2 id="-les-boucles-imbriquées-en-java">🔁🔁 Les boucles <strong>imbriquées</strong> en Java</h2>
+<p>Une <strong>boucle imbriquée</strong> (ou <strong>boucle dans une boucle</strong>) permet de <strong>répéter un ensemble d’instructions à l’intérieur d’une autre boucle</strong>. C’est très utile pour travailler avec des <strong>tableaux à plusieurs dimensions</strong>, <strong>afficher des grilles</strong>, ou <strong>répéter des structures complexes</strong>.</p>
+<hr>
+<h2 id="-structure-dune-boucle-imbriquée">🧱 Structure d’une boucle imbriquée</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">3</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">4</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Instructions exécutées à chaque combinaison de i et j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<p>💡 Ici, pour <strong>chaque valeur de <code>i</code></strong>, la boucle <code>j</code> <strong>s’exécute complètement</strong>.</p>
+<hr>
+<h2 id="-exemple--afficher-une-grille">🔂 Exemple : afficher une grille</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">ligne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">ligne</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">3</span><span class="p">;</span><span class="w"> </span><span class="n">ligne</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">5</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;* &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w"> </span><span class="c1">// retour à la ligne</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<p>🔎 Résultat :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>* * * * *  
+* * * * *  
+* * * * *  </code></pre></div>
+<hr>
+<h2 id="-comment-ça-marche-">💡 Comment ça marche ?</h2>
+<table>
+  <thead>
+      <tr>
+          <th><code>ligne</code></th>
+          <th><code>col</code></th>
+          <th>Affichage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>0→4</td>
+          <td><code>* * * * *</code></td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>0→4</td>
+          <td><code>* * * * *</code></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>0→4</td>
+          <td><code>* * * * *</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>👉 La <strong>boucle intérieure</strong> se termine <strong>à chaque tour</strong> de la boucle extérieure.</p>
+<hr>
+<h2 id="-quand-utiliser-des-boucles-imbriquées-">🎯 Quand utiliser des boucles imbriquées ?</h2>
+<p>Utilise-les pour :</p>
+<ul>
+<li>Parcourir des <strong>tableaux à deux dimensions</strong></li>
+<li>Créer des <strong>formes</strong>, <strong>grilles</strong> ou <strong>tableaux</strong></li>
+<li>Effectuer des <strong>comparaisons multiples</strong> ou des <strong>comptages croisés</strong></li>
+</ul>
+<hr>
+<h2 id="-exemple--tableau-à-2-dimensions">🔁 Exemple : tableau à 2 dimensions</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">matrice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">{</span><span class="n">1</span><span class="p">,</span><span class="w"> </span><span class="n">2</span><span class="p">,</span><span class="w"> </span><span class="n">3</span><span class="p">},</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">{</span><span class="n">4</span><span class="p">,</span><span class="w"> </span><span class="n">5</span><span class="p">,</span><span class="w"> </span><span class="n">6</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">matrice</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">matrice</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">matrice</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<p>🔎 Affiche :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>1 2 3  
+4 5 6</code></pre></div>
+<hr>
+<h2 id="-attention">⚠️ Attention</h2>
+<ul>
+<li>Les boucles imbriquées <strong>peuvent être coûteuses</strong> en performance si trop profondes (ex : triple ou quadruple boucle).</li>
+<li>Toujours bien <strong>nommer tes variables</strong> (<code>i</code>, <code>j</code>, <code>k</code>, etc.) pour garder ton code lisible.</li>
+<li>Ne pas oublier les <strong>retours à la ligne</strong> (<code>System.out.println()</code>) si tu fais de l&rsquo;affichage.</li>
+</ul>
+<hr>
+<h2 id="-à-retenir">🧠 À retenir</h2>
+<ul>
+<li>Une <strong>boucle imbriquée</strong> est une boucle <strong>dans une autre boucle</strong>.</li>
+<li>La boucle <strong>intérieure s&rsquo;exécute entièrement à chaque tour de la boucle extérieure</strong>.</li>
+<li>Très utile pour les <strong>grilles</strong>, <strong>matrices</strong>, et <strong>structures répétitives</strong>.</li>
+</ul>
+<hr>
+<h3 id="-exercice-1--grille-de">🔹 <strong>Exercice 1 : Grille de <code>*</code> avec deux <code>for</code></strong></h3>
+<p>Utilise <strong>deux boucles <code>for</code> imbriquées</strong> pour afficher une grille de 4 lignes et 6 colonnes remplie de <code>*</code>.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Exo1</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Boucle extérieure : lignes</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">4</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="c1">// Boucle intérieure : colonnes</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">6</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;* &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w"> </span><span class="c1">// Retour à la ligne</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<h3 id="sortie-attendue">Sortie attendue</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>* * * * * *  
+* * * * * *  
+* * * * * *  
+* * * * * *  </code></pre></div>
+<hr>
+<h3 id="-exercice-2--afficher-une-matrice-de-nombres">🔹 <strong>Exercice 2 : Afficher une matrice de nombres</strong></h3>
+<p>Crée une <strong>matrice 2D d&rsquo;entiers</strong> et affiche son contenu ligne par ligne avec deux boucles imbriquées.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Exo2</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="o">[][]</span><span class="w"> </span><span class="n">matrice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">{</span><span class="n">10</span><span class="p">,</span><span class="w"> </span><span class="n">20</span><span class="p">},</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">{</span><span class="n">30</span><span class="p">,</span><span class="w"> </span><span class="n">40</span><span class="p">},</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">{</span><span class="n">50</span><span class="p">,</span><span class="w"> </span><span class="n">60</span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">};</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Parcours de la matrice</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">matrice</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">matrice</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">matrice</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<h3 id="sortie-attendue-1">Sortie attendue</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>10 20  
+30 40  
+50 60</code></pre></div>
+<hr>
+<h3 id="-exercice-3--triangle-détoiles-croissant">🔹 <strong>Exercice 3 : Triangle d’étoiles croissant</strong></h3>
+<p>Utilise des boucles imbriquées pour afficher un <strong>triangle d’étoiles</strong>. La première ligne contient 1 étoile, la deuxième 2, etc.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Exo3</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;*&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<h3 id="sortie-attendue-2">Sortie attendue</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>*  
+**  
+***  
+****  
+*****</code></pre></div>
+<hr>
+<h3 id="-défi-visuel--dessiner-un-damier">🧩 <strong>Défi visuel : Dessiner un damier <code>#</code> et <code>.</code></strong></h3>
+<p>Affiche un <strong>damier de 6 lignes par 6 colonnes</strong>, avec des <code>#</code> et <code>.</code> en alternance (comme un échiquier).</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">DefiDamier</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">ligne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">ligne</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">6</span><span class="p">;</span><span class="w"> </span><span class="n">ligne</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">0</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">6</span><span class="p">;</span><span class="w"> </span><span class="n">col</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">ligne</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">col</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;# &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;. &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span><span class="w"> </span><span class="c1">// Retour à la ligne</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<h3 id="sortie-attendue-3">Sortie attendue</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code># . # . # .  
+. # . # . #  
+# . # . # .  
+. # . # . #  
+# . # . # .  
+. # . # . #  </code></pre></div>
+<hr>
+<h2 id="-objectif">🎯 Objectif</h2>
+<ul>
+<li>Utiliser <strong>deux boucles imbriquées</strong></li>
+<li>Alterner les symboles selon la <strong>position dans la grille</strong></li>
+<li>S&rsquo;appuyer sur l&rsquo;expression <code>(ligne + col) % 2</code> pour alterner</li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Sep 19, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="R-logo" 
+   style="display: flex; justify-content: center; align-items: center; text-decoration: none;" 
+   href="/420-111/index.html">
+
+    <img src="/420-111/images/logo.png" width="40" height="40" alt="logo" style="margin-right: 8px;">
+
+    <div style="display: flex; flex-direction: column; font-size: 130%; align-items: flex-start;">
+        <span>Introduction à</span>
+        <span>la programmation</span>
+    </div>
+</a>
+
+        </div>
+        <search><form action="/420-111/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/420-111/index.html"><a class="padding" href="/420-111/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Intro</a><ul id="R-subsections-6fffaf9b92bcc839991ff76663fb9bac" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/2-vscode/index.html"><a class="padding" href="/420-111/2-vscode/index.html">VSCode</a></li>
+            <li class="" data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables &amp; Types</a><ul id="R-subsections-56652df65f37063b28a69d5d800b9039" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/4-string/index.html"><a class="padding" href="/420-111/4-string/index.html">String</a><ul id="R-subsections-782b65f21e652a1eafb534740db488ee" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/5-operateurs/arithmetique/index.html"><a class="padding" href="/420-111/5-operateurs/arithmetique/index.html">Opérateurs</a><ul id="R-subsections-cef453883c54c95d8fd8616f806d4cea" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/6-conversions-de-types/index.html"><a class="padding" href="/420-111/6-conversions-de-types/index.html">Conversions De Types</a></li>
+            <li class="" data-nav-id="/420-111/7-tableaux/index.html"><a class="padding" href="/420-111/7-tableaux/index.html">Tableaux</a><ul id="R-subsections-55c24a3b7117af4e14c631828fa164c4" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Structures De Controles</a><ul id="R-subsections-9f8f049e95e0d117f4b5a03645c9071a" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Conditionnelles</a><ul id="R-subsections-379d8cb921877fdfea606d5c31d27f9b" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/420-111/8-structures-de-controles/boucles/1-for/index.html"><a class="padding" href="/420-111/8-structures-de-controles/boucles/1-for/index.html">Boucles</a><ul id="R-subsections-f939461937c1c8031993db49d14d294b" class="collapsible-menu">
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/boucles/1-for/index.html"><a class="padding" href="/420-111/8-structures-de-controles/boucles/1-for/index.html">For</a></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/boucles/2-while/index.html"><a class="padding" href="/420-111/8-structures-de-controles/boucles/2-while/index.html">While</a></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/boucles/3-do-while/index.html"><a class="padding" href="/420-111/8-structures-de-controles/boucles/3-do-while/index.html">Do While</a></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/boucles/4-for-each/index.html"><a class="padding" href="/420-111/8-structures-de-controles/boucles/4-for-each/index.html">For Each</a></li>
+            <li class="active " data-nav-id="/420-111/8-structures-de-controles/boucles/5-boucles-imbriquees/index.html"><a class="padding" href="/420-111/8-structures-de-controles/boucles/5-boucles-imbriquees/index.html">Boucles Imbriquees</a></li></ul></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/break-continue/index.html"><a class="padding" href="/420-111/8-structures-de-controles/break-continue/index.html">Break Continue</a></li></ul></li>
+            <li class="" data-nav-id="/420-111/9-debug/index.html"><a class="padding" href="/420-111/9-debug/index.html">Debug</a></li>
+            <li class="" data-nav-id="/420-111/10-fonctions/index.html"><a class="padding" href="/420-111/10-fonctions/index.html">Fonctions</a><ul id="R-subsections-e4181c72c636f10f24765f042a0f0763" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/11-scanner/index.html"><a class="padding" href="/420-111/11-scanner/index.html">Scanner</a><ul id="R-subsections-2e7a5e82e009aac91720d05751cc77c0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/12-fichier/lecture/index.html"><a class="padding" href="/420-111/12-fichier/lecture/index.html">Fichier</a><ul id="R-subsections-7d34dcc2710810bfed736603e11f989d" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/exercices/index.html"><a class="padding" href="/420-111/exercices/index.html">Exercices</a><ul id="R-subsections-393f73ec6223292328da5c03b7f3a881" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-learn" value="learn">Learn</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"></div>
+      </div>
+    </aside>
+    <script src="/420-111/js/clipboard/clipboard.min.js?1768412029" defer></script>
+    <script src="/420-111/js/perfect-scrollbar/perfect-scrollbar.min.js?1768412029" defer></script>
+    <script src="/420-111/js/theme.js?1768412029" defer></script>
+  </body>
+</html>

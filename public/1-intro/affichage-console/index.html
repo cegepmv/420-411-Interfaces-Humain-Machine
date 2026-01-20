@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/420-111/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=420-111/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="☕ Créer son tout premier programme en Java Avant de plonger dans le code, il est important de savoir qu’en Java, tout le code source doit être enregistré dans un fichier avec l’extension .java.
+EN ligne Si java n’est malheureusement pas installé sur votre ordinateur et que vous ne pouvez pas le faire, vous pouvez tout de même programmer directement sur le web ici">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Affichage console :: Introduction à la programmation">
+    <meta name="twitter:description" content="☕ Créer son tout premier programme en Java Avant de plonger dans le code, il est important de savoir qu’en Java, tout le code source doit être enregistré dans un fichier avec l’extension .java.
+EN ligne Si java n’est malheureusement pas installé sur votre ordinateur et que vous ne pouvez pas le faire, vous pouvez tout de même programmer directement sur le web ici">
+    <meta property="og:url" content="http://localhost:1313/420-111/1-intro/affichage-console/index.html">
+    <meta property="og:site_name" content="Introduction à la programmation">
+    <meta property="og:title" content="Affichage console :: Introduction à la programmation">
+    <meta property="og:description" content="☕ Créer son tout premier programme en Java Avant de plonger dans le code, il est important de savoir qu’en Java, tout le code source doit être enregistré dans un fichier avec l’extension .java.
+EN ligne Si java n’est malheureusement pas installé sur votre ordinateur et que vous ne pouvez pas le faire, vous pouvez tout de même programmer directement sur le web ici">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Intro">
+    <meta property="article:published_time" content="2025-08-20T19:04:19-04:00">
+    <meta property="article:modified_time" content="2025-08-20T19:04:19-04:00">
+    <meta itemprop="name" content="Affichage console :: Introduction à la programmation">
+    <meta itemprop="description" content="☕ Créer son tout premier programme en Java Avant de plonger dans le code, il est important de savoir qu’en Java, tout le code source doit être enregistré dans un fichier avec l’extension .java.
+EN ligne Si java n’est malheureusement pas installé sur votre ordinateur et que vous ne pouvez pas le faire, vous pouvez tout de même programmer directement sur le web ici">
+    <meta itemprop="datePublished" content="2025-08-20T19:04:19-04:00">
+    <meta itemprop="dateModified" content="2025-08-20T19:04:19-04:00">
+    <meta itemprop="wordCount" content="971">
+    <title>Affichage console :: Introduction à la programmation</title>
+    <link href="/420-111/images/favicon.png?1768412029" rel="icon" type="image/png">
+    <link href="/420-111/css/auto-complete/auto-complete.min.css?1768412029" rel="stylesheet">
+    <script src="/420-111/js/auto-complete/auto-complete.min.js?1768412029" defer></script>
+    <script src="/420-111/js/search-lunr.js?1768412029" defer></script>
+    <script src="/420-111/js/search.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/420-111/searchindex.en.js?1768412029";
+    </script>
+    <script src="/420-111/js/lunr/lunr.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.stemmer.support.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.multi.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.fr.min.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet"></noscript>
+    <link href="/420-111/css/perfect-scrollbar/perfect-scrollbar.min.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/theme.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/format-html.css?1768412029" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/1-intro\/affichage-console\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/420-111';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'zen-light', 'zen-dark', 'neon', 'learn' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+:root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 16rem;
+}
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/420-111/1-intro/affichage-console/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#-étapes-">🔧 Étapes :</a></li>
+      </ul>
+    </li>
+    <li><a href="#-comprendre-la-notion-de-classe">🧩 Comprendre la notion de classe</a></li>
+    <li><a href="#-la-méthode-main">🏁 La méthode <code>main()</code></a></li>
+    <li><a href="#-résumé-ligne-par-ligne">🔄 Résumé ligne par ligne</a></li>
+    <li><a href="#-compilation-et-exécution-dun-programme-java">🧪 Compilation et exécution d’un programme Java</a></li>
+    <li><a href="#exécution-du-code-dans-le-fichier-mainjava">Exécution du code dans le fichier Main.java</a></li>
+    <li><a href="#-affichage-avec-systemoutprint-et-systemoutprintln">🖨️ Affichage avec <code>System.out.print</code> et <code>System.out.println</code></a>
+      <ul>
+        <li><a href="#-détail-sur-systemout">📌 Détail sur <code>System.out</code></a></li>
+        <li><a href="#-différence-entre-print-et-println">🧩 Différence entre <code>print()</code> et <code>println()</code></a></li>
+        <li><a href="#-en-résumé-">✅ En résumé :</a></li>
+      </ul>
+    </li>
+    <li><a href="#le-caractère-déchappement-">Le caractère d’échappement <code>\</code></a></li>
+    <li><a href="#systemoutprintf--affichage-formaté"><code>System.out.printf()</code> – Affichage formaté</a>
+      <ul>
+        <li><a href="#-à-retenir">✅ À retenir</a></li>
+        <li><a href="#-astuce-pro--format-avancé">🛠️ Astuce pro : format avancé</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/index.html"><span itemprop="name">Introduction à la programmation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/1-intro/java/index.html"><span itemprop="name">Intro</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Affichage console</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/1-intro/java/index.html" title="Java (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/1-intro/regles/index.html" title="Règles/conventions (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 1-intro" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="affichage-console">Affichage console</h1>
+
+<hr>
+<h1 id="-créer-son-tout-premier-programme-en-java">☕ Créer son tout premier programme en Java</h1>
+<p>Avant de plonger dans le code, il est important de savoir qu’en Java, tout le code source doit être enregistré dans un fichier avec l’extension <code>.java</code>.</p>
+
+<details open class=" box cstyle notices tip">
+  <summary class="box-label" tabindex="-1">
+    <i class="fa-fw fas fa-lightbulb"></i> 
+    EN ligne
+  </summary>
+  <div class="box-content">
+<p>Si java n&rsquo;est malheureusement pas installé sur votre ordinateur et que vous ne pouvez pas le faire, vous pouvez tout de même
+programmer directement sur le web <a href="https://www.programiz.com/java-programming/online-compiler/">ici</a></p>
+  </div>
+</details>
+<h3 id="-étapes-">🔧 Étapes :</h3>
+<ol>
+<li>Crée un nouveau fichier et nomme-le <code>Main.java</code>.</li>
+<li>Tape (de préférence manuellement) le code suivant dans ce fichier :</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<blockquote>
+<p>💡 <em>Astuce : Prends le temps de taper le code au lieu de simplement le copier-coller. Cela t&rsquo;aidera à bien comprendre chaque ligne.</em></p></blockquote>
+<hr>
+<h2 id="-comprendre-la-notion-de-classe">🧩 Comprendre la notion de classe</h2>
+<ul>
+<li>
+<p>En Java, tout le code exécutable doit être contenu dans une <strong>classe</strong>.</p>
+<ul>
+<li>Ce concept sera expliqué en détail plus tard, mais retiens pour l’instant qu’une classe est <strong>indispensable</strong>.</li>
+<li>Dans notre exemple, cela correspond à la ligne <code>public class Main</code>.</li>
+<li>Par convention, le <strong>nom d&rsquo;une classe commence par une majuscule</strong> (ce n’est pas obligatoire, mais recommandé).</li>
+<li>Le nom du <strong>fichier doit être identique au nom de la classe</strong>, suivi de l’extension <code>.java</code>. Ici, la classe s’appelle <code>Main</code>, donc le fichier s’appelle <code>Main.java</code>.</li>
+<li>Le mot-clé <code>public</code> est un <strong>modificateur d’accès</strong> indiquant que cette classe est accessible depuis d&rsquo;autres classes (nous y reviendrons plus tard).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="-la-méthode-main">🏁 La méthode <code>main()</code></h2>
+<ul>
+<li>La méthode <code>main()</code> est <strong>le point d’entrée</strong> de tout programme Java.</li>
+<li>Tout le code à l’intérieur de cette méthode sera exécuté au lancement du programme.</li>
+</ul>
+<blockquote>
+<p>🔍 <em>Ne t&rsquo;inquiète pas pour le moment des autres mots-clés comme <code>static</code> ou <code>void</code>. Tu les comprendras avec le temps.</em></p></blockquote>
+<hr>
+<h2 id="-résumé-ligne-par-ligne">🔄 Résumé ligne par ligne</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Ligne de code</th>
+          <th>Explication</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>public class Main</code></td>
+          <td>Déclare une classe publique appelée <code>Main</code>.</td>
+      </tr>
+      <tr>
+          <td><code>public static void main(String[] args)</code></td>
+          <td>Déclare la méthode principale qui sera exécutée au démarrage du programme.</td>
+      </tr>
+      <tr>
+          <td><code>System.out.println(&quot;Hello World&quot;);</code></td>
+          <td>Affiche le message <code>&quot;Hello World&quot;</code> dans la console.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-compilation-et-exécution-dun-programme-java">🧪 Compilation et exécution d’un programme Java</h2>
+<p>D&rsquo;abord, tu dois t&rsquo;assurer que Java est bien installé sur ton ordinateur</p>
+<ul>
+<li>Ouvre une invite de commandes (cmd) sous Windows (Terminal sous Mac/Linux).</li>
+<li>Tape la commande <code>java -version</code>. Cette commande devrait vous dire la version de Java qui est installé sur votre ordinateur.</li>
+<li>Tape aussi la commande <code>javac -version</code>. Cette commande devrait te dire la version du compilateur de Java installé sur ton ordinateur
+<em>Note: Ces commandes fonctionnent seulement si Java et le compilateur de Java sont installés et que le chemin où le répertoire de Java se trouve est mis dans le <code>PATH</code> des variables d&rsquo;environnement (À expliquer en classe pour que ce soit plus clair)</em></li>
+</ul>
+<h2 id="exécution-du-code-dans-le-fichier-mainjava">Exécution du code dans le fichier Main.java</h2>
+<ul>
+<li>Ouvre une invite de commandes (cmd) sous Windows (Terminal sous Mac/Linux).</li>
+<li>Navigue vers le dossier où se trouve votre fichier Main.java</li>
+<li>Exécute la commande <code>java Main.java</code>. Tu devrais voir le message <code>Hello World</code> dans l&rsquo;invite de commandes.</li>
+</ul>
+<p>Traditionnellement, Java fonctionne en deux étapes :</p>
+<ol>
+<li>
+<p><strong>Compilation</strong> : Le code source (<code>.java</code>) est transformé en bytecode (<code>.class</code>) grâce à la commande :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">javac Main.java</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Exécution</strong> : Le bytecode est ensuite exécuté avec la commande :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java Main</span></span></code></pre></div>
+</li>
+</ol>
+<blockquote>
+<p>💡 <em>Astuce : Depuis une version relativement récente de Java, il est aussi possible d’exécuter directement un fichier <code>.java</code> sans passer explicitement par l’étape de compilation (<code>javac</code>).</em></p></blockquote>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">java Main.java</span></span></code></pre></div>
+<p>Cela permet d’exécuter rapidement un programme, mais à noter :</p>
+<ul>
+<li>Le fichier <code>.class</code> est <strong>généré temporairement</strong>.</li>
+<li>Il est ensuite <strong>supprimé automatiquement</strong> après l’exécution.</li>
+</ul>
+<blockquote>
+<p>📝 Cette méthode est pratique pour tester du code rapidement, mais dans un projet structuré, on utilise généralement <code>javac</code> suivi de <code>java</code>.</p></blockquote>
+<hr>
+<h2 id="-affichage-avec-systemoutprint-et-systemoutprintln">🖨️ Affichage avec <code>System.out.print</code> et <code>System.out.println</code></h2>
+<p>Dans la méthode <code>main()</code>, tu peux utiliser :</p>
+<ul>
+<li><code>System.out.println()</code> : pour afficher une ligne de texte suivie d’un <strong>retour à la ligne</strong>.</li>
+<li><code>System.out.print()</code> : pour afficher du texte <strong>sans retour à la ligne</strong>.</li>
+</ul>
+<blockquote>
+<p>✏️ Pour l’instant, retiens que tu dois utiliser <code>System.out.println(&quot;ton message&quot;);</code> pour afficher du texte à l’écran.</p></blockquote>
+<hr>
+<h3 id="-détail-sur-systemout">📌 Détail sur <code>System.out</code></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Élément</th>
+          <th>Rôle</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>System</code></td>
+          <td>Classe prédéfinie dans <code>java.lang</code></td>
+      </tr>
+      <tr>
+          <td><code>out</code></td>
+          <td>Représente le <strong>flux de sortie standard</strong></td>
+      </tr>
+      <tr>
+          <td><code>System.out</code></td>
+          <td>Utilisé pour <strong>écrire dans la console</strong></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-différence-entre-print-et-println">🧩 Différence entre <code>print()</code> et <code>println()</code></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Méthode</th>
+          <th>Effet</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>print()</code></td>
+          <td>Affiche le texte <strong>sur la même ligne</strong></td>
+      </tr>
+      <tr>
+          <td><code>println()</code></td>
+          <td>Affiche le texte <strong>puis passe à la ligne suivante</strong></td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="exemple-1--sans-retour-à-la-ligne">Exemple 1 : sans retour à la ligne</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;Bonjour &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;tout le monde !&#34;</span><span class="p">);</span></span></span></code></pre></div>
+<p>🖥️ <strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Bonjour tout le monde !</code></pre></div>
+<h4 id="exemple-2--avec-retour-à-la-ligne">Exemple 2 : avec retour à la ligne</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Bonjour&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;tout le monde !&#34;</span><span class="p">);</span></span></span></code></pre></div>
+<p>🖥️ <strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Bonjour
+tout le monde !</code></pre></div>
+<h4 id="exemple-3--retour-à-la-ligne-manuel">Exemple 3 : retour à la ligne manuel</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;Ligne 1\nLigne 2&#34;</span><span class="p">);</span></span></span></code></pre></div>
+<p>🖥️ <strong>Résultat :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Ligne 1
+Ligne 2</code></pre></div>
+<hr>
+<h3 id="-en-résumé-">✅ En résumé :</h3>
+<ul>
+<li><code>print()</code> : n’ajoute pas de retour à la ligne.</li>
+<li><code>println()</code> : ajoute un retour à la ligne automatiquement.</li>
+<li>Ces méthodes sont très utilisées pour afficher des messages ou pour déboguer.</li>
+</ul>
+<hr>
+<h2 id="le-caractère-déchappement-">Le caractère d’échappement <code>\</code></h2>
+<p>Le <code>\</code> permet d’insérer des caractères spéciaux dans une chaîne.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Séquence</th>
+          <th>Résultat</th>
+          <th>Exemple</th>
+          <th>Résultat Console</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>\n</code></td>
+          <td>Saut de ligne</td>
+          <td><code>&quot;Bonjour\nSalut&quot;</code></td>
+          <td>Bonjour<br>Salut</td>
+      </tr>
+      <tr>
+          <td><code>\t</code></td>
+          <td>Tabulation</td>
+          <td><code>&quot;Nom\tAge&quot;</code></td>
+          <td>Nom  Age</td>
+      </tr>
+      <tr>
+          <td><code>\&quot;</code></td>
+          <td>Guillemets doubles</td>
+          <td><code>&quot;Il a dit : \&quot;ok\&quot;&quot;</code></td>
+          <td>Il a dit : &ldquo;ok&rdquo;</td>
+      </tr>
+      <tr>
+          <td><code>\\</code></td>
+          <td>Backslash</td>
+          <td><code>&quot;C:\\Users\\Nom&quot;</code></td>
+          <td>C:\Users\Nom</td>
+      </tr>
+      <tr>
+          <td><code>\'</code></td>
+          <td>Apostrophe</td>
+          <td><code>'\'</code></td>
+          <td><code>'</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="systemoutprintf--affichage-formaté"><code>System.out.printf()</code> – Affichage formaté</h2>
+<p>Tu peux fixer la <strong>largeur de colonnes</strong> avec :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&#34;%-15s : %s\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Nom&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Alice&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&#34;%-15s : %d\n&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Âge&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">30</span><span class="p">);</span></span></span></code></pre></div>
+<p>🔎 <code>%–15s</code> → champ texte <strong>aligné à gauche</strong> sur <strong>15 caractères</strong>.</p>
+<hr>
+<h3 id="-à-retenir">✅ À retenir</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Commande</th>
+          <th>Utilité principale</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>print()</code></td>
+          <td>Affiche sur la même ligne.</td>
+      </tr>
+      <tr>
+          <td><code>println()</code></td>
+          <td>Affiche puis saute une ligne.</td>
+      </tr>
+      <tr>
+          <td><code>\</code></td>
+          <td>Caractère d’échappement pour mise en forme.</td>
+      </tr>
+      <tr>
+          <td><code>printf()</code></td>
+          <td>Affichage <strong>structuré et aligné</strong>.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-astuce-pro--format-avancé">🛠️ Astuce pro : format avancé</h3>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">printf</span><span class="p">(</span><span class="s">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">    Nom complet  : Julie MARTIN     
+</span></span></span><span class="line"><span class="cl"><span class="s">    Âge          : 28
+</span></span></span><span class="line"><span class="cl"><span class="s">    Ville        : %s
+</span></span></span><span class="line"><span class="cl"><span class="s">    &#34;&#34;&#34;</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;Paris&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">);</span></span></span></code></pre></div>
+<h4 id="-résultat-console">🖥️ Résultat console</h4>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Nom complet  : Julie MARTIN    
+Âge          : 28    
+Ville        : Paris    </code></pre></div>
+<hr>
+<h4 id="-explication-ligne-par-ligne">✅ Explication ligne par ligne</h4>
+<table>
+  <thead>
+      <tr>
+          <th>Élément</th>
+          <th>Rôle</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>&quot;&quot;&quot;</code> (Text block)</td>
+          <td>Permet un texte <strong>multiligne</strong> propre (Java 15+).</td>
+      </tr>
+      <tr>
+          <td><code>%s</code></td>
+          <td>Placeholder pour une <strong>valeur chaîne</strong> (String ou objet).</td>
+      </tr>
+  </tbody>
+</table>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Aug 20, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="R-logo" 
+   style="display: flex; justify-content: center; align-items: center; text-decoration: none;" 
+   href="/420-111/index.html">
+
+    <img src="/420-111/images/logo.png" width="40" height="40" alt="logo" style="margin-right: 8px;">
+
+    <div style="display: flex; flex-direction: column; font-size: 130%; align-items: flex-start;">
+        <span>Introduction à</span>
+        <span>la programmation</span>
+    </div>
+</a>
+
+        </div>
+        <search><form action="/420-111/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/420-111/index.html"><a class="padding" href="/420-111/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="parent " data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Intro</a><ul id="R-subsections-6fffaf9b92bcc839991ff76663fb9bac" class="collapsible-menu">
+            <li class="" data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Java</a></li>
+            <li class="active " data-nav-id="/420-111/1-intro/affichage-console/index.html"><a class="padding" href="/420-111/1-intro/affichage-console/index.html">Affichage console</a></li>
+            <li class="" data-nav-id="/420-111/1-intro/regles/index.html"><a class="padding" href="/420-111/1-intro/regles/index.html">Règles/conventions</a></li>
+            <li class="" data-nav-id="/420-111/1-intro/commentaires/index.html"><a class="padding" href="/420-111/1-intro/commentaires/index.html">Commentaires</a></li></ul></li>
+            <li class="" data-nav-id="/420-111/2-vscode/index.html"><a class="padding" href="/420-111/2-vscode/index.html">VSCode</a></li>
+            <li class="" data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables &amp; Types</a><ul id="R-subsections-56652df65f37063b28a69d5d800b9039" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/4-string/index.html"><a class="padding" href="/420-111/4-string/index.html">String</a><ul id="R-subsections-782b65f21e652a1eafb534740db488ee" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/5-operateurs/arithmetique/index.html"><a class="padding" href="/420-111/5-operateurs/arithmetique/index.html">Opérateurs</a><ul id="R-subsections-cef453883c54c95d8fd8616f806d4cea" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/6-conversions-de-types/index.html"><a class="padding" href="/420-111/6-conversions-de-types/index.html">Conversions De Types</a></li>
+            <li class="" data-nav-id="/420-111/7-tableaux/index.html"><a class="padding" href="/420-111/7-tableaux/index.html">Tableaux</a><ul id="R-subsections-55c24a3b7117af4e14c631828fa164c4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Structures De Controles</a><ul id="R-subsections-9f8f049e95e0d117f4b5a03645c9071a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/9-debug/index.html"><a class="padding" href="/420-111/9-debug/index.html">Debug</a></li>
+            <li class="" data-nav-id="/420-111/10-fonctions/index.html"><a class="padding" href="/420-111/10-fonctions/index.html">Fonctions</a><ul id="R-subsections-e4181c72c636f10f24765f042a0f0763" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/11-scanner/index.html"><a class="padding" href="/420-111/11-scanner/index.html">Scanner</a><ul id="R-subsections-2e7a5e82e009aac91720d05751cc77c0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/12-fichier/lecture/index.html"><a class="padding" href="/420-111/12-fichier/lecture/index.html">Fichier</a><ul id="R-subsections-7d34dcc2710810bfed736603e11f989d" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/exercices/index.html"><a class="padding" href="/420-111/exercices/index.html">Exercices</a><ul id="R-subsections-393f73ec6223292328da5c03b7f3a881" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-learn" value="learn">Learn</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"></div>
+      </div>
+    </aside>
+    <script src="/420-111/js/clipboard/clipboard.min.js?1768412029" defer></script>
+    <script src="/420-111/js/perfect-scrollbar/perfect-scrollbar.min.js?1768412029" defer></script>
+    <script src="/420-111/js/theme.js?1768412029" defer></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conditionnelles :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/if-else/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Fri, 19 Sep 2025 11:20:56 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/if-else/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>If Else</title>
+      <link>http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/if-else/index.html</link>
+      <pubDate>Fri, 19 Sep 2025 11:13:13 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/if-else/index.html</guid>
+      <description>🧩 Les conditions if, else if et else en Java Les structures conditionnelles permettent de prendre des décisions dans le programme : on peut exécuter certains blocs de code uniquement si une condition est vraie.&#xA;C’est fondamental pour écrire des programmes intelligents, interactifs et dynamiques !&#xA;❓ La structure if La condition if permet de tester si l’expression qui est entre parenthèse est vraie (true). Si c’est le cas, le bloc de code associé est exécuté.</description>
+    </item>
+    <item>
+      <title>Ternaire</title>
+      <link>http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/ternaire/index.html</link>
+      <pubDate>Fri, 19 Sep 2025 11:20:56 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/ternaire/index.html</guid>
+      <description>❓ L’opérateur ternaire en Java L’opérateur ternaire est une forme abrégée du if...else, qui permet d’écrire des conditions simples en une seule ligne.&#xA;Il est souvent utilisé pour rendre le code plus concis, surtout lorsqu’on veut affecter une valeur selon une condition.&#xA;🧰 Syntaxe de base (condition) ? valeurSiVrai : valeurSiFaux; C’est comme dire : “Si la condition est vraie, retourne ceci ; sinon, retourne cela.”&#xA;📦 Exemple simple int âge = 20; String statut = (âge &gt;= 18) ? &#34;Majeur&#34; : &#34;Mineur&#34;; System.out.println(statut); // Affiche : Majeur ✳️ C’est équivalent à :</description>
+    </item>
+    <item>
+      <title>Switch</title>
+      <link>http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/switch/index.html</link>
+      <pubDate>Fri, 19 Sep 2025 11:20:49 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/8-structures-de-controles/conditionnelles/switch/index.html</guid>
+      <description>🎛️ Les instructions switch en Java L’instruction switch permet de tester la valeur d’une variable et d’exécuter différents blocs de code selon son contenu exact.&#xA;C’est une alternative plus claire aux chaînes de if...else if quand on compare une même variable à plusieurs valeurs possibles.&#xA;🧰 Syntaxe de base switch (variable) { case valeur1: // Code si variable == valeur1 break; case valeur2: // Code si variable == valeur2 break; default: // Code si aucune des valeurs ne correspond } 🧱 Éléments clés : Mot-clé Rôle case Spécifie une valeur à tester break Termine le switch, évite les “chutes” default (optionnel) Bloc exécuté par défaut 📦 Exemple simple int jour = 3; switch (jour) { case 1: System.out.println(&#34;Lundi&#34;); break; case 2: System.out.println(&#34;Mardi&#34;); break; case 3: System.out.println(&#34;Mercredi&#34;); break; default: System.out.println(&#34;Jour inconnu&#34;); } ➡️ Affichera : Mercredi</description>
+    </item>
+  </channel>
+</rss>

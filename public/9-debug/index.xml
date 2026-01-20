@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debug :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/9-debug/index.html</link>
+    <description>🐞 Utiliser le débogueur Java dans VSCode Le débogueur est un outil essentiel pour comprendre ce que fait ton programme, repérer des erreurs et analyser le comportement du code pas à pas.&#xA;Dans Visual Studio Code, tu peux facilement déboguer du Java avec l’extension adéquate.&#xA;🧰 Prérequis Avant de commencer :&#xA;✔️ Avoir Java installé (JDK 11+ recommandé) ✔️ Avoir VSCode installé ✔️ Avoir installé l’extension Java Extension Pack ou au minimum :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/9-debug/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

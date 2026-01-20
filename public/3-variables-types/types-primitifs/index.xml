@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Types Primitifs :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/3-variables-types/types-primitifs/index.html</link>
+    <description>En Java, les types de données sont divisés en deux grandes familles :&#xA;🧱 Les types primitifs (8 types) 🧩 Les types références (classes comme String, Scanner, etc.) Les types primitifs sont les briques de base de tout programme Java. Ils permettent de représenter les informations simples : nombres, caractères, booléens.&#xA;🎁 Pourquoi différents types de “boîtes” ? En Java (et dans la plupart des langages), il existe plusieurs types de variables — ou “boîtes” — pour deux raisons principales :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/3-variables-types/types-primitifs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

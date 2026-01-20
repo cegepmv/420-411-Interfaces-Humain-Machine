@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/420-111/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=420-111/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="En Java, les types de données sont divisés en deux grandes familles :
+🧱 Les types primitifs (8 types) 🧩 Les types références (classes comme String, Scanner, etc.) Les types primitifs sont les briques de base de tout programme Java. Ils permettent de représenter les informations simples : nombres, caractères, booléens.
+🎁 Pourquoi différents types de “boîtes” ? En Java (et dans la plupart des langages), il existe plusieurs types de variables — ou “boîtes” — pour deux raisons principales :">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Types Primitifs :: Introduction à la programmation">
+    <meta name="twitter:description" content="En Java, les types de données sont divisés en deux grandes familles :
+🧱 Les types primitifs (8 types) 🧩 Les types références (classes comme String, Scanner, etc.) Les types primitifs sont les briques de base de tout programme Java. Ils permettent de représenter les informations simples : nombres, caractères, booléens.
+🎁 Pourquoi différents types de “boîtes” ? En Java (et dans la plupart des langages), il existe plusieurs types de variables — ou “boîtes” — pour deux raisons principales :">
+    <meta property="og:url" content="http://localhost:1313/420-111/3-variables-types/types-primitifs/index.html">
+    <meta property="og:site_name" content="Introduction à la programmation">
+    <meta property="og:title" content="Types Primitifs :: Introduction à la programmation">
+    <meta property="og:description" content="En Java, les types de données sont divisés en deux grandes familles :
+🧱 Les types primitifs (8 types) 🧩 Les types références (classes comme String, Scanner, etc.) Les types primitifs sont les briques de base de tout programme Java. Ils permettent de représenter les informations simples : nombres, caractères, booléens.
+🎁 Pourquoi différents types de “boîtes” ? En Java (et dans la plupart des langages), il existe plusieurs types de variables — ou “boîtes” — pour deux raisons principales :">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Types Primitifs :: Introduction à la programmation">
+    <meta itemprop="description" content="En Java, les types de données sont divisés en deux grandes familles :
+🧱 Les types primitifs (8 types) 🧩 Les types références (classes comme String, Scanner, etc.) Les types primitifs sont les briques de base de tout programme Java. Ils permettent de représenter les informations simples : nombres, caractères, booléens.
+🎁 Pourquoi différents types de “boîtes” ? En Java (et dans la plupart des langages), il existe plusieurs types de variables — ou “boîtes” — pour deux raisons principales :">
+    <meta itemprop="datePublished" content="2025-08-24T16:52:12-04:00">
+    <meta itemprop="dateModified" content="2025-08-24T16:52:12-04:00">
+    <meta itemprop="wordCount" content="1152">
+    <title>Types Primitifs :: Introduction à la programmation</title>
+    <link href="/420-111/3-variables-types/types-primitifs/index.xml" rel="alternate" type="application/rss+xml" title="Types Primitifs :: Introduction à la programmation">
+    <link href="/420-111/images/favicon.png?1768412029" rel="icon" type="image/png">
+    <link href="/420-111/css/auto-complete/auto-complete.min.css?1768412029" rel="stylesheet">
+    <script src="/420-111/js/auto-complete/auto-complete.min.js?1768412029" defer></script>
+    <script src="/420-111/js/search-lunr.js?1768412029" defer></script>
+    <script src="/420-111/js/search.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/420-111/searchindex.en.js?1768412029";
+    </script>
+    <script src="/420-111/js/lunr/lunr.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.stemmer.support.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.multi.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.fr.min.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet"></noscript>
+    <link href="/420-111/css/perfect-scrollbar/perfect-scrollbar.min.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/theme.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/format-html.css?1768412029" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/3-variables-types\/types-primitifs\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/420-111';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'zen-light', 'zen-dark', 'neon', 'learn' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+:root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 16rem;
+}
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/420-111/3-variables-types/types-primitifs/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#-pourquoi-différents-types-de-boîtes-">🎁 Pourquoi différents types de &ldquo;boîtes&rdquo; ?</a>
+      <ul>
+        <li><a href="#-1-lencodage-est-différent-selon-le-contenu">🧬 1. L&rsquo;encodage est différent selon le contenu</a></li>
+        <li><a href="#-2-la-taille-de-la-boîte-varie-selon-les-besoins">📦 2. La taille de la boîte varie selon les besoins</a></li>
+        <li><a href="#-un-exemple-simple">💡 Un exemple simple</a></li>
+      </ul>
+    </li>
+    <li><a href="#-1-les-nombres-entiers">🧮 1. Les nombres entiers</a>
+      <ul>
+        <li><a href="#-exemples-de-codage-positifs-">➕ Exemples de codage (positifs) :</a></li>
+      </ul>
+    </li>
+    <li><a href="#-2-les-nombres-à-virgule-flottants">🌊 2. Les nombres à virgule (flottants)</a></li>
+    <li><a href="#-3-le-caractère">🔤 3. Le caractère</a></li>
+    <li><a href="#-4-le-booléen">🔘 4. Le booléen</a></li>
+    <li><a href="#-récap-visuel">✨ Récap visuel</a></li>
+    <li><a href="#-exercice-1">🎯 Exercice 1</a></li>
+    <li><a href="#-exercice-2">🎯 Exercice 2</a></li>
+    <li><a href="#-exercice-3">🎯 Exercice 3</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/index.html"><span itemprop="name">Introduction à la programmation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/3-variables-types/variables/index.html"><span itemprop="name">Variables &amp; Types</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Types Primitifs</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/3-variables-types/variables/locale-instance-classe/index.html" title="Locale/Instance/Classe (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/4-string/index.html" title="String (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 3-variables-types" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="types-primitifs">Types Primitifs</h1>
+
+<hr>
+<p>En Java, les types de données sont divisés en deux grandes familles :</p>
+<ul>
+<li>🧱 <strong>Les types primitifs</strong> (8 types)</li>
+<li>🧩 <strong>Les types références</strong> (classes comme <code>String</code>, <code>Scanner</code>, etc.)</li>
+</ul>
+<p>Les types <strong>primitifs</strong> sont les <strong>briques de base</strong> de tout programme Java. Ils permettent de représenter les informations simples : <strong>nombres, caractères, booléens</strong>.</p>
+<p><a href="#R-image-bda020f10a4bc57e94ef7a75d0cf978e" class="lightbox-link"><img alt="Types primitifs" class="lazy lightbox figure-image" loading="lazy" src="/420-111/images/variables/dimType.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bda020f10a4bc57e94ef7a75d0cf978e"><img alt="Types primitifs" class="lazy lightbox lightbox-image" loading="lazy" src="/420-111/images/variables/dimType.png"></a></p>
+<hr>
+<h2 id="-pourquoi-différents-types-de-boîtes-">🎁 Pourquoi différents types de &ldquo;boîtes&rdquo; ?</h2>
+<p>En Java (et dans la plupart des langages), il existe plusieurs types de variables — ou &ldquo;boîtes&rdquo; — pour <strong>deux raisons principales</strong> :</p>
+<h3 id="-1-lencodage-est-différent-selon-le-contenu">🧬 1. L&rsquo;encodage est différent selon le contenu</h3>
+<p>Un <strong>nombre entier</strong> (<code>int</code>, <code>long</code>, etc.) et un <strong>nombre à virgule</strong> (<code>float</code>, <code>double</code>) sont encodés <strong>différemment en mémoire</strong>.</p>
+<ul>
+<li>Par exemple, un <code>int</code> <strong>ne peut pas stocker de virgule</strong>, car son encodage ne prévoit que des nombres entiers.</li>
+<li>Un <code>float</code> ou un <code>double</code>, eux, utilisent un encodage spécial (norme IEEE 754) pour <strong>stocker les parties entière et décimale</strong>.</li>
+</ul>
+<p>👉 Tu ne peux donc pas mettre un <strong>nombre à virgule</strong> dans une boîte faite pour des <strong>entiers</strong> — ça reviendrait à mettre de la soupe dans une boîte avec des trous : ça ne marche pas 😄.</p>
+<hr>
+<h3 id="-2-la-taille-de-la-boîte-varie-selon-les-besoins">📦 2. La taille de la boîte varie selon les besoins</h3>
+<p>Chaque type occupe une <strong>taille différente en mémoire</strong> (1, 2, 4 ou 8 octets). C’est important car :</p>
+<ul>
+<li>Plus la boîte est <strong>grosse</strong>, plus elle prend de place 🏋️‍♂️</li>
+<li>Plus elle est <strong>petite</strong>, plus tu peux en stocker dans la mémoire 🪶</li>
+</ul>
+<hr>
+<h3 id="-un-exemple-simple">💡 Un exemple simple</h3>
+<p>Imaginons que tu disposes de <strong>128 bits de mémoire</strong>.</p>
+<p>Voici quelques façons de les remplir :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Combinaison</th>
+          <th>Total utilisé</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>2 <code>long</code> (2 × 64 bits)</td>
+          <td>128 bits</td>
+      </tr>
+      <tr>
+          <td>1 <code>long</code> (64) + 2 <code>int</code> (2 × 32)</td>
+          <td>128 bits</td>
+      </tr>
+      <tr>
+          <td>3 <code>int</code> (3 × 32) + 1 <code>short</code> (16) + 16 <code>boolean</code> (16 × 1)</td>
+          <td>128 bits</td>
+      </tr>
+  </tbody>
+</table>
+<p>Tu choisis donc le type selon :</p>
+<ul>
+<li>🧠 Ce que tu veux <strong>représenter</strong></li>
+<li>💾 Et <strong>l’espace mémoire</strong> que tu veux ou peux utiliser</li>
+</ul>
+<hr>
+<ol>
+<li>
+<p><strong>Nombres entiers</strong> :</p>
+<ul>
+<li><code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Nombres à virgule flottante</strong> (Des approximations des Réels ou chiffres à virgules) :</p>
+<ul>
+<li><code>float</code>, <code>double</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Caractères</strong> :</p>
+<ul>
+<li><code>char</code> (représente un caractère Unicode sur 16 bits)</li>
+</ul>
+</li>
+<li>
+<p><strong>Booléens</strong> :</p>
+<ul>
+<li><code>boolean</code> (valeurs <code>true</code> ou <code>false</code>)</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-1-les-nombres-entiers">🧮 1. Les nombres entiers</h2>
+<p>Ils servent à stocker des <strong>valeurs sans virgule</strong>, positives ou négatives. Chaque type utilise un certain nombre d’octets et a une plage de valeurs définie :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Taille (bits / octets)</th>
+          <th>Valeur minimale</th>
+          <th>Valeur maximale</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>byte</code></td>
+          <td>8 bits (1 octet)</td>
+          <td>-128</td>
+          <td>127</td>
+          <td><code>byte b = 10;</code></td>
+      </tr>
+      <tr>
+          <td><code>short</code></td>
+          <td>16 bits (2 octets)</td>
+          <td>-32 768</td>
+          <td>32 767</td>
+          <td><code>short s = 1000;</code></td>
+      </tr>
+      <tr>
+          <td><code>int</code></td>
+          <td>32 bits (4 octets)</td>
+          <td>-2 147 483 648</td>
+          <td>2 147 483 647</td>
+          <td><code>int i = 42;</code></td>
+      </tr>
+      <tr>
+          <td><code>long</code></td>
+          <td>64 bits (8 octets)</td>
+          <td>-9 223 372 036 854 775 808</td>
+          <td>9 223 372 036 854 775 807</td>
+          <td><code>long l = 100L;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>🧠 Il existe des <strong>constantes</strong> utiles comme <code>Integer.MAX_VALUE</code> ou <code>Long.MIN_VALUE</code> pour obtenir ces limites sans les retenir.</p>
+<h3 id="-exemples-de-codage-positifs-">➕ Exemples de codage (positifs) :</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Décimal</th>
+          <th>Binaire (16 bits)</th>
+          <th>Hexadécimal</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>00000000 00000001</td>
+          <td>0001</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>00000000 00000010</td>
+          <td>0002</td>
+      </tr>
+      <tr>
+          <td>127</td>
+          <td>00000000 01111111</td>
+          <td>007F</td>
+      </tr>
+      <tr>
+          <td>255</td>
+          <td>00000000 11111111</td>
+          <td>00FF</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-2-les-nombres-à-virgule-flottants">🌊 2. Les nombres à virgule (flottants)</h2>
+<p>Ils permettent de représenter des <strong>valeurs décimales</strong> (≈ des réels), avec une approximation en base 2.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Taille (bits / octets)</th>
+          <th>Précision</th>
+          <th>Valeur min / max</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>float</code></td>
+          <td>32 bits (4 octets)</td>
+          <td>~7 chiffres significatifs</td>
+          <td>±1.4×10⁻⁴⁵ → ±3.4×10³⁸</td>
+          <td><code>float f = 3.14f;</code></td>
+      </tr>
+      <tr>
+          <td><code>double</code></td>
+          <td>64 bits (8 octets)</td>
+          <td>~15-16 chiffres significatifs</td>
+          <td>±4.9×10⁻³²⁴ → ±1.8×10³⁰⁸</td>
+          <td><code>double d = 2.718;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>💡 En Java, <strong>les littéraux décimaux sont des <code>double</code> par défaut</strong>. Pour un <code>float</code>, on ajoute un <strong><code>f</code></strong> à la fin.</p>
+<hr>
+<h2 id="-3-le-caractère">🔤 3. Le caractère</h2>
+<p>Le type <code>char</code> représente <strong>un seul caractère Unicode</strong> (lettre, symbole, emoji, etc.) :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Taille (bits)</th>
+          <th>Plage Unicode</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>char</code></td>
+          <td>16 bits</td>
+          <td>0 à 65 535 (U+0000 à U+FFFF)</td>
+          <td><code>char c = 'A';</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>🎨 Les caractères sont entourés de <strong>quotes simples</strong> (<code>'A'</code>) et peuvent contenir aussi des caractères spéciaux ou emojis :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">char</span><span class="w"> </span><span class="n">emoji</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;💡&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">char</span><span class="w"> </span><span class="n">lettre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;f&#39;</span><span class="p">;</span></span></span></code></pre></div>
+<hr>
+<h2 id="-4-le-booléen">🔘 4. Le booléen</h2>
+<p>Un <code>boolean</code> est un type logique qui représente <strong>vrai ou faux</strong>, souvent utilisé dans les conditions :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>Valeurs possibles</th>
+          <th>Exemple</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>boolean</code></td>
+          <td><code>true</code> ou <code>false</code></td>
+          <td><code>boolean actif = false;</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>💬 Très utile pour représenter des états binaires : activé/désactivé, visible/caché, connecté/non connecté&hellip;</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">boolean</span><span class="w"> </span><span class="n">estPret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">boolean</span><span class="w"> </span><span class="n">estFini</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span></span></span></code></pre></div>
+<hr>
+<h2 id="-récap-visuel">✨ Récap visuel</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Catégorie</th>
+          <th>Types</th>
+          <th>Rôle principal</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>🧮 Entiers</td>
+          <td><code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code></td>
+          <td>Stocker des nombres sans virgule</td>
+      </tr>
+      <tr>
+          <td>🌊 Flottants</td>
+          <td><code>float</code>, <code>double</code></td>
+          <td>Représenter des valeurs décimales</td>
+      </tr>
+      <tr>
+          <td>🔤 Caractères</td>
+          <td><code>char</code></td>
+          <td>Représenter un caractère Unicode</td>
+      </tr>
+      <tr>
+          <td>🔘 Booléens</td>
+          <td><code>boolean</code></td>
+          <td>Représenter une valeur vraie ou fausse</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-exercice-1">🎯 Exercice 1</h2>
+<p>🔧 <strong>Consigne</strong> :</p>
+<p>Créer et afficher les variables avec le meilleur type possible</p>
+<ol>
+<li>
+<p>Variable contenant l&rsquo;âge d&rsquo;une personne (moins de 123)</p>
+</li>
+<li>
+<p>Population du cégep Marie-Victorin (Environ 7 500)</p>
+</li>
+<li>
+<p>Variable comptant la population au Qc (Environ 9 millions)</p>
+</li>
+<li>
+<p>Variable pour calculer le revenu d&rsquo;un individu normal</p>
+</li>
+<li>
+<p>Nombre de gouttes d&rsquo;eau dans une piscine (environ 960 000 000 gouttes).</p>
+</li>
+<li>
+<p>Une variable qui se rappelle si le prof était bon ou pas (true?)</p>
+</li>
+<li>
+<p>Note en lettre qu&rsquo;un étudiant obtient au cours (A)</p>
+</li>
+</ol>
+<p>📝 <strong>Exemple attendu à l&rsquo;écran</strong>  :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>32
+7512
+8905430
+45000.25
+960540388
+true
+A</code></pre></div>
+<details>
+<summary>Réponse</summary>
+<ol>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">byte</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">32</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">short</span><span class="w"> </span><span class="n">populationMV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">7512</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">populationQC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">8_905_430</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">float</span><span class="w"> </span><span class="n">revenu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">45000</span><span class="p">.</span><span class="na">25f</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">nbGoutteEau</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">960_540_388</span><span class="w"> </span><span class="o">//</span><span class="n">Un</span><span class="w"> </span><span class="n">argument</span><span class="w"> </span><span class="n">pourrait</span><span class="w"> </span><span class="n">être</span><span class="w"> </span><span class="n">fait</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">utiliser</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="n">suggérant</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">piscine</span><span class="w"> </span><span class="n">pourrait</span><span class="w"> </span><span class="n">possiblement</span><span class="w"> </span><span class="n">être</span><span class="w"> </span><span class="n">beaucoup</span><span class="w"> </span><span class="n">plus</span><span class="w"> </span><span class="n">grande</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">pourrait</span><span class="w"> </span><span class="n">être</span><span class="w"> </span><span class="n">plus</span><span class="w"> </span><span class="n">sécuritaire</span><span class="p">.</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">boolean</span><span class="w"> </span><span class="n">leProfEstBon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">char</span><span class="w"> </span><span class="n">noteEleve</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+</ol>
+</details>
+<hr>
+<h2 id="-exercice-2">🎯 Exercice 2</h2>
+<p>🔧 <strong>Consigne</strong> :</p>
+<p>Créer et afficher les variables avec le <strong>meilleur type possible</strong></p>
+<ol>
+<li>
+<p>Âge d&rsquo;un chat domestique (environ 8 ans)</p>
+</li>
+<li>
+<p>Nombre d&rsquo;étudiants dans une petite école secondaire (environ 420)</p>
+</li>
+<li>
+<p>Nombre d’habitants à Montréal (environ 1.7 million)</p>
+</li>
+<li>
+<p>Salaire annuel d’un développeur junior (~52 000.75 $)</p>
+</li>
+<li>
+<p>Nombre de grains de sable dans un seau (~25 000 000)</p>
+</li>
+<li>
+<p>Une variable indiquant si une lumière est allumée (<code>false</code>)</p>
+</li>
+<li>
+<p>La lettre de la section d’un cours (par exemple <code>B</code>)</p>
+</li>
+</ol>
+<p>📝 <strong>Exemple attendu à l&rsquo;écran</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>8
+420
+1700000
+52000.75
+25000000
+false
+B</code></pre></div>
+<details>
+<summary>Réponse</summary>
+<ol>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">byte</span><span class="w"> </span><span class="n">ageChat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">8</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">short</span><span class="w"> </span><span class="n">nbElevesEcole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">420</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">populationMontreal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1_700_000</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">float</span><span class="w"> </span><span class="n">salaireAnnuel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">52000</span><span class="p">.</span><span class="na">75f</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">nbGrainsSable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">25_000_000</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">boolean</span><span class="w"> </span><span class="n">lumiereAllumee</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">char</span><span class="w"> </span><span class="n">sectionCours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;B&#39;</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+</ol>
+</details>
+<hr>
+<h2 id="-exercice-3">🎯 Exercice 3</h2>
+<p>🔧 <strong>Consigne</strong> :</p>
+<p>Créer et afficher les variables avec le <strong>meilleur type primitif possible</strong>, dans l’ordre ci-dessous :</p>
+<ol>
+<li>Une lettre qui représente une réponse à un quiz (par exemple <code>C</code>)</li>
+<li>Est-ce que l’alarme est activée (<code>true</code>) ?</li>
+<li>Le nombre d&rsquo;habitants dans un petit village (environ 1 200)</li>
+<li>Âge d&rsquo;un enfant (environ 5 ans)</li>
+<li>Le revenu annuel d’un dentiste (~98 500.95 $)</li>
+<li>Le nombre d’étoiles visibles à l’œil nu (~6 000)</li>
+<li>Estimation du nombre de cellules dans un corps humain (environ 37 000 000 000 000)</li>
+</ol>
+<p>📝 <strong>Exemple attendu à l&rsquo;écran</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>C
+true
+1200
+5
+98500.95
+6000
+37000000000000</code></pre></div>
+<details>
+<summary>Réponse</summary>
+<ol>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">char</span><span class="w"> </span><span class="n">reponseQuiz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;C&#39;</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">boolean</span><span class="w"> </span><span class="n">alarmeActivee</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">short</span><span class="w"> </span><span class="n">populationVillage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">1200</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">byte</span><span class="w"> </span><span class="n">ageEnfant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">5</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">float</span><span class="w"> </span><span class="n">revenuDentiste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">98500</span><span class="p">.</span><span class="na">95f</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">short</span><span class="w"> </span><span class="n">nbEtoilesVisibles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">6000</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+<li>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">long</span><span class="w"> </span><span class="n">nbCellulesHumain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">37_000_000_000_000L</span><span class="p">;</span></span></span></code></pre></div>
+</li>
+</ol>
+</details>
+<hr>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Aug 24, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="R-logo" 
+   style="display: flex; justify-content: center; align-items: center; text-decoration: none;" 
+   href="/420-111/index.html">
+
+    <img src="/420-111/images/logo.png" width="40" height="40" alt="logo" style="margin-right: 8px;">
+
+    <div style="display: flex; flex-direction: column; font-size: 130%; align-items: flex-start;">
+        <span>Introduction à</span>
+        <span>la programmation</span>
+    </div>
+</a>
+
+        </div>
+        <search><form action="/420-111/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/420-111/index.html"><a class="padding" href="/420-111/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Intro</a><ul id="R-subsections-6fffaf9b92bcc839991ff76663fb9bac" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/2-vscode/index.html"><a class="padding" href="/420-111/2-vscode/index.html">VSCode</a></li>
+            <li class="parent " data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables &amp; Types</a><ul id="R-subsections-56652df65f37063b28a69d5d800b9039" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables</a><ul id="R-subsections-8dcad45112353909a79ce5ff090c21d2" class="collapsible-menu"></ul></li>
+            <li class="active " data-nav-id="/420-111/3-variables-types/types-primitifs/index.html"><a class="padding" href="/420-111/3-variables-types/types-primitifs/index.html">Types Primitifs</a></li></ul></li>
+            <li class="" data-nav-id="/420-111/4-string/index.html"><a class="padding" href="/420-111/4-string/index.html">String</a><ul id="R-subsections-782b65f21e652a1eafb534740db488ee" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/5-operateurs/arithmetique/index.html"><a class="padding" href="/420-111/5-operateurs/arithmetique/index.html">Opérateurs</a><ul id="R-subsections-cef453883c54c95d8fd8616f806d4cea" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/6-conversions-de-types/index.html"><a class="padding" href="/420-111/6-conversions-de-types/index.html">Conversions De Types</a></li>
+            <li class="" data-nav-id="/420-111/7-tableaux/index.html"><a class="padding" href="/420-111/7-tableaux/index.html">Tableaux</a><ul id="R-subsections-55c24a3b7117af4e14c631828fa164c4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Structures De Controles</a><ul id="R-subsections-9f8f049e95e0d117f4b5a03645c9071a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/9-debug/index.html"><a class="padding" href="/420-111/9-debug/index.html">Debug</a></li>
+            <li class="" data-nav-id="/420-111/10-fonctions/index.html"><a class="padding" href="/420-111/10-fonctions/index.html">Fonctions</a><ul id="R-subsections-e4181c72c636f10f24765f042a0f0763" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/11-scanner/index.html"><a class="padding" href="/420-111/11-scanner/index.html">Scanner</a><ul id="R-subsections-2e7a5e82e009aac91720d05751cc77c0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/12-fichier/lecture/index.html"><a class="padding" href="/420-111/12-fichier/lecture/index.html">Fichier</a><ul id="R-subsections-7d34dcc2710810bfed736603e11f989d" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/exercices/index.html"><a class="padding" href="/420-111/exercices/index.html">Exercices</a><ul id="R-subsections-393f73ec6223292328da5c03b7f3a881" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-learn" value="learn">Learn</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"></div>
+      </div>
+    </aside>
+    <script src="/420-111/js/clipboard/clipboard.min.js?1768412029" defer></script>
+    <script src="/420-111/js/perfect-scrollbar/perfect-scrollbar.min.js?1768412029" defer></script>
+    <script src="/420-111/js/theme.js?1768412029" defer></script>
+  </body>
+</html>

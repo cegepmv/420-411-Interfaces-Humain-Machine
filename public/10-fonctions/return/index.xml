@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>return :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/10-fonctions/return/index.html</link>
+    <description>🔙 Le mot-clé return en Java Le mot-clé return permet à une méthode de renvoyer une valeur à l’endroit où elle a été appelée.&#xA;Il est essentiel dans les fonctions qui calculent un résultat ou transmettent une information.&#xA;🧱 Syntaxe de base typeRetour nomDeLaMéthode(...) { // instructions return valeur; } 💡 Le type de la valeur renvoyée doit correspondre à celui indiqué dans la déclaration de la méthode.</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/10-fonctions/return/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

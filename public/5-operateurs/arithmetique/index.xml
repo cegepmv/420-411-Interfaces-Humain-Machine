@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> 🧮 Les opérateurs arithmétiques en Java :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/5-operateurs/arithmetique/index.html</link>
+    <description>Les opérateurs arithmétiques permettent d’effectuer des calculs mathématiques de base sur des valeurs numériques (int, double, etc.).&#xA;Ils sont très souvent utilisés pour manipuler les nombres entiers ou à virgule, que ce soit pour additionner des scores, calculer des moyennes, ajuster des quantités, etc.&#xA;✋ Les opérateurs de base Voici les 5 opérateurs arithmétiques principaux :&#xA;Opérateur Nom Exemple Résultat (si a = 10, b = 3) + Addition a + b 13 - Soustraction a - b 7 * Multiplication a * b 30 / Division a / b 3 (entier !) % Modulo a % b 1 (reste de la division) 💡 En Java :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Wed, 03 Sep 2025 15:01:45 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/5-operateurs/arithmetique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⛏️ Le modulo `%` : Le reste utile</title>
+      <link>http://localhost:1313/420-111/5-operateurs/arithmetique/modulo/index.html</link>
+      <pubDate>Wed, 03 Sep 2025 15:01:45 -0400</pubDate>
+      <guid>http://localhost:1313/420-111/5-operateurs/arithmetique/modulo/index.html</guid>
+      <description>L’opérateur modulo (%) calcule le reste d’une division entière.&#xA;int reste = 10 % 3; // Résultat : 1 Pourquoi ? 👉 Parce que 10 ÷ 3 = 3, reste 1. Le modulo, c’est donc ce qui reste après la division entière.&#xA;📘 Comment il faut le lire int var = a % b; Cela renvoie le reste de la division de a par b.&#xA;🔍 Le modulo côté mathématique 📐 1. Définition formelle En mathématiques, pour deux entiers a (le dividende) et b ≠ 0 (le diviseur), on peut écrire la division euclidienne ainsi :</description>
+    </item>
+  </channel>
+</rss>

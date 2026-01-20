@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🧭 Ordre de priorité des opérations en Java :: Introduction à la programmation</title>
+    <link>http://localhost:1313/420-111/5-operateurs/ordre-priorite/index.html</link>
+    <description>En Java, comme en mathématiques, certaines opérations sont effectuées avant d’autres. C’est ce qu’on appelle la priorité des opérateurs.&#xA;🪜 Diagramme de priorité (du plus fort au plus faible) ╔════════════════════════════════════╗ ║ () ║ ➤ Parenthèses : forcent la priorité ╠════════════════════════════════════╣ ║ ++ -- ! ║ ➤ Incrément, décrément, NON logique ╠════════════════════════════════════╣ ║ * / % ║ ➤ Multiplication, division, modulo ╠════════════════════════════════════╣ ║ + - ║ ➤ Addition, soustraction ╠════════════════════════════════════╣ ║ &lt; &lt;= &gt; &gt;= ║ ➤ Comparaisons ╠════════════════════════════════════╣ ║ == != ║ ➤ Égalité / inégalité ╠════════════════════════════════════╣ ║ &amp;&amp; ║ ➤ ET logique (et court-circuité) ╠════════════════════════════════════╣ ║ || ║ ➤ OU logique (et court-circuité) ╠════════════════════════════════════╣ ║ = += -= *= /= %= ║ ➤ Affectations simples et composées ╚════════════════════════════════════╝ 🎓 Exemple d’analyse : sans parenthèses boolean resultat = 4 + 2 * 3 &gt; 10 || !false; 🔍 Étapes d’évaluation :</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/420-111/5-operateurs/ordre-priorite/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

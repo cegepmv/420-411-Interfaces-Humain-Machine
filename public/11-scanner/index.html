@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/420-111/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=420-111/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.2">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="🍥 Lien vers la classe Scanner de l’API Java
+📥 Lire des données avec Scanner en Java La classe Scanner permet de lire des données saisies par l’utilisateur dans la console (ou d’autres sources).
+Très utile pour créer des programmes interactifs, qui posent des questions à l’utilisateur !
+📦 Importer Scanner Avant d’utiliser Scanner, tu dois l’importer :
+import java.util.Scanner; 🧱 Créer un objet Scanner Scanner sc = new Scanner(System.in); ➡️ System.in signifie : lire depuis la console (clavier)">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Scanner :: Introduction à la programmation">
+    <meta name="twitter:description" content="🍥 Lien vers la classe Scanner de l’API Java
+📥 Lire des données avec Scanner en Java La classe Scanner permet de lire des données saisies par l’utilisateur dans la console (ou d’autres sources).
+Très utile pour créer des programmes interactifs, qui posent des questions à l’utilisateur !
+📦 Importer Scanner Avant d’utiliser Scanner, tu dois l’importer :
+import java.util.Scanner; 🧱 Créer un objet Scanner Scanner sc = new Scanner(System.in); ➡️ System.in signifie : lire depuis la console (clavier)">
+    <meta property="og:url" content="http://localhost:1313/420-111/11-scanner/index.html">
+    <meta property="og:site_name" content="Introduction à la programmation">
+    <meta property="og:title" content="Scanner :: Introduction à la programmation">
+    <meta property="og:description" content="🍥 Lien vers la classe Scanner de l’API Java
+📥 Lire des données avec Scanner en Java La classe Scanner permet de lire des données saisies par l’utilisateur dans la console (ou d’autres sources).
+Très utile pour créer des programmes interactifs, qui posent des questions à l’utilisateur !
+📦 Importer Scanner Avant d’utiliser Scanner, tu dois l’importer :
+import java.util.Scanner; 🧱 Créer un objet Scanner Scanner sc = new Scanner(System.in); ➡️ System.in signifie : lire depuis la console (clavier)">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Scanner :: Introduction à la programmation">
+    <meta itemprop="description" content="🍥 Lien vers la classe Scanner de l’API Java
+📥 Lire des données avec Scanner en Java La classe Scanner permet de lire des données saisies par l’utilisateur dans la console (ou d’autres sources).
+Très utile pour créer des programmes interactifs, qui posent des questions à l’utilisateur !
+📦 Importer Scanner Avant d’utiliser Scanner, tu dois l’importer :
+import java.util.Scanner; 🧱 Créer un objet Scanner Scanner sc = new Scanner(System.in); ➡️ System.in signifie : lire depuis la console (clavier)">
+    <meta itemprop="datePublished" content="2025-09-19T13:17:31-04:00">
+    <meta itemprop="dateModified" content="2025-09-19T13:17:31-04:00">
+    <meta itemprop="wordCount" content="422">
+    <title>Scanner :: Introduction à la programmation</title>
+    <link href="/420-111/11-scanner/index.xml" rel="alternate" type="application/rss+xml" title="Scanner :: Introduction à la programmation">
+    <link href="/420-111/images/favicon.png?1768412029" rel="icon" type="image/png">
+    <link href="/420-111/css/auto-complete/auto-complete.min.css?1768412029" rel="stylesheet">
+    <script src="/420-111/js/auto-complete/auto-complete.min.js?1768412029" defer></script>
+    <script src="/420-111/js/search-lunr.js?1768412029" defer></script>
+    <script src="/420-111/js/search.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/420-111/searchindex.en.js?1768412029";
+    </script>
+    <script src="/420-111/js/lunr/lunr.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.stemmer.support.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.multi.min.js?1768412029" defer></script>
+    <script src="/420-111/js/lunr/lunr.fr.min.js?1768412029" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/420-111/fonts/fontawesome/css/fontawesome-all.min.css?1768412029" rel="stylesheet"></noscript>
+    <link href="/420-111/css/perfect-scrollbar/perfect-scrollbar.min.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/theme.css?1768412029" rel="stylesheet">
+    <link href="/420-111/css/format-html.css?1768412029" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/11-scanner\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313\/420-111';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'relearn-auto', 'zen-light', 'zen-dark', 'neon', 'learn' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+:root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 16rem;
+}
+</style>
+  </head>
+  <body class="mobile-support html" data-url="/420-111/11-scanner/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#-importer-scanner">📦 Importer <code>Scanner</code></a></li>
+    <li><a href="#-créer-un-objet-scanner">🧱 Créer un objet <code>Scanner</code></a></li>
+    <li><a href="#-lire-différents-types-de-données">🔍 Lire différents types de données</a></li>
+    <li><a href="#-exemple-simple">🧪 Exemple simple</a></li>
+    <li><a href="#-attention--mélange-nextline--nextint">⚠️ Attention : mélange <code>nextLine()</code> / <code>nextInt()</code></a></li>
+    <li><a href="#-fermer-le-scanner">🧼 Fermer le scanner</a></li>
+    <li><a href="#-à-retenir">🧠 À retenir</a>
+      <ul>
+        <li><a href="#-exercice-1--mot-secret">🎯 Exercice 1 : Mot secret</a></li>
+        <li><a href="#-exercice-2-corrigé--multiplication-surprise">🧮 <strong>Exercice 2 (corrigé) : Multiplication surprise</strong></a></li>
+        <li><a href="#-exercice-3--confirmation-de-participation">✅ Exercice 3 : Confirmation de participation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/420-111/index.html"><span itemprop="name">Introduction à la programmation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Scanner</span><meta itemprop="position" content="2"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/10-fonctions/return/index.html" title="return (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/420-111/11-scanner/hasnext/index.html" title="Gestion des Entrées (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 11-scanner" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="scanner">Scanner</h1>
+
+<p>🍥 <a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Scanner.html" rel="external" target="_blank">Lien vers la classe Scanner de l&rsquo;API Java</a></p>
+<hr>
+<h1 id="-lire-des-données-avec-scanner-en-java">📥 Lire des données avec <code>Scanner</code> en Java</h1>
+<p>La classe <strong><code>Scanner</code></strong> permet de <strong>lire des données</strong> saisies par l’utilisateur dans la <strong>console</strong> (ou d’autres sources).</p>
+<p>Très utile pour créer des programmes <strong>interactifs</strong>, qui <strong>posent des questions</strong> à l’utilisateur !</p>
+<hr>
+<h2 id="-importer-scanner">📦 Importer <code>Scanner</code></h2>
+<p>Avant d’utiliser <code>Scanner</code>, tu dois l’<strong>importer</strong> :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span></span></span></code></pre></div>
+<hr>
+<h2 id="-créer-un-objet-scanner">🧱 Créer un objet <code>Scanner</code></h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span></span></span></code></pre></div>
+<p>➡️ <code>System.in</code> signifie : lire depuis la <strong>console (clavier)</strong></p>
+<hr>
+<h2 id="-lire-différents-types-de-données">🔍 Lire différents types de données</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Méthode</th>
+          <th>Lit…</th>
+          <th>Exemple de saisie</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>nextLine()</code></td>
+          <td>une <strong>ligne</strong> complète (String)</td>
+          <td><code>Bonjour le monde</code></td>
+      </tr>
+      <tr>
+          <td><code>next()</code></td>
+          <td>un <strong>mot</strong> (jusqu’au 1er espace)</td>
+          <td><code>Bonjour</code></td>
+      </tr>
+      <tr>
+          <td><code>nextInt()</code></td>
+          <td>un <strong>entier</strong> (<code>int</code>)</td>
+          <td><code>42</code></td>
+      </tr>
+      <tr>
+          <td><code>nextDouble()</code></td>
+          <td>un <strong>décimal</strong> (<code>double</code>)</td>
+          <td><code>3.14</code></td>
+      </tr>
+      <tr>
+          <td><code>nextBoolean()</code></td>
+          <td>un <strong>booléen</strong> (<code>true/false</code>)</td>
+          <td><code>true</code></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-exemple-simple">🧪 Exemple simple</h2>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Scanner</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Exemple</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Scanner</span><span class="w"> </span><span class="n">sc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;Quel est ton nom ? &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&#34;Quel âge as-tu ? &#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&#34;Bonjour &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nom</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34;, tu as &#34;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; ans !&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span></span></span></code></pre></div>
+<hr>
+<h2 id="-attention--mélange-nextline--nextint">⚠️ Attention : mélange <code>nextLine()</code> / <code>nextInt()</code></h2>
+<p>💥 Si tu utilises <code>nextInt()</code> <strong>puis</strong> <code>nextLine()</code>, il peut y avoir un <strong>bug de saut de ligne</strong> !</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">sc</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="w"> </span><span class="c1">// vide le saut de ligne restant</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">String</span><span class="w"> </span><span class="n">nom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sc</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">fonctionne</span><span class="w"> </span><span class="n">maintenant</span></span></span></code></pre></div>
+<hr>
+<h2 id="-fermer-le-scanner">🧼 Fermer le scanner</h2>
+<p>Une fois terminé, <strong>ferme le scanner</strong> pour libérer les ressources :</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span></span></span></code></pre></div>
+<hr>
+<h2 id="-à-retenir">🧠 À retenir</h2>
+<ul>
+<li><code>Scanner</code> permet de <strong>lire des entrées clavier</strong></li>
+<li>Il faut <strong>importer</strong> <code>java.util.Scanner</code></li>
+<li>Utilise des méthodes comme <code>nextInt()</code>, <code>nextLine()</code>, etc.</li>
+<li>⚠️ Fais attention aux <strong>sauts de ligne</strong> après <code>nextInt()</code></li>
+<li>N’oublie pas de <strong>fermer</strong> ton scanner avec <code>close()</code></li>
+</ul>
+<hr>
+<h3 id="-exercice-1--mot-secret">🎯 Exercice 1 : Mot secret</h3>
+<p><strong>Objectif :</strong> Vérifie si l’utilisateur a saisi le bon mot secret.</p>
+<p>🧾 <strong>Consignes :</strong></p>
+<ul>
+<li>Demande un mot à l’utilisateur avec <code>next()</code></li>
+<li>Si le mot est <code>&quot;java&quot;</code>, affiche <code>&quot;Accès autorisé&quot;</code></li>
+<li>Sinon, affiche <code>&quot;Mot incorrect&quot;</code></li>
+</ul>
+<p>🔧 Méthode : <code>next()</code></p>
+<hr>
+<h3 id="-exercice-2-corrigé--multiplication-surprise">🧮 <strong>Exercice 2 (corrigé) : Multiplication surprise</strong></h3>
+<p><strong>Objectif :</strong> Lire un entier, le multiplier par un nombre fixe, et afficher le résultat.</p>
+<p>🧾 <strong>Consignes :</strong></p>
+<ul>
+<li>Demande à l’utilisateur un nombre entier avec <code>nextInt()</code></li>
+<li>Multiplie ce nombre par <strong>7</strong></li>
+<li>Affiche le résultat dans une phrase</li>
+</ul>
+<p>🖥️ <strong>Exemple :</strong></p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>Tape un nombre : 4  
+Résultat : 28</code></pre></div>
+<p>🔧 Méthode : <code>nextInt()</code></p>
+<hr>
+<h3 id="-exercice-3--confirmation-de-participation">✅ Exercice 3 : Confirmation de participation</h3>
+<p><strong>Objectif :</strong> Lire un booléen (<code>true</code> / <code>false</code>) et réagir.</p>
+<p>🧾 <strong>Consignes :</strong></p>
+<ul>
+<li>Demande : “Participes-tu à l’événement ? (true/false)”</li>
+<li>Si <code>true</code>, affiche : “À bientôt !”</li>
+<li>Si <code>false</code>, affiche : “Dommage, une prochaine fois.”</li>
+</ul>
+<p>🔧 Méthode : <code>nextBoolean()</code></p>
+<hr>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Sep 19, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a id="R-logo" 
+   style="display: flex; justify-content: center; align-items: center; text-decoration: none;" 
+   href="/420-111/index.html">
+
+    <img src="/420-111/images/logo.png" width="40" height="40" alt="logo" style="margin-right: 8px;">
+
+    <div style="display: flex; flex-direction: column; font-size: 130%; align-items: flex-start;">
+        <span>Introduction à</span>
+        <span>la programmation</span>
+    </div>
+</a>
+
+        </div>
+        <search><form action="/420-111/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/420-111/index.html"><a class="padding" href="/420-111/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/420-111/1-intro/java/index.html"><a class="padding" href="/420-111/1-intro/java/index.html">Intro</a><ul id="R-subsections-6fffaf9b92bcc839991ff76663fb9bac" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/2-vscode/index.html"><a class="padding" href="/420-111/2-vscode/index.html">VSCode</a></li>
+            <li class="" data-nav-id="/420-111/3-variables-types/variables/index.html"><a class="padding" href="/420-111/3-variables-types/variables/index.html">Variables &amp; Types</a><ul id="R-subsections-56652df65f37063b28a69d5d800b9039" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/4-string/index.html"><a class="padding" href="/420-111/4-string/index.html">String</a><ul id="R-subsections-782b65f21e652a1eafb534740db488ee" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/5-operateurs/arithmetique/index.html"><a class="padding" href="/420-111/5-operateurs/arithmetique/index.html">Opérateurs</a><ul id="R-subsections-cef453883c54c95d8fd8616f806d4cea" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/6-conversions-de-types/index.html"><a class="padding" href="/420-111/6-conversions-de-types/index.html">Conversions De Types</a></li>
+            <li class="" data-nav-id="/420-111/7-tableaux/index.html"><a class="padding" href="/420-111/7-tableaux/index.html">Tableaux</a><ul id="R-subsections-55c24a3b7117af4e14c631828fa164c4" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html"><a class="padding" href="/420-111/8-structures-de-controles/conditionnelles/if-else/index.html">Structures De Controles</a><ul id="R-subsections-9f8f049e95e0d117f4b5a03645c9071a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/9-debug/index.html"><a class="padding" href="/420-111/9-debug/index.html">Debug</a></li>
+            <li class="" data-nav-id="/420-111/10-fonctions/index.html"><a class="padding" href="/420-111/10-fonctions/index.html">Fonctions</a><ul id="R-subsections-e4181c72c636f10f24765f042a0f0763" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/420-111/11-scanner/index.html"><a class="padding" href="/420-111/11-scanner/index.html">Scanner</a><ul id="R-subsections-2e7a5e82e009aac91720d05751cc77c0" class="collapsible-menu">
+            <li class="" data-nav-id="/420-111/11-scanner/hasnext/index.html"><a class="padding" href="/420-111/11-scanner/hasnext/index.html">Gestion des Entrées</a></li></ul></li>
+            <li class="" data-nav-id="/420-111/12-fichier/lecture/index.html"><a class="padding" href="/420-111/12-fichier/lecture/index.html">Fichier</a><ul id="R-subsections-7d34dcc2710810bfed736603e11f989d" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/420-111/exercices/index.html"><a class="padding" href="/420-111/exercices/index.html">Exercices</a><ul id="R-subsections-393f73ec6223292328da5c03b7f3a881" class="collapsible-menu"></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-relearn-auto" value="relearn-auto" selected>Relearn Light/Dark</option>
+                    <option id="R-select-variant-zen-light" value="zen-light">Zen Light</option>
+                    <option id="R-select-variant-zen-dark" value="zen-dark">Zen Dark</option>
+                    <option id="R-select-variant-neon" value="neon">Neon</option>
+                    <option id="R-select-variant-learn" value="learn">Learn</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"></div>
+      </div>
+    </aside>
+    <script src="/420-111/js/clipboard/clipboard.min.js?1768412029" defer></script>
+    <script src="/420-111/js/perfect-scrollbar/perfect-scrollbar.min.js?1768412029" defer></script>
+    <script src="/420-111/js/theme.js?1768412029" defer></script>
+  </body>
+</html>
