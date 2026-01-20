@@ -4,23 +4,19 @@ type = "home"
 +++
 
 
-[Plan de cours](plan.pdf)
+:clipboard:[Plan de cours](files/plan.pdf)
 
 ## Structure du cours
 
 ### 📘 Semaines
 
 - **Semaine 1 – Introduction à l’IHM**
-  - [Définition et objectifs](Définitions/interfaces-humain-machine.md)
-  - [UI, UX et interfaces interactives](Définitions/uiVSux.md)
+  - [Définition et objectifs](01-définitions/interfaces-humain-machine.md)
+  - [UI, UX et interfaces interactives](01-définitions/uiVSux.md)
 
 - **Semaine 2 – Principes de design d'interfaces**
-  - [Worflow de design d'interfaces](Principes-design-interfaces/workflow.md)
-  - [Principes fondamentaux du design d’interfaces ](Principes-design-interfaces/principes-design.md)
-
-- **Semaine 3 – Principes de design**
-  - [Heuristiques de Nielsen](weeks/week03-nielsen.md)
-  - [Lois de Gestalt](weeks/week03-gestalt.md)
+  - [Worflow de design d'interfaces](02-principes-design-interfaces/workflow.md)
+  - [Principes fondamentaux du design d’interfaces ](02-principes-design-interfaces/principes-design.md)
 
 ---
 
