@@ -5,7 +5,6 @@ type = "home"
 
 
 [Plan de cours](plan.pdf)
-[Horaire et disponibilité de la professeure](plan.pdf)
 
 ## Structure du cours
 
