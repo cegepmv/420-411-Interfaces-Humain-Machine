@@ -1,8 +1,13 @@
++++
+title = "Principes de design d'interfaces"
+weight = "2"
++++
+
 ## 🧠 Principe 1
 
 ### Exemple
 
-![Interface surchargée](images/interface1.png)
+![Interface surchargée](/420-411-Interfaces-Humain-Machine/images/interface1.png)
 
 ### Question pour l’étudiant
 - Que ressentez-vous en regardant cette interface ?
@@ -23,7 +28,7 @@ Une bonne interface **réduit la charge cognitive** en :
 
 ### Exemple
 
-![Absence de feedback](images/interface2.png)
+![Absence de feedback](/420-411-Interfaces-Humain-Machine/images/interface2.png)
 
 ### Question pour l’étudiant
 - Que se passe-t-il après avoir cliqué sur le bouton ?
@@ -44,7 +49,7 @@ Il permet de :
 
 ### Exemple
 
-![Affordance ambiguë](images/interface3.png)
+![Affordance ambiguë](/420-411-Interfaces-Humain-Machine/images/interface3.png)
 
 ### Question pour l’étudiant
 - Quels éléments sont cliquables ?
@@ -64,7 +69,7 @@ Un bouton doit ressembler à un bouton, un champ de texte à un champ de texte.
 
 ### Exemple
 
-![Manque de contraintes](images/interface4.png)
+![Manque de contraintes](/420-411-Interfaces-Humain-Machine/images/interface4.png)
 
 ### Question pour l’étudiant
 - L’utilisateur peut-il faire une erreur ?
@@ -84,7 +89,7 @@ Une bonne interface **empêche l’erreur plutôt que de la corriger après**.
 
 ### Exemple
 
-![Gestalt non respectée](images/interface5.png)
+![Gestalt non respectée](/420-411-Interfaces-Humain-Machine/images/interface5.png)
 
 ### Question pour l’étudiant
 - Quels éléments vont ensemble ?
@@ -108,7 +113,7 @@ Elles incluent :
 
 ### Exemple
 
-![Nielson non respectée](images/interface6.png)
+![Nielson non respectée](/420-411-Interfaces-Humain-Machine/images/interface6.png)
 
 ### Question pour l’étudiant
 - Est-ce qu'il est facile de corriger l'erreur de l'utilisateur dans le cas de cette interface ?

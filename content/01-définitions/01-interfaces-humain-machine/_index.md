@@ -1,3 +1,8 @@
++++
+title = "Interfaces Humain Machine"
+weight = "1"
++++
+
 ## Définition
 
 Une **interface humain-machine (IHM)** est **l’ensemble des éléments qui permettent à un utilisateur d’interagir avec un système, une machine ou un logiciel**.  

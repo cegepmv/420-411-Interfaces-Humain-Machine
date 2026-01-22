@@ -1,3 +1,8 @@
++++
+title = "Workflow de conception d'interfaces"
+weight = "1"
++++
+
 # Workflow de conception d’une interface
 
 Dans cette section, nous allons détailler les étapes pour créer une bonne interface à l’aide d’un exemple concret : une **application de réservation de rendez-vous médicaux**.  
@@ -78,7 +83,7 @@ Définir **les étapes que l’utilisateur suit** pour atteindre son objectif.
 
 > Le user flow aide à **visualiser le parcours et repérer les points de friction**.
 
-![user flow](images/flow.png)
+![user flow](/420-411-Interfaces-Humain-Machine/images/flow.png)
 
 ---
 
