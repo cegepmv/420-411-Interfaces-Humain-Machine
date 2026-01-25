@@ -38,7 +38,7 @@ Elle inclut :
 - la **disposition des éléments**
 
 > La UI répond à la question :  
-> **« À quoi ressemble l’interface et comment l’utilisateur interagit avec elle ? »**
+> **« À quoi ressemble l’interface ? »**
 
 ### Exemples
 - Un bouton bien visible « Arroser »
@@ -150,3 +150,47 @@ Une application mobile fonctionne bien, mais les **polices sont trop petites** p
 Justification :  
 ....................................................................
 
+---
+
+## Situation 7
+Un site web est très beau visuellement (couleurs, animations, typographie), mais l’utilisateur **ne sait jamais** quoi faire ensuite ni où cliquer pour atteindre son objectif.
+
+👉 Problème de :
+☐ UX
+☐ UI
+
+Justification :  
+....................................................................
+
+# Le User-Driven Design (ou User-First Design)
+
+C'est une approche de conception qui place **l’utilisateur** au centre de toutes les décisions de design.
+
+On ne conçoit pas pour :
+
+- la technologie
+
+- l’entreprise
+
+- l’esthétique
+
+👉 On conçoit d’abord pour l’utilisateur.
+
+---
+
+🧩 **Exemple concret**
+
+❌ Design centré système
+« L’utilisateur doit remplir 10 champs parce que la base de données les exige. »  
+
+✅ User-Driven Design
+« L’utilisateur veut envoyer de l’argent rapidement → on réduit à 3 champs essentiels. »
+
+---
+
+🧪 **Autre exemple parlant**
+
+Bouton “Submit” ❌
+Bouton “Envoyer le message” ✅
+
+👉 Le vocabulaire est pensé du point de vue de l’utilisateur, pas du développeur.
