@@ -141,3 +141,22 @@ Valider que l’interface est **facile, efficace et agréable**.
 6. **Tester et améliorer** → tests utilisateurs, feedback, itérations  
 
 > Chaque étape se construit sur la précédente, toujours **centrée sur l’utilisateur**.
+
+---
+
+## Exercice : Flux utilisateur
+
+**Application de streaming de musique et de podcasts📱 :**
+
+Vous travaillez sur la conception d’une application de streaming de musique et de podcasts.
+L’application permet d’écouter du contenu audio, de découvrir de nouveaux artistes et de gérer des playlists.
+
+==> Votre objectif est de concevoir le flux utilisateur en utilisant [draw.io](https://app.diagrams.net/).
+
+**Choisissez un seul objectif principal parmi les suivants :**
+
+- Écouter une musique
+- Écouter un épisode de podcast
+- Créer une playlist
+- Rechercher un artiste ou un podcast
+- Télécharger un contenu pour une écoute hors ligne
