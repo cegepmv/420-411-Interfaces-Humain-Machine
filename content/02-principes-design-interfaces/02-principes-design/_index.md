@@ -9,7 +9,7 @@ weight = "2"
 
 ![Interface surchargée](/420-411-Interfaces-Humain-Machine/images/interface1.png)
 
-### Question pour l’étudiant
+### Question
 - Que ressentez-vous en regardant cette interface ?
 
 ---
@@ -30,7 +30,7 @@ Une bonne interface **réduit la charge cognitive** en :
 
 ![Absence de feedback](/420-411-Interfaces-Humain-Machine/images/interface2.png)
 
-### Question pour l’étudiant
+### Question
 - Que se passe-t-il après avoir cliqué sur le bouton ?
 
 ---
@@ -49,9 +49,10 @@ Il permet de :
 
 ### Exemple
 
-![Affordance ambiguë](/420-411-Interfaces-Humain-Machine/images/interface3.png)
+![Affordance ambiguë](/420-411-Interfaces-Humain-Machine/images/interface3.png)  
+![Affordance ambiguë](/420-411-Interfaces-Humain-Machine/images/affordance1.jpg)
 
-### Question pour l’étudiant
+### Question
 - Quels éléments sont cliquables ?
 - Est-ce évident sans explication ?
 - Pourquoi l’utilisateur peut hésiter ?
@@ -71,7 +72,7 @@ Un bouton doit ressembler à un bouton, un champ de texte à un champ de texte.
 
 ![Manque de contraintes](/420-411-Interfaces-Humain-Machine/images/interface4.png)
 
-### Question pour l’étudiant
+### Question
 - L’utilisateur peut-il faire une erreur ?
 - L’interface empêche-t-elle les mauvaises actions ?
 - Comment pourrait-on guider l’utilisateur ?
@@ -89,12 +90,11 @@ Une bonne interface **empêche l’erreur plutôt que de la corriger après**.
 
 ### Exemple
 
-![Gestalt non respectée](/420-411-Interfaces-Humain-Machine/images/interface5.png)
+![Gestalt non respectée](/420-411-Interfaces-Humain-Machine/images/gestalt.png)
 
-### Question pour l’étudiant
+### Question
 - Quels éléments vont ensemble ?
 - Est-ce évident visuellement ?
-- Pourquoi la lecture est-elle difficile ?
 
 ---
 
@@ -111,12 +111,7 @@ Elles incluent :
 
 ## 🧩 Principe 6
 
-### Exemple
-
-![Nielson non respectée](/420-411-Interfaces-Humain-Machine/images/interface6.png)
-
-### Question pour l’étudiant
-- Est-ce qu'il est facile de corriger l'erreur de l'utilisateur dans le cas de cette interface ?
+![Nielson non respectée](/420-411-Interfaces-Humain-Machine/images/Heuristic-nielson.jpg)
 
 ---
 
@@ -136,6 +131,8 @@ Elles incluent :
 - Aide et documentation
 
 ---
+
+# Des recommendations pratiques
 ## 📏 Espacements
 
 - On utilise presque toujours une grille et un système d’espacement cohérent.

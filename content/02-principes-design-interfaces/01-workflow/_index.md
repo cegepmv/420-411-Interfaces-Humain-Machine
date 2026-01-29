@@ -3,8 +3,6 @@ title = "Workflow de conception d'interfaces"
 weight = "1"
 +++
 
-# Workflow de conception d’une interface
-
 Dans cette section, nous allons détailler les étapes pour créer une bonne interface à l’aide d’un exemple concret : **une application de réservation de rendez-vous médicaux**.  
 
 ---

@@ -3,11 +3,9 @@ title = "Accessibilité des interfaces numériques"
 weight = "3"
 +++
 
-# Accessibilité des interfaces numériques
-
 ## Définition
 
-L’**accessibilité des interfaces** consiste à concevoir des interfaces numériques qui peuvent être **perçues, comprises et utilisées par le plus grand nombre**, y compris les personnes ayant des **limitations physiques, sensorielles, cognitives ou situationnelles**.
+L’**accessibilité des interfaces** consiste à concevoir des interfaces numériques qui peuvent être **perçues, comprises et utilisées par le plus grand nombre** de personnes, y compris les personnes ayant des **limitations physiques, sensorielles, cognitives ou situationnelles**.
 
 > Une interface accessible est une interface utilisable par **tout le monde**, sans exclusion.
 
@@ -16,12 +14,12 @@ L’**accessibilité des interfaces** consiste à concevoir des interfaces numé
 ## Types de limitations prises en compte
 
 ### 1. Limitations visuelles 👁️
-- Cécité totale ou partielle
-  ![cecité partielle de vision](images/cecite.png)
+- Cécité totale ou partielle  
+  ![cecité partielle de vision](/420-411-Interfaces-Humain-Machine/images/cecite.png)
 - Basse vision
 - Daltonisme
-  ![sans daltonisme](images/sans-daltonisme.png)
-  ![avec daltonisme](images/avec-daltonisme.png)
+  ![sans daltonisme](/420-411-Interfaces-Humain-Machine/images/sans-daltonisme.png)
+  ![avec daltonisme](/420-411-Interfaces-Humain-Machine/images/avec-daltonisme.png)
 - Sensibilité à la lumière
 
 ---
@@ -42,7 +40,7 @@ L’**accessibilité des interfaces** consiste à concevoir des interfaces numé
 ### 4. Limitations cognitives 🧠
 - Troubles de l’attention (TDAH)
 - Dyslexie
-  ![dyslexia](images/dyslexia.png)
+  ![dyslexia](/420-411-Interfaces-Humain-Machine/images/dyslexia.png)
 - Difficultés de compréhension ou de mémoire
 - Stress et surcharge cognitive
 
@@ -60,6 +58,15 @@ L’**accessibilité des interfaces** consiste à concevoir des interfaces numé
 - Fatigue
 - Connexion lente
 - Une seule main disponible
+
+---
+
+### 6. Limitations culturelles 🌍
+- Langue et niveau de maîtrise
+- Symboles, icônes et métaphores culturelles
+- Signification des couleurs
+- Sens de lecture et orientation
+- Formats de date, heure et nombres
 
 ---
 
@@ -88,15 +95,39 @@ L’**accessibilité des interfaces** consiste à concevoir des interfaces numé
 ## Bonnes pratiques à suivre
 
 1. Fournir des **alternatives textuelles** pour images et icônes
-  Exemple : `<img src="doctor.png" alt="Médecin souriant dans son cabinet">`
-Les alternatives textuelles permettent aux lecteurs d’écran de décrire l’image (tester avec un lecteur d'écran).
+  Exemple : `<img src="doctor.png" alt="Médecin souriant dans son cabinet">`  
+Les alternatives textuelles permettent aux lecteurs d’écran de décrire l’image (tester avec un lecteur d'écran).  
+2. Si tu intègres une vidéo dans ton site, tu dois prévoir des sous-titres et une description audio.
  
-3. Maintenir un **contraste élevé** entre texte et fond (≥ 4.5:1)
+3. Maintenir un **contraste élevé** entre texte et fond (≥ 4.5:1 pour texte normal et 3:1 pour éléments graphiques)
    Le contraste permet de distinguer le contenu du fond. Un mauvais contraste rend la lecture difficile (tester avec une vérificateur de contraste).
    
-5. Assurer une **navigation complète au clavier** (tester manuellement) 
+4. Assurer une **navigation complète au clavier** (tester manuellement) 
+5. Utiliser une structure sémantique correcte  
 6. Utiliser un **langage simple** et clair  
 7. Fournir un **feedback compréhensible** pour les erreurs  
 8. Éviter les **animations rapides ou clignotantes**  
 9. Tester avec **simulateurs de daltonisme, lecteurs d’écran et zoom**
+10. Rendre les formulaires accessibles  
 
+---
+
+## Tester l'accessibilité avec les bons outils
+
+1. Lecteur d'écran : **NVDA** (Windows) ou **VoiceOver** (MacOS).  
+2. Tester le contraste : [Webaim tool](https://webaim.org/resources/contrastchecker/)  
+3. Navigation Clavier :  
+| Action             | Touche        |
+|--------------------|---------------|
+| Aller au suivant   | Tab           |
+| Aller au précédent | Shift + Tab   |
+| Activer            | Enter / Space |
+| Fermer             | Esc           |
+| Naviguer           | Flèches       |
+4. Simulateur de Daltonisme.
+5. Test de zoom 200 % minimum. 
+
+## Exercice
+
+- Testez le [site du cegep](https://cegepmv.ca/) en terme d'accessibilité.
+- Testez le [site de la banque nationale](https://www.bnc.ca/) en terme d'accessibilité.
