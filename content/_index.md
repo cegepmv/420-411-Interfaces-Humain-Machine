@@ -19,6 +19,7 @@ type = "home"
   - [Worflow de design d'interfaces](02-principes-design-interfaces/01-workflow/_index.md)
   - [Principes fondamentaux du design d’interfaces ](02-principes-design-interfaces/02-principes-design/_index.md)
   - [Accessibilité des interfaces](02-principes-design-interfaces/03-accessibilité/_index.md)
+  - [Audit des interfaces](03-audit-interfaces/01-audit-interface/_index.md)
 
 ---
 
