@@ -126,6 +126,9 @@ Les alternatives textuelles permettent aux lecteurs d’écran de décrire l’i
 | Naviguer           | Flèches       |
 4. Simulateur de Daltonisme.
 5. Test de zoom 200 % minimum. 
+6. Chrome DevTools (Accessibility)  
+7. Lighthouse  
+8. WAVE
 
 ## Exercice
 

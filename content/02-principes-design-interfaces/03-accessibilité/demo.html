@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibilité – Exemple simple</title>
+</head>
+
+<body>
+  <h1>Contact</h1>
+
+  <!-- Image avec texte alternatif -->
+  <img
+    src="../images/chat.jpg"
+    alt="Un chat noir assis sur un canapé"
+    width="300">
+
+  <br><br>
+
+  <!-- Icône seule avec aria-label -->
+  <button aria-label="Ajouter aux favoris">
+    ★
+  </button>
+
+  <br><br>
+
+  <!-- Formulaire avec labels -->
+  <form>
+    <label for="nom">Nom</label><br>
+    <input type="text" id="nom" name="nom"><br><br>
+
+    <label for="email">Courriel</label><br>
+    <input type="email" id="email" name="email">
+  </form>
+</body>
+</html>
