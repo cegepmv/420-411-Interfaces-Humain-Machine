@@ -15,15 +15,16 @@ type = "home"
   - [Définition et objectifs](01-définitions/01-interfaces-humain-machine/_index.md)
   - [UI, UX et interfaces interactives](01-définitions/02-user-interface-vs-user-experience/_index.md)
 
-- **Semaine 2 – Principes de design d'interfaces**
+- **Semaine 2-4 – Principes de design d'interfaces**
   - [Worflow de design d'interfaces](02-principes-design-interfaces/01-workflow/_index.md)
   - [Principes fondamentaux du design d’interfaces](02-principes-design-interfaces/02-principes-design/_index.md)
   - [Accessibilité des interfaces](02-principes-design-interfaces/03-accessibilité/_index.md)
   - [Audit des interfaces](03-audit-interfaces/01-audit-interface/_index.md)
 
-- **Semaine 3 – Prototypage des interfaces**
+- **Semaine 4-5 – Prototypage des interfaces**
   - [Types de prototypes](04-prototypage/01-types-prototypes/_index.md)
   - [Introduction à Figma](04-prototypage/02-figma-intro/_index.md)
+  - [Figma (Avancé)](04-prototypage/03-figma-more/_index.md)
 
 ---
 
