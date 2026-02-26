@@ -26,23 +26,26 @@ type = "home"
   - [Introduction à Figma](04-prototypage/02-figma-intro/_index.md)
   - [Figma (Avancé)](04-prototypage/03-figma-more/_index.md)
 
+- **Semaine 6-10 – Projet 1 : Plante intelligente**
+  - [Introduction à Arduino](05-Arduino/01-intro/index.html)
+
 ---
 
 ### 🧪 Travaux pratiques
 
 - **TP 1**
-  - [Audit d’interface](labs/lab01-audit.md)
+  - Audit d’interface (Sur Léa : 15%)
 
 - **TP 2**
-  - [Prototypage avec Figma](labs/lab02-figma.md)
+  - Prototypage avec Figma (Sur Léa : 20%)
 
 ---
 
 ### 🚀 Projets
 
-- **Projet mi-session – Plante intelligente**
-  - [Description du projet](projects/smart-plant/brief.md)
-  - [Critères d’évaluation](projects/smart-plant/rubric.md)
+- **Projet mi-session – Plante intelligente (25%)**
+  - [Description du projet](Projets/smart-plant/brief.md)
+  - [Critères d’évaluation](Projets/smart-plant/rubric.md)
 
 
 
