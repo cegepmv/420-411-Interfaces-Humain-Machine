@@ -120,3 +120,12 @@ Fonctions principales :
 - via USB ou batterie externe
 
 ---
+
+### 🔌 Les circuits
+
+#### 🔹 Circuit en série 
+![circuit en série](/420-411-Interfaces-Humain-Machine/images/circuit-serie.jpg)
+
+
+#### 🔹 Circuit parallèle 
+![circuit parallèle](/420-411-Interfaces-Humain-Machine/images/circuit-parallel.jpg)
