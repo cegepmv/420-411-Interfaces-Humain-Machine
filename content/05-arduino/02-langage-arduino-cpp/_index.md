@@ -138,8 +138,26 @@ while(digitalRead(2) == LOW) {
 
 - Faire varier la luminosité de la LED de faible à forte progressivement
 
-**3/ Moteur DC avec bouton :**
+**3/ Piano avec buzzer :**
 
-- Appuyer sur le bouton → moteur tourne 
-- Relâcher → moteur s’arrête
+- En utilisant le buzzer passif que vous avez dans le kit :
+
+* Vous allez faire un circuit avec le buzzer et sept boutons (Do, ré, mi, fa, sol , la , si). 
+* Le buzzer et les boutons seront chacun connectés à un pin d'arduino. 
+* Le clic sur l'un des boutons va jouer la note correspondante pendant 500ms. 
+* Utilisez la fonction `tone(buzzerPin, frequency, duration)` pour jouer la note en question. 
+* Utilisez la fonction `noTone(buzzerPin)` pour arrêter le son. 
+
+Les différentes fréquences des notes :
+| Note                   | Fréquence (Hz) |
+| ---------------------- | -------------- |
+| Do (C4)                | 261            |
+| Ré (D4)                | 294            |
+| Mi (E4)                | 330            |
+| Fa (F4)                | 349            |
+| Sol (G4)               | 392            |
+| La (A4)                | 440            |
+| Si (B4)                | 494            |
+| Do (C5)                | 523            |
+
 
