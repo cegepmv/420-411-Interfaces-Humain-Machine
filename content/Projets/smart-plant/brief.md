@@ -92,8 +92,8 @@ Créer un système intelligent capable de :
 
 ## ⚙️ Conditions du projet
 
-- Température > 27°C → 🔴 LED rouge ON
-- Sol sec → 🔵 LED bleue ON
+- Température > 30°C → 🔴 LED rouge ON
+- Sol sec (humidité du sol < 40 %) → 🔵 LED bleue ON
 - Bouton dashboard → 💧 pompe ON/OFF
 
 ---

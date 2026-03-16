@@ -63,11 +63,13 @@ Le capteur utilise deux électrodes métalliques plantées dans la terre. L’Ar
 
 **Valeurs typiques**
 
-- sol très humide → valeur ≈ 300
-- sol normal → ≈ 500
-- sol sec → ≈ 800
+Ça dépend du type de capteur, dans notre cas c'est des capteurs reversés. Les valeurs sont entre 0 et 1023 :  
 
-👉 plus la valeur est grande → plus le sol est sec.
+- sol très humide → valeur > 800
+- sol normal → valeur ≈ 500
+- sol sec → valeur <≈ 300-400
+
+👉 plus la valeur est grande → plus le sol est humide.
 
 **Connecter le capteur :**
 - VCC → 5V
@@ -75,7 +77,7 @@ Le capteur utilise deux électrodes métalliques plantées dans la terre. L’Ar
 - AO → Pin analogique
 
 **Ecrire le programme**  
-- Brancher le capteur et écrire et tester le programme qui lit et affiche la moyenne d'humidité du sol sur 1 minute (la moyenne de 30 valeurs, une valeur par 2 secondes).
+- Brancher le capteur et écrire et tester le programme qui lit et affiche la moyenne d'humidité du sol sur 1 minute (la moyenne de 30 valeurs, une valeur par 2 secondes). Cette moyenne doit être affichée sous format d'un pourcentage (0→0% et 1023→100%)
 
 ### 3) Commander une pompe à eau :  
 ![pompe à eau](/420-411-Interfaces-Humain-Machine/images/pompe.png)
@@ -86,8 +88,10 @@ La pompe doit être commandée avec :
 ![diode](/420-411-Interfaces-Humain-Machine/images/diode.png)
 
 **Connecter la pompe :**
-- pin digitale → résistance → base transistor
-- pompe → alimentation externe (batterie 9V)
+- pin digitale → résistance → pin à gauche de transistor
+- pompe (+) → alimentation externe (batterie 9V)
+- pompe (-) → pin au milieu de transistor
+- transistor pin à droite → GND Arduino
 - diode en parallèle sur la pompe
 
 **Ecrire le programme**  
