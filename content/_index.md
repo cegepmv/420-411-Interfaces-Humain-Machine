@@ -28,6 +28,8 @@ type = "home"
 
 - **Semaine 6-10 – Projet 1 : Plante intelligente**
   - [Introduction à Arduino](05-Arduino/01-intro/index.html)
+  - [Langage Arduino](05-Arduino/02-langage-arduino-cpp/_index.md)
+  - [Utilisation des capteurs](05-Arduino/03-utilisation%20capteurs/_index.md)
 
 ---
 
@@ -46,6 +48,7 @@ type = "home"
 - **Projet mi-session – Plante intelligente (25%)**
   - [Description du projet](Projets/smart-plant/brief.md)
   - [Critères d’évaluation](Projets/smart-plant/rubric.md)
+  - [Première évaluation](files/Evaluation1.pdf)
 
 
 
