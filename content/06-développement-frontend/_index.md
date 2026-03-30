@@ -12,7 +12,7 @@ pre = "6."
 
 **I) Contexte**  
 
-Un backend (Node.js) vous sera fourni dans les séances prochaines et expose les routes suivantes :
+Un backend (Node.js) vous sera fourni dans les séances prochaines et qui est accessible via : http://localhost:3001/ et expose les routes suivantes :
 
 - GET /api/data → retourne les données des capteurs
 - POST /api/pump → déclenche la pompe à eau
