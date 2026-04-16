@@ -27,9 +27,15 @@ type = "home"
   - [Figma (Avancé)](04-prototypage/03-figma-more/_index.md)
 
 - **Semaine 6-10 – Projet 1 : Plante intelligente**
-  - [Introduction à Arduino](05-Arduino/01-intro/index.html)
+  - [Introduction à Arduino](05-Arduino/01-intro/_index.md)
   - [Langage Arduino](05-Arduino/02-langage-arduino-cpp/_index.md)
   - [Utilisation des capteurs](05-Arduino/03-utilisation%20capteurs/_index.md)
+  - [Développement Front-End](06-développement-frontend/_index.md)
+
+- **Semaine 11-15 – Projet 2 : Jeu 2D**
+  - [Introduction](07-développement-jeux-vidéo/_index.md)
+  - [Création du monde de jeu](07-développement-jeux-vidéo/01-Unity/world.md)
+  - [Mouvements joueur et physique 2D](07-développement-jeux-vidéo/01-Unity/player.md)
 
 ---
 
