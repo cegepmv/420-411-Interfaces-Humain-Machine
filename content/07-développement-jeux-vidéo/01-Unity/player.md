@@ -128,20 +128,85 @@ public class PlayerMouvement : MonoBehaviour
     }
 
     // Detect when touching ground
-    void OnCollisionEnter2D(Collision2D collision)
+        void OnCollisionEnter2D(Collision2D collision)
     {
-        isGrounded = true;
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
     }
 
     // Detect when leaving ground
     void OnCollisionExit2D(Collision2D collision)
     {
-        isGrounded = false;
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
+    
+    void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+    }
+}
+```
+<p style="color:red;font-weight: bold; font-size: 25px;">Et si mon jeu est de type top-down runner ?</p>
+
+```csharp
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    public float speed = 5f;
+    private Rigidbody2D rb;
+    private Vector2 moveInput;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+        // Input (horizontal + vertical)
+        moveInput.x = Input.GetAxisRaw("Horizontal");
+        moveInput.y = Input.GetAxisRaw("Vertical");
+
+        // normalize so diagonal isn't faster
+        moveInput = moveInput.normalized;
     }
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+        rb.linearVelocity = moveInput * speed;
+    }
+}
+```
+<p style="color:red;font-weight: bold; font-size: 25px;">Et si je veux que la caméra suit le joueur ?</p>
+
+```csharp
+using UnityEngine;
+
+public class CameraFollow : MonoBehaviour
+{
+    public Transform player;
+    public float smoothSpeed = 5f;
+    public float yOffset = 1.5f;
+
+    void LateUpdate()
+    {
+        Vector3 targetPosition = new Vector3(
+            player.position.x,
+            player.position.y + yOffset,
+            transform.position.z
+        );
+
+        transform.position = Vector3.Lerp(
+            transform.position,
+            targetPosition,
+            smoothSpeed * Time.deltaTime
+        );
     }
 }
 ```
