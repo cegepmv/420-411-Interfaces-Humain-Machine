@@ -77,6 +77,38 @@ Couleur → blanc (ou autre)
 <p style="font-weight: bold; width: 210px; color: #000; background-color: #ffcf33;">5/ Lier le texte au script :  </p>
 Glisse le texte UI dans : Score Text (dans Inspector) du score manager
 
+```csharp
+using UnityEngine;
+using TMPro;
+
+public class ScoreManager : MonoBehaviour
+{
+    public static ScoreManager instance;
+    public TextMeshProUGUI scoreText;
+    // initialiser la variable publique score
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    void Start()
+    {
+        UpdateScore();
+    }
+
+    public void AddScore(int amount)
+    {
+        // à compléter
+    }
+
+    void UpdateScore()
+    {
+        scoreText.text = "Score : " + score;
+    }
+}
+```
+
 **Exemple 2 : Image (nombre de vies)**
 
 1/ Ajouter l'image du coeur (sprite 2D) : Right click → UI → Image  
@@ -239,3 +271,14 @@ public class EnemyDamage : MonoBehaviour
     }
 }
 ```
+
+## Exercice 1 :
+- Ajoutez un bouton pause qui fait activer un panel UI de pause.
+- Le jeu doit s'arrêter quand on est en pause.
+- Le panel de pause doit contenir un bouton de "reprendre jeu" qui nous remet dans la scène.
+
+
+## Exercice 2 :
+- Ajoutez une scène appelée "Level2" avec quelques plateformes, le même Player, des ennemis et des éléments à collecter.
+
+- Ajoutez une porte à la fin de la première et faites en sorte que quand le joueur rentre par la porte il passe au niveau 2 (scène Level2).
